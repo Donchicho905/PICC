@@ -15,7 +15,7 @@
   - DOC-044 (99_META/REPOSITORY_RULES.md)
 - Documentos consumidos:
   - DOC-002 (00_MASTER_PLAN/MASTER_PLAN_PICC_NEXT_V3.md)
-- Documentos generados:
+- Documentos visualizados:
   - DOC-046 (INDEX.md)
   - KM-001 (99_META/KNOWLEDGE_MODEL.md)
   - KG-001 (99_META/KNOWLEDGE_GRAPH.md)

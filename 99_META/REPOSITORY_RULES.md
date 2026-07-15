@@ -13,7 +13,7 @@
   - DOC-042 (99_META/DECISION_HISTORY.md)
 - Documentos consumidos:
   - DOC-046 (INDEX.md)
-- Documentos generados:
+- Documentos gobernados/indexados:
   - DOC-040 (99_META/ARTIFACT_REGISTRY.md)
 - Responsable: PMO / Arquitectura de conocimiento
 - Fecha: 2026-07-15

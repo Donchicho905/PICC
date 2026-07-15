@@ -51,6 +51,24 @@ Decision:
 Razon:
 - Separar incertidumbre de respuesta y evitar cierre prematuro de hipotesis.
 
+## D-0006 (2026-07-15)
+Decision:
+- Congelar SHDLS V1.0 como motor interno de aprendizaje y activar el PICC NEXT Growth System como programa prioritario.
+Razon:
+- El modelo interno ya es suficiente para producir aprendizaje; el siguiente valor esta en generar demanda, confianza y conversion comercial.
+
+## D-0007 (2026-07-15)
+Decision:
+- Formalizar el Research OS como motor de investigacion por hipotesis estrategicas y aprendizaje institucionalizado.
+Razon:
+- El sistema debe optimizar ventaja competitiva acumulativa, no solo produccion de evidencia.
+
+## D-0008 (2026-07-15)
+Decision:
+- Incorporar indicadores de acumulacion estrategica: Advantage Velocity, Knowledge Reuse Ratio, Evidence Leverage, Competitive Gap Reduction y Capability Compound Rate.
+Razon:
+- La madurez del programa debe medirse por aprendizaje acumulado y ventaja competitiva, no por volumen documental.
+
 
 
 

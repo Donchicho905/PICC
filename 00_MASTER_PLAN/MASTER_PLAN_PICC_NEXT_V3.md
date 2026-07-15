@@ -54,6 +54,14 @@ Construir el principal activo comercial de PICC para la proxima decada, capaz de
 4. Mejorar conversion a shortlist, propuesta y contrato.
 5. Acumular ventaja competitiva sostenible basada en evidencia y conocimiento.
 
+## 3.1) Etapa congelada: SHDLS V1.0
+
+SHDLS V1.0 queda congelado como motor interno de aprendizaje y decision.
+
+No se seguira refinando el modelo operativo salvo que la ejecucion demuestre una limitacion objetiva para producir mejores decisiones o aprendizaje.
+
+La prioridad del programa pasa al PICC NEXT Growth System.
+
 ## 4) Manifiesto
 
 PICC no competira por tener la pagina mas bonita.
@@ -358,6 +366,227 @@ Capacidad adquirida: confianza progresiva y defendible.
 
 Fase 3: Conversion consultiva + diagnostico
 Capacidad adquirida: convertir confianza en oportunidad calificada.
+
+## 21) PICC NEXT Growth System (Plan Maestro de la siguiente etapa)
+
+### 21.1 Definicion
+
+PICC NEXT Growth System es el sistema de adquisicion y conversion comercial que utiliza evidencia, conocimiento y capacidades organizacionales para ayudar al comprador a tomar decisiones, reducir incertidumbre y convertir confianza en proyectos contratados.
+
+### 21.2 Propósito
+
+1. Generar demanda calificada.
+2. Aumentar shortlist.
+3. Mejorar conversion.
+4. Reducir ciclo comercial.
+5. Proteger margen.
+6. Acumular evidencia y conocimiento reutilizable.
+
+### 21.3 Principios rectores
+
+1. Toda pieza debe apoyar una decision del comprador.
+2. Evidencia antes que persuasion vacia.
+3. Confianza antes que presion comercial.
+4. Calidad de oportunidad antes que volumen.
+5. Capacidades antes que herramientas.
+6. Aprendizaje acumulativo antes que campanas aisladas.
+7. Toda metrica debe conectarse con un resultado comercial.
+8. La arquitectura interna esta al servicio del crecimiento.
+9. No construir una superficie sin definir que decision facilita.
+10. No producir contenido sin definir que incertidumbre reduce.
+
+### 21.4 Limites
+
+El Growth System no es solamente una pagina web, un CMS, un CRM, un chatbot, una campana de marketing, un proyecto aislado de IA, una coleccion de articulos ni un reemplazo de los procesos comerciales humanos.
+
+### 21.5 Buyer System
+
+El sistema se organiza desde la perspectiva del comprador.
+
+ICPs prioritarios:
+- Se tratan como hipotesis hasta contar con evidencia verificable.
+- Cada ICP debe declarar: problema que resuelve, objetivo economico, riesgos percibidos, preguntas, objeciones, criterios de compra, personas que intervienen, informacion necesaria, evidencia esperada, señales de intencion, señales de abandono, ciclo estimado de decision y Decision Surfaces utilizadas.
+
+Buyer Journey:
+1. Detecta una necesidad.
+2. Entiende el problema.
+3. Investiga alternativas.
+4. Compara opciones.
+5. Construye shortlist.
+6. Valida confianza tecnica, economica e institucional.
+7. Solicita diagnostico o conversacion.
+8. Evalua propuesta.
+9. Obtiene aprobacion interna.
+10. Contrata.
+11. Evalua ejecucion.
+12. Repite o refiere.
+
+Decision Journey:
+Las decisiones criticas a resolver son: ¿Vale la pena considerar a PICC?, ¿PICC entiende un proyecto como el mio?, ¿Tiene experiencia comparable?, ¿Puede reducir mi riesgo?, ¿Que la hace diferente?, ¿Puedo confiar en su capacidad tecnica?, ¿Puedo justificar esta seleccion ante un comite?, ¿Su oferta es economicamente defendible?, ¿Es el momento correcto para avanzar?, ¿Que siguiente paso debo tomar?
+
+### 21.6 Decision Coverage
+
+Indicador estrategico para el Growth System.
+
+Definicion:
+- Porcentaje de decisiones criticas del comprador correctamente soportadas por evidencia en una Decision Surface.
+
+Formula:
+- Decision Coverage (%) = (Decisiones criticas soportadas / Total de decisiones criticas evaluadas) x 100
+
+Regla de decision soportada:
+- Mensaje explicito para la decision.
+- Evidencia trazable con confianza media o alta.
+- Owner responsable de vigencia de evidencia.
+- Accion definida (mantener, fortalecer, reescribir, eliminar o priorizar).
+
+Coberturas a medir:
+- Por ICP.
+- Por journey.
+- Por superficie.
+- Global.
+
+### 21.7 Decision Surfaces
+
+Toda interaccion publica o comercial de PICC se clasifica como Decision Surface.
+
+Listado base:
+- Home.
+- Paginas sectoriales.
+- Servicios.
+- Casos de exito.
+- Centro de conocimiento.
+- Herramientas y diagnosticos.
+- Reportes.
+- Propuestas.
+- Presentaciones.
+- LinkedIn.
+- Correo.
+- WhatsApp.
+- Reuniones.
+- Seguimiento.
+- Portal del cliente.
+
+Cada superficie debe declarar: objetivo, ICP, etapa, decision que facilita, evidencia requerida, mensaje principal, CTA, intervencion humana, owner, metrica, nivel actual, nivel objetivo, dependencias y riesgos.
+
+### 21.8 Evidence Portfolio
+
+Portafolio minimo de evidencias:
+- experiencia,
+- resultados,
+- casos,
+- fotografias,
+- testimonios,
+- metricas,
+- metodologia,
+- personas,
+- cumplimiento,
+- certificaciones,
+- procesos,
+- costos,
+- tiempos,
+- garantias,
+- comparativos,
+- diagnosticos.
+
+Cada evidencia debe tener: ID, fuente, fecha, owner, nivel de confianza, vigencia, sensibilidad, permiso de publicacion, claims que respalda, decisiones que ayuda a resolver y superficies consumidoras.
+
+### 21.9 Content Portfolio
+
+El contenido se diseña como mecanismo de decision, no como blog.
+
+Clasificacion:
+- descubrimiento,
+- educacion,
+- comparacion,
+- validacion,
+- reduccion de riesgo,
+- shortlist,
+- cierre,
+- postventa,
+- referencia.
+
+Cada contenido debe declarar: pregunta que responde, ICP, etapa, decision que facilita, evidencia utilizada, CTA, superficie, owner, actualizacion y metrica de contribucion comercial.
+
+### 21.10 Capability Portfolio
+
+Capacidades estrategicas integradas:
+1. Arquitectura de Confianza Comercial.
+2. Inteligencia Comercial e ICP.
+3. Ingenieria de Oferta.
+4. Sistema Comercial Operativo.
+5. Inteligencia Competitiva y Posicionamiento.
+6. Gestion del Conocimiento Comercial.
+
+Cada capacidad debe formalizar: proposito, problema, nivel C0-C5 actual, nivel objetivo, decisiones soportadas, superficies habilitadas, evidencias necesarias, activos existentes, brechas, owner, KPIs, inversiones, roadmap y criterio de avance.
+
+### 21.11 Commercial Operating Model
+
+Definir y gobernar:
+- origen y captura de oportunidades,
+- calificacion,
+- asignacion,
+- SLA de respuesta,
+- diagnostico inicial,
+- reunion,
+- preparacion de propuesta,
+- seguimiento,
+- shortlist,
+- negociacion,
+- cierre,
+- registro de perdida,
+- postmortem,
+- caso de exito,
+- referencia.
+
+Cada etapa debe indicar: responsable, entrada, salida, herramientas, evidencia, decision, tiempo objetivo, KPI, handoff y criterios de aceptacion.
+
+### 21.12 Roadmap de releases
+
+Release 0 - Verdad y readiness.
+- Inventario real de Home.
+- Claim -> decision -> evidencia -> permiso.
+- Baseline de Decision Coverage.
+- Identificacion de casos publicables.
+- ICPs como hipotesis.
+- Analitica disponible y faltante.
+
+MVP - Confianza y conversion inicial.
+- Home reestructurada.
+- Dos rutas de ICP prioritarias.
+- Tres a cinco casos solidos.
+- Diagnostico o preevaluacion.
+- CTA consultiva.
+- CRM y medicion minima.
+- SLA comercial.
+- Primer conjunto de contenido de alta intencion.
+
+V2 - Motor de demanda.
+- Centro de conocimiento.
+- Paginas sectoriales.
+- Reportes.
+- Distribucion en LinkedIn y correo.
+- Secuencias de nutricion.
+- Segmentacion y scoring.
+- Optimizacion de propuestas.
+
+V3 - Capacidades inteligentes.
+- Diagnostico asistido.
+- Estimacion parametrica.
+- Informacion territorial.
+- Personalizacion por ICP.
+- Portal del cliente.
+- Atribucion economica avanzada.
+
+### 21.13 Primer ciclo de produccion
+
+Decision Readiness de Home sigue siendo el candidato principal de mayor retorno esperado, sujeto a validacion de informacion real disponible.
+
+### 21.14 Disciplina de ejecucion
+
+Cada nuevo documento debe responder: ¿Como ayuda esto a atraer, convencer o convertir un cliente?
+
+Si un entregable no mejora alguna parte del sistema comercial, debera justificarse explicitamente.
 
 Fase 4: Estimacion parametrica + analitica economica
 Capacidad adquirida: acelerar decision y mejorar precision comercial.

@@ -1,0 +1,284 @@
+﻿[
+    {
+        "id":  "DOC-001",
+        "path":  "00_MASTER_PLAN/CHANGE_POLICY.md",
+        "state":  "🔵 Congelado",
+        "type":  "Documento"
+    },
+    {
+        "id":  "DOC-002",
+        "path":  "00_MASTER_PLAN/MASTER_PLAN_PICC_NEXT_V3.md",
+        "state":  "🔵 Congelado",
+        "type":  "Documento"
+    },
+    {
+        "id":  "DOC-003",
+        "path":  "01_VISION/Manifiesto.md",
+        "state":  "🟡 En desarrollo",
+        "type":  "Documento"
+    },
+    {
+        "id":  "DOC-004",
+        "path":  "01_VISION/Principios.md",
+        "state":  "🟡 En desarrollo",
+        "type":  "Documento"
+    },
+    {
+        "id":  "DOC-005",
+        "path":  "01_VISION/Vision.md",
+        "state":  "🟡 En desarrollo",
+        "type":  "Documento"
+    },
+    {
+        "id":  "DOC-006",
+        "path":  "02_VERDAD_COMERCIAL/000_PREGUNTAS_ABIERTAS.md",
+        "state":  "🟢 Aprobado",
+        "type":  "Inventario de preguntas"
+    },
+    {
+        "id":  "DOC-007",
+        "path":  "02_VERDAD_COMERCIAL/Auditoria_Sitio.md",
+        "state":  "🟡 En desarrollo",
+        "type":  "Documento"
+    },
+    {
+        "id":  "DOC-008",
+        "path":  "02_VERDAD_COMERCIAL/Benchmark.md",
+        "state":  "🟡 En desarrollo",
+        "type":  "Documento"
+    },
+    {
+        "id":  "DOC-009",
+        "path":  "02_VERDAD_COMERCIAL/Competencia.md",
+        "state":  "🟡 En desarrollo",
+        "type":  "Documento"
+    },
+    {
+        "id":  "DOC-010",
+        "path":  "02_VERDAD_COMERCIAL/Verdad_Comercial.md",
+        "state":  "🟡 En desarrollo",
+        "type":  "Documento"
+    },
+    {
+        "id":  "DOC-011",
+        "path":  "03_MODELO_COMERCIAL/Customer_Journey.md",
+        "state":  "🟡 En desarrollo",
+        "type":  "Documento"
+    },
+    {
+        "id":  "DOC-012",
+        "path":  "03_MODELO_COMERCIAL/Decision_Architecture.md",
+        "state":  "🟡 En desarrollo",
+        "type":  "Documento"
+    },
+    {
+        "id":  "DOC-013",
+        "path":  "03_MODELO_COMERCIAL/ICPs.md",
+        "state":  "🟡 En desarrollo",
+        "type":  "Documento"
+    },
+    {
+        "id":  "DOC-014",
+        "path":  "03_MODELO_COMERCIAL/Modelo_Comercial.md",
+        "state":  "🟡 En desarrollo",
+        "type":  "Documento"
+    },
+    {
+        "id":  "DOC-015",
+        "path":  "04_TRUST/Biblioteca_de_Evidencia.md",
+        "state":  "🟡 En desarrollo",
+        "type":  "Documento"
+    },
+    {
+        "id":  "DOC-016",
+        "path":  "04_TRUST/Sistema_de_Evidencia.md",
+        "state":  "🟡 En desarrollo",
+        "type":  "Documento"
+    },
+    {
+        "id":  "DOC-017",
+        "path":  "04_TRUST/Trust_Architecture.md",
+        "state":  "🟡 En desarrollo",
+        "type":  "Documento"
+    },
+    {
+        "id":  "DOC-018",
+        "path":  "05_PRODUCTO/Capability_Backlog.md",
+        "state":  "🟡 En desarrollo",
+        "type":  "Documento"
+    },
+    {
+        "id":  "DOC-019",
+        "path":  "05_PRODUCTO/Capability_Lifecycle.md",
+        "state":  "🟡 En desarrollo",
+        "type":  "Documento"
+    },
+    {
+        "id":  "DOC-020",
+        "path":  "05_PRODUCTO/Capability_Model.md",
+        "state":  "🟡 En desarrollo",
+        "type":  "Documento"
+    },
+    {
+        "id":  "DOC-021",
+        "path":  "05_PRODUCTO/Product_Definition.md",
+        "state":  "🟡 En desarrollo",
+        "type":  "Documento"
+    },
+    {
+        "id":  "DOC-022",
+        "path":  "05_PRODUCTO/Product_Roadmap.md",
+        "state":  "🟡 En desarrollo",
+        "type":  "Documento"
+    },
+    {
+        "id":  "DOC-023",
+        "path":  "06_CONOCIMIENTO/Calendario_Editorial.md",
+        "state":  "🟡 En desarrollo",
+        "type":  "Documento"
+    },
+    {
+        "id":  "DOC-024",
+        "path":  "06_CONOCIMIENTO/Economia_del_Conocimiento.md",
+        "state":  "🟡 En desarrollo",
+        "type":  "Documento"
+    },
+    {
+        "id":  "DOC-025",
+        "path":  "06_CONOCIMIENTO/Knowledge_Program.md",
+        "state":  "🟡 En desarrollo",
+        "type":  "Documento"
+    },
+    {
+        "id":  "DOC-026",
+        "path":  "06_CONOCIMIENTO/Taxonomia.md",
+        "state":  "🟡 En desarrollo",
+        "type":  "Documento"
+    },
+    {
+        "id":  "DOC-027",
+        "path":  "07_GOBIERNO/Decision_Log.md",
+        "state":  "🟡 En desarrollo",
+        "type":  "Documento"
+    },
+    {
+        "id":  "DOC-028",
+        "path":  "07_GOBIERNO/Governance.md",
+        "state":  "🟡 En desarrollo",
+        "type":  "Documento"
+    },
+    {
+        "id":  "DOC-029",
+        "path":  "07_GOBIERNO/KPIs.md",
+        "state":  "🟡 En desarrollo",
+        "type":  "Documento"
+    },
+    {
+        "id":  "DOC-030",
+        "path":  "07_GOBIERNO/North_Star.md",
+        "state":  "🟡 En desarrollo",
+        "type":  "Documento"
+    },
+    {
+        "id":  "DOC-031",
+        "path":  "07_GOBIERNO/Operating_Model.md",
+        "state":  "🟡 En desarrollo",
+        "type":  "Documento"
+    },
+    {
+        "id":  "DOC-032",
+        "path":  "08_IMPLEMENTACION/Largo_Plazo.md",
+        "state":  "🟡 En desarrollo",
+        "type":  "Documento"
+    },
+    {
+        "id":  "DOC-033",
+        "path":  "08_IMPLEMENTACION/MVP.md",
+        "state":  "🟡 En desarrollo",
+        "type":  "Documento"
+    },
+    {
+        "id":  "DOC-034",
+        "path":  "08_IMPLEMENTACION/Version_2.md",
+        "state":  "🟡 En desarrollo",
+        "type":  "Documento"
+    },
+    {
+        "id":  "DOC-035",
+        "path":  "08_IMPLEMENTACION/Version_3.md",
+        "state":  "🟡 En desarrollo",
+        "type":  "Documento"
+    },
+    {
+        "id":  "DOC-036",
+        "path":  "09_ANEXOS/Glosario.md",
+        "state":  "🟡 En desarrollo",
+        "type":  "Documento"
+    },
+    {
+        "id":  "DOC-037",
+        "path":  "09_ANEXOS/Hipotesis.md",
+        "state":  "🟡 En desarrollo",
+        "type":  "Documento"
+    },
+    {
+        "id":  "DOC-038",
+        "path":  "09_ANEXOS/Referencias.md",
+        "state":  "🟡 En desarrollo",
+        "type":  "Documento"
+    },
+    {
+        "id":  "DOC-039",
+        "path":  "09_ANEXOS/Riesgos.md",
+        "state":  "🟡 En desarrollo",
+        "type":  "Documento"
+    },
+    {
+        "id":  "DOC-040",
+        "path":  "99_META/ARTIFACT_REGISTRY.md",
+        "state":  "🟡 En desarrollo",
+        "type":  "Meta-gobierno"
+    },
+    {
+        "id":  "DOC-041",
+        "path":  "99_META/CHANGELOG.md",
+        "state":  "🟡 En desarrollo",
+        "type":  "Meta-gobierno"
+    },
+    {
+        "id":  "DOC-042",
+        "path":  "99_META/DECISION_HISTORY.md",
+        "state":  "🟡 En desarrollo",
+        "type":  "Meta-gobierno"
+    },
+    {
+        "id":  "DOC-043",
+        "path":  "99_META/README.md",
+        "state":  "🟢 Aprobado",
+        "type":  "Meta-gobierno"
+    },
+    {
+        "id":  "DOC-044",
+        "path":  "99_META/REPOSITORY_RULES.md",
+        "state":  "🟢 Aprobado",
+        "type":  "Meta-gobierno"
+    },
+    {
+        "id":  "DOC-045",
+        "path":  "99_META/SYSTEM_MAP.md",
+        "state":  "🟢 Aprobado",
+        "type":  "Meta-gobierno"
+    },
+    {
+        "id":  "DOC-046",
+        "path":  "INDEX.md",
+        "state":  "🟢 Aprobado",
+        "type":  "Indice"
+    },
+    {
+        "id":  "DOC-047",
+        "path":  "TEMPLATE_DOCUMENTO.md",
+        "state":  "🟡 En desarrollo",
+        "type":  "Documento"
+    }
+]

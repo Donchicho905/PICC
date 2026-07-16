@@ -4,7 +4,7 @@
 
 # 🔄 HANDOFF A ZEUS — EVALUACIÓN DE INTEGRACIÓN OLYMPUS
 
-## Status: Memorandum Prepared for ZEUS Review
+## Status: Gates 0-1 Closed; Assessment Registered; Gate 2 Preparation Ready
 
 **Purpose:** Evaluate whether PICC NEXT should integrate into OLYMPUS, remain independent, or adopt controlled interoperability.
 
@@ -35,11 +35,11 @@
 | Aspect                              | Status                                                                      |
 | ----------------------------------- | --------------------------------------------------------------------------- |
 | PICC Architecture                   | 🔵 Frozen (SHDLS, Growth, Buyer, DIS, Demand, BCE, MBM v1.0)                 |
-| Buyer Curiosity Engine              | 🟢 Approved & Frozen (300 unique questions, Top 100 prioritized)             |
-| Knowledge Product Alpha             | 🟢 Approved Design (3 candidates, not yet implemented)                       |
-| Decision Experience                 | 🟡 Design phase (requires DOS-based redesign before impl)                    |
+| Buyer Curiosity Engine              | 🔵 Frozen SSOT + documentary validation approved + market validation pending |
+| Knowledge Product Alpha             | 🟡 Candidate product design (not operational)                                |
+| Decision Experience                 | 🟡 Draft experience (not built, not tested, not validated)                   |
 | Market Validation                   | ❌ None yet (MVP designed, pilot in planning)                                |
-| Transversal Capabilities Identified | 🟡 Hypothesis (Research OS, DOS, Question Prioritization require validation) |
+| Transversal Capabilities Identified | 🟡 Hypothesis (DOS remains strategic hypothesis, not doctrine)               |
 | Repository Autonomy                 | 🟢 Prepared (AI_EXECUTION_CONTRACT, BOOT, transfer docs ready)               |
 
 ---
@@ -98,22 +98,55 @@ Evaluation is complete when:
 
 ---
 
-## Next Transition
+## Decision State (Current)
 
-After ZEUS recommendation:
-- If **INDEPENDIENTE** or **DECISIÓN DIFERIDA**: PICC continues product development. ZEUS establishes quarterly checkpoint.
-- If **INTEROPERABILIDAD** or **CAPACIDAD TRANSVERSAL**: Gates 3–7 schedule implementation sprints.
-- If **INTEGRACIÓN PROFUNDA**: Requires separate comprehensive rollout plan (not authorized by this handoff).
+- **Official provisional decision:** `DECISIÓN DIFERIDA`
+- **Contingency:** `INTEROPERABILIDAD CONTROLADA`
+- **Decision record:** D-0020 in `99_META/DECISION_HISTORY.md`
+
+Rationale summary:
+1. Gate 0 approved.
+2. Gate 1 approved in visible scope.
+3. No product validation with real buyers.
+4. ZEUS already has equivalents for research, ledgers, portfolio, memory, observability, and handoff.
+5. PICC differentials remain structured knowledge, designs, or hypotheses.
 
 ---
 
 ## Repository State at Handoff
 
 - **Branch:** `feature/picc-next-growth-system`
-- **HEAD:** f1c5768
-- **Tag:** `picc-next-buyer-curiosity-v1`
-- **Untracked:** {AI_EXECUTION_CONTRACT.md, BOOT.md, EXECUTABILITY_AUDIT.md, DECISION_EXPERIENCE_ALPHA.md, tools/}
-- **Git Status:** Clean (awaiting commit)
+- **HEAD:** a606630
+- **Tag:** `picc-next-zeus-integration-handoff-v1`
+- **Untracked (current):** {.tmp_bce_audit.ps1, tools/tmp_bce_finalize.ps1}
+- **Git Status:** Working tree clean except documented untracked files
+
+Untracked classification:
+1. `.tmp_bce_audit.ps1`: temporal BCE audit script; do not auto-commit.
+2. `tools/tmp_bce_finalize.ps1`: temporary tooling with potential reuse; requires human authorization before normalize/archive/delete.
+
+---
+
+## Active Program (Single Next Sprint)
+
+`RiskDiag Pilot V1 — Gate 2 Preparation`
+
+Current state:
+- **READY FOR ZEUS AUTHORIZATION**
+
+Not authorized in this iteration:
+- AUTHORIZED
+- ACTIVE
+- IN PROGRESS
+
+Gate 2 preparation package (documentation only):
+1. Objective: generate first real evidence of PICC NEXT value via RiskDiag in real cases.
+2. Hypothesis: a structured risk diagnosis improves clarity and decision speed versus current method.
+3. Scope: flow, question bank, classification rules, result template, assumptions, evidence, gaps, recommendations, feedback, metrics.
+4. Acceptance criteria: use in real cases, understandable output, decision effect, reduced time/confusion/rework, shareable result, evidence discipline, reuse intent, decision/commercial signal, defects logged, ZEUS verdict.
+5. Metrics: diagnosis time, completion, perceived clarity, perceived utility, gaps identified, priority change, rework reduction, share intent, advance intent, decision affected, downstream commercial signal, critical errors.
+6. Restrictions: no web build, no chatbot, no RAG, no autonomous agent, no final frontend, no integrations (OLYMPUS/ZEUS/DAVINCI/BrickEye).
+7. Expected deliverables: pilot protocol, 3-5 case template, measurement sheet, defect log, verdict template.
 
 ---
 

@@ -62,6 +62,10 @@
 
 Ver DOC-040 (99_META/ARTIFACT_REGISTRY.md).
 
+## Artefactos de conocimiento aprobados
+
+- DOC-047: Market Knowledge Map V1 (06_CONOCIMIENTO/Market_Knowledge_Map.md)
+
 ## Artefactos nucleares
 
 - KM-001: modelo semantico minimo viable.

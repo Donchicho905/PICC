@@ -86,3 +86,19 @@
 | BKL-P2-07 | Dashboard de métricas del MVP               | H01-H06       | Interno           | Aprendizaje sistémico                      | Dashboard conectado con GA4, formulario y CRM                      | BKL-P0-10, BKL-P0-11, BKL-P1-08        | Marketing + Producto  | Medio      | Alto                        | Dashboard activo con 5+ métricas en tiempo real                      | MVP V1.1+ |
 | BKL-P2-08 | Programa de contenido ampliado (10+ piezas) | H01-H04       | Blog / Rutas      | Autoridad y SEO                            | Calendario editorial y primeras 5 piezas adicionales               | CNT-01 a CNT-05 publicados y medidos   | Marketing + Técnico   | Alto       | Medio-alto                  | 5 piezas adicionales publicadas                                      | MVP V1.1+ |
 
+## Estado de BKL-P0-01/02/03 post Alpha Gate 01 (2026-07-15)
+
+| Ítem                                              | Estado anterior           | Estado actual                                                        | Pending para cerrar                                                                                                   |
+| ------------------------------------------------- | ------------------------- | -------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- |
+| BKL-P0-01 — Claim audit: métricas institucionales | 🔵 MVP Alpha (no iniciado) | 🟡 En proceso — auditoría hecha; validación de Dirección pendiente    | DEC-01, DEC-07, DEC-08 — año fundador, nº proyectos con criterio, m² con metodología; fotos propias (EVB-03/04/05/06) |
+| BKL-P0-02 — Claim audit: certificación ICREA      | 🔵 MVP Alpha (no iniciado) | 🟡 En proceso — inconsistencia ES/EN/FR identificada y documentada    | DEC-02 — alcance exacto de ICREA CCRD (diseño / construcción / certificación, qué tier/nivel); EVB-01                 |
+| BKL-P0-03 — Claim audit: relación Panduit         | 🔵 MVP Alpha (no iniciado) | 🟡 En proceso — tipo de relación y permiso de logotipo no confirmados | DEC-03 (tipo de relación) + DEC-04 (autorización de logo); EVB-02; RSK-01                                             |
+
+Ninguno de los tres puede marcarse como completado hasta que Dirección responda DEC-01 a DEC-10. El audit documental está completo; la validación con fuente primaria (Dirección) es el paso bloqueante.
+
+---
+
+## P0 — Necesario para lanzar
+
+| ID        | Capacidad
+

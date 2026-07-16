@@ -105,3 +105,55 @@ La biblioteca se activará operativamente conforme se construyan casos y se gest
 5. Levantar inventario de fotos disponibles internamente y clasificar permisos.
 6. Documentar proceso de trabajo interno para validar hipótesis de TA-07a.
 
+
+---
+
+## Alpha Gate 01 — Hallazgos sobre activos visuales y credenciales (2026-07-15)
+
+### Confirmación de estado E0 en activos visuales
+
+El snapshot simultáneo de `picc.com.mx`, `picc.com.mx/en` y `picc.com.mx/fr` confirmó que las tres imágenes del sitio son de Unsplash:
+
+| Asset en sitio                | URL de origen                    | Confirmación  | Impacto                             |
+| ----------------------------- | -------------------------------- | ------------- | ----------------------------------- |
+| Imagen Hero (fondo principal) | Unsplash — construcción genérica | Confirmado E0 | Invalida claim implícito CLM-IMP-01 |
+| Foto de equipo                | Unsplash — equipo genérico       | Confirmado E0 | Invalida claim implícito CLM-IMP-02 |
+| Foto de Data Center           | Unsplash — Data Center genérico  | Confirmado E0 | Invalida claim implícito CLM-IMP-03 |
+
+**Acción**: TA-06 permanece en E0. Estado operativo actualizado de "No existe inventario activo" a "Activos del sitio actual son de stock; no publicables como imágenes propias de PICC."
+
+### Actualización de estado TA-06
+
+| Campo            | Valor anterior              | Valor actual                                                                      |
+| ---------------- | --------------------------- | --------------------------------------------------------------------------------- |
+| Nivel actual     | E0                          | E0 — confirmado post-auditoría                                                    |
+| Estado operativo | No existe inventario activo | Las 3 imágenes en producción son de Unsplash; no representan obra o equipo propio |
+| Acción           | Levantar inventario         | Confirmar si existen fotos propias en archivo; planificar sesión fotográfica      |
+
+### Estado de permisos de logotipos
+
+| Logotipo   | Uso en sitio                                             | Estado de autorización                             | Riesgo                     | Acción recomendada                                                 |
+| ---------- | -------------------------------------------------------- | -------------------------------------------------- | -------------------------- | ------------------------------------------------------------------ |
+| PANDUIT    | ES: sin calificador / EN: "Certified" / FR: "Partenaire" | Sin verificar — sin autorización formal en repo    | ALTO — RSK-01              | Obtener autorización escrita antes de próxima publicación (DEC-04) |
+| ICREA CCRD | Aparece en badge de Hero y en footer                     | Sin verificar — sin acuerdo de uso de logo en repo | MEDIO — RSK-01 relacionado | Verificar con ICREA vigencia y términos de uso del logo (EVB-12)   |
+
+### Actualización del Registro de permisos
+
+| ID asset                   | Tercero | Tipo de permiso                    | Fecha solicitud | Respuesta | Estado        | Owner     |
+| -------------------------- | ------- | ---------------------------------- | --------------- | --------- | ------------- | --------- |
+| CLM-IMP-04 (logo Panduit)  | Panduit | Uso de logotipo en sitio web       | —               | —         | No solicitado | Dirección |
+| CLM-IMP-05 (logo ICREA)    | ICREA   | Uso de logotipo en sitio web       | —               | —         | No verificado | Dirección |
+| CLM-CRD-05 (relación tipo) | Panduit | Certificación o partnership formal | —               | —         | No verificado | Dirección |
+
+### Hallazgo de inconsistencia en credencial ICREA (BKL-P0-02)
+
+La versión ES del sitio afirma "Diseño Nivel I al VI ICREA" mientras que EN y FR afirman "Tier II and III Design". Esto no puede resolverse con el documento disponible en el repo; requiere consulta directa con Dirección (DEC-02).
+
+**Impacto en TA-03 (Certificación ICREA CCRD)**:
+
+| Campo            | Valor anterior                                    | Valor actual                                                                                                   |
+| ---------------- | ------------------------------------------------- | -------------------------------------------------------------------------------------------------------------- |
+| Nivel actual     | E2                                                | E1 — revisado a la baja por inconsistencia entre versiones                                                     |
+| Estado operativo | No publicable — requiere documentación de alcance | No publicable — inconsistencia activa entre idiomas; requiere resolución antes de publicar en cualquier idioma |
+| Acción           | Verificar alcance exacto con Dirección            | Responder DEC-02; unificar los tres idiomas simultáneamente                                                    |
+

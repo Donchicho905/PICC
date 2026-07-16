@@ -146,8 +146,70 @@ git status --short
 4. 05_PRODUCTO/Product_Roadmap.md (c\u00f3mo secuenciar los releases)
 5. 04_TRUST/Biblioteca_de_Evidencia.md (qu\u00e9 evidencia conseguir primero)
 6. 04_TRUST/Sistema_de_Evidencia.md (c\u00f3mo gestionar la evidencia)
+| Alpha Gate 01   | Auditoría completa   | 04_TRUST/Sistema_de_Evidencia.md (secc. Gate 01) |
 
+---
 
+## Sprint 3 activo: Alpha Gate 01 — Claim–Evidence–Permission Readiness
+
+### Fecha de ejecución
+
+2026-07-15
+
+### Objetivo
+
+Determinar con exactitud qué puede decir PICC públicamente, a quién, para soportar qué decisión de comprador, respaldado por qué evidencia. El gate cubre BKL-P0-01 (métricas institucionales), BKL-P0-02 (ICREA CCRD), y BKL-P0-03 (Panduit).
+
+### Método
+
+Snapshot simultáneo de las 3 versiones del sitio en producción (ES, EN, FR). Inventario completo de claims (33+ en 6 grupos). Matriz Claim–Decision–Evidence–Permission. Claim Set provisional (A/B/C/D). Backlog de evidencia (EVB-01 a EVB-15). Riesgos (RSK-01 a RSK-07). Decisiones para Dirección (DEC-01 a DEC-10).
+
+### Hallazgos críticos
+
+| #   | Hallazgo                                                                                    | Severity | Claim(s)               | Acción requerida                                  |
+| --- | ------------------------------------------------------------------------------------------- | -------- | ---------------------- | ------------------------------------------------- |
+| 1   | "Nivel I al VI" (ES) vs "Tier II and III" (EN/FR) — contradicción directa                   | Crítico  | CLM-CRD-03             | Resolver con Dirección antes de publicar (DEC-02) |
+| 2   | Todas las fotos del sitio son de Unsplash — no son imágenes propias de PICC                 | Crítico  | CLM-IMP-01/02/03       | Reemplazar con fotos propias (BKL-P0-12, EVB-06)  |
+| 3   | Logotipo Panduit sin autorización formal verificada                                         | Alto     | CLM-IMP-04, CLM-CRD-05 | Obtener autorización escrita (DEC-04, RSK-01)     |
+| 4   | "garantizando resultados de primer nivel en cada proyecto" — promesa absoluta sin evidencia | Medio    | CLM-EQP-03             | Eliminar o reformular (NP hasta resolución)       |
+| 5   | "Cobertura Internacional" sin evidencia de proyecto fuera de México                         | Medio    | CLM-POS-06             | Retirar hasta tener evidencia (DEC-06)            |
+
+### Estado de BKL-P0-01/02/03
+
+| Ítem                                             | Estado                                                                    | Pending                                 |
+| ------------------------------------------------ | ------------------------------------------------------------------------- | --------------------------------------- |
+| BKL-P0-01 — Claim audit métricas institucionales | 🟡 En proceso — auditoría hecha; validación de Dirección pendiente         | DEC-01, DEC-07, DEC-08, EVB-03/04/05/06 |
+| BKL-P0-02 — Claim audit certificación ICREA      | 🟡 En proceso — inconsistencia ES/EN/FR documentada; alcance no verificado | DEC-02, EVB-01                          |
+| BKL-P0-03 — Claim audit relación Panduit         | 🟡 En proceso — tipo de relación y permiso de logo no confirmados          | DEC-03, DEC-04, EVB-02, RSK-01          |
+
+### Veredicto del gate
+
+**GO CONDICIONADO** — el diseño de la Home puede comenzar en paralelo usando claims PA y PC como placeholders. Ningún claim NP puede aparecer como texto real en el diseño final. Los tres bloqueos críticos (inconsistencia ICREA, fotos de Unsplash, logo Panduit) deben resolverse antes de producción.
+
+### Decisiones que requieren respuesta de Dirección (P0)
+
+DEC-01 a DEC-10 documentadas en `04_TRUST/Sistema_de_Evidencia.md` — sección "Decisiones requeridas de Dirección".
+
+### Commits de este sprint
+
+```
+git add 04_TRUST/Sistema_de_Evidencia.md
+git commit -m "docs(audit): snapshot PICC Home and inventory claims"
+
+git add 04_TRUST/Biblioteca_de_Evidencia.md
+git commit -m "docs(trust): map claims to evidence and permissions"
+
+git add 03_MODELO_COMERCIAL/Decision_Architecture.md
+git commit -m "docs(growth): define provisional Home claim set"
+
+git add 05_PRODUCTO/Capability_Backlog.md
+git commit -m "docs(backlog): prioritize MVP evidence gaps"
+
+git add 00_IMPLEMENTATION_REPORT.md
+git commit -m "docs(handoff): record Alpha Gate 01 status"
+
+git push origin feature/picc-next-growth-system
+```
 ## Resumen ejecutivo
 
 Este documento deja trazado el paso desde el cierre de la transicion a Growth System hacia el primer sprint operativo del programa: Buyer System V1.

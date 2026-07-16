@@ -35,11 +35,11 @@ La arquitectura se diseña para sostener una década de mejora continua sin reab
 
 ## D. Qué está activo
 
-- Market Behavior Map V1.
+- Buyer Curiosity Engine V1.
 
 ## E. Qué problema se intenta resolver ahora
 
-Comprender la dinámica real de nacimiento, evolución, bloqueo, muerte y reactivación de oportunidades comerciales en el mercado de infraestructura crítica.
+Convertir curiosidad dispersa del comprador en un sistema priorizado y accionable de preguntas que acelere decisiones defendibles en infraestructura crítica.
 
 ## F. Qué archivos leer, en orden
 
@@ -52,13 +52,14 @@ Comprender la dinámica real de nacimiento, evolución, bloqueo, muerte y reacti
 7. `03_MODELO_COMERCIAL/Decision_Architecture.md`
 8. `06_CONOCIMIENTO/Market_Knowledge_Map.md`
 9. `06_CONOCIMIENTO/Market_Behavior_Map.md`
-10. `04_TRUST/Trust_Architecture.md`
+10. `06_CONOCIMIENTO/Buyer_Curiosity_Map.md`
+11. `04_TRUST/Trust_Architecture.md`
 
 ## G. Qué no debe hacer
 
 - No reabrir SHDLS.
 - No agregar metamodelos.
-- No producir todavía artículos, herramientas ni las 100 preguntas.
+- No mezclar normalización cosmética de formato con el sprint BCE.
 - No rediseñar Buyer System.
 - No modificar arquitectura por preferencia.
 - No inventar datos de mercado.
@@ -72,25 +73,25 @@ git status --short
 
 ## I. Primera tarea
 
-Ejecutar el sprint `Market Behavior Map V1`.
+Ejecutar el sprint `Buyer Curiosity Engine V1`.
 
 ## J. Definition of Done del siguiente sprint
 
-- Trigger Graph completo y diferenciado por dominio.
-- Stakeholder Graph y Buying Committee Graph modelados.
-- Opportunity Lifecycle con estados de vida, muerte y reactivación.
-- Trust Lifecycle, Information Flow y Influence Graph documentados.
-- Competitive Dynamics Map y Behavioral Demand Flywheel definidos.
-- Hipótesis, vacíos de información y riesgos separados de hechos.
-- Integración explícita con Market Knowledge Map y Buyer Curiosity Engine.
+- Buyer Curiosity Model publicado y trazable.
+- Question Graph publicado y usable.
+- Universo mínimo de 300 preguntas únicas publicado.
+- Primeras 100 preguntas prioritarias definidas.
+- Priorización explicable con fórmula y umbrales.
+- Question-to-Product / Surface / CTA mappings completos.
+- Information Gap Matrix y Knowledge Product Backlog inicial publicados.
 - Git comprometido, publicado y con handoff inequívoco.
 
-## K. Estado del sprint Market Behavior Map V1
+## K. Estado del sprint Buyer Curiosity Engine V1
 
-- SSOT creado en `06_CONOCIMIENTO/Market_Behavior_Map.md`.
-- Artefacto registrado en `99_META/ARTIFACT_REGISTRY.md`.
-- Referencia añadida en `INDEX.md`.
-- Siguiente sprint protegido: `Buyer Curiosity Engine V1`.
+- SSOT actualizado en `06_CONOCIMIENTO/Buyer_Curiosity_Map.md`.
+- Checkpoint base confirmado: `picc-next-market-behavior-v1`.
+- Market Behavior Map V1 preservado como fuente, sin reapertura.
+- Siguiente sprint objetivo: Question Portfolio V1.
 
 
 ## Resumen ejecutivo

@@ -146,3 +146,55 @@ Una decision se considera:
 - Auditar propuestas reales antes de afirmar que PICC gana por metodologia o comparabilidad.
 - Convertir discovery y diagnostico en artefactos repetibles.
 - Levantar casos y referencias con permiso de uso.
+
+---
+
+## Decision Coverage V2 — Post-auditoría Alpha Gate 01 (2026-07-15)
+
+La cobertura V2 reemplaza las estimaciones previas con medición post-snapshot de las tres versiones del sitio en producción.
+
+### Cobertura cuantificada H01 e H02
+
+| ICP     | Decisiones totales evaluadas | Soportadas | Parcialmente soportadas | No soportadas | No evaluables | Cobertura efectiva estimada | Delta vs V1                                 |
+| ------- | ---------------------------- | ---------- | ----------------------- | ------------- | ------------- | --------------------------- | ------------------------------------------- |
+| ICP-H01 | 9                            | 0          | 3                       | 2             | 4             | 30–35%                      | Sin cambio sustancial                       |
+| ICP-H02 | 9                            | 0          | 2                       | 3             | 4             | 20–25%                      | Sin cambio sustancial — peor de lo estimado |
+
+**Nota sobre cobertura efectiva**: Se calcula como (soportadas + 0.5 × parcialmente soportadas) / total. El 0.5 penaliza las parciales por ausencia de trazabilidad interna.
+
+### Factores de reducción detectados en auditoría
+
+Los siguientes factores reducen la cobertura real por debajo de la visual:
+
+1. **Fotos de Unsplash**: Todo el material visual del sitio (Hero, equipo, Data Center) es stock, no imágenes propias. Un buyer técnico de H01 puede detectarlo fácilmente. Esto invalida efectivamente los claims implícitos CLM-IMP-01/02/03.
+2. **Inconsistencia ICREA ES vs EN/FR**: ES dice "Nivel I al VI" mientras EN y FR dicen "Tier II and III". Un comprador H01 que revisa las dos versiones percibe incompetencia o deshonestidad.
+3. **Claim absoluto en equipo**: "garantizando resultados de primer nivel en cada proyecto" — genera expectativa contractual sin respaldo (CLM-EQP-03).
+4. **Métricas sin metodología visible**: 100+ proyectos y 50,000+ m² no tienen fuente ni criterio de conteo. Para un buyer técnico de H01, esto puede ser señal de marketing vacío.
+5. **Logotipo Panduit sin calificación uniforme**: ES no califica, EN dice "Certified", FR dice "Partenaire". Inconsistencia visible entre idiomas.
+
+### Brecha más crítica para H01 (post-auditoría)
+
+La decisión "¿Tiene experiencia comparable?" (etapa de Validación) está **no soportada** por ausencia de:
+- Ningún caso de Data Center publicable.
+- Ninguna foto propia de obra.
+- Alcance de ICREA sin documento verificable.
+
+Esta decisión es el paso de calificación más importante antes de que H01 pase a solicitar propuesta.
+
+### Brecha más crítica para H02 (post-auditoría)
+
+La decisión "¿PICC entiende mi tipo de proyecto?" está **no soportada** por:
+- La Home habla principalmente de Data Centers, no de industrial.
+- No existe una ruta diferenciada para H02.
+- No hay ningún caso industrial visible.
+
+### Acción prioritaria derivada de cobertura V2
+
+| Acción                                          | ICP      | Decisión desbloqueada                  | Owner                 | Esfuerzo | Impacto  |
+| ----------------------------------------------- | -------- | -------------------------------------- | --------------------- | -------- | -------- |
+| Resolver inconsistencia ICREA ES/EN/FR          | H01      | Es técnicamente competente             | Dirección             | Muy bajo | Crítico  |
+| Obtener y publicar mínimo 3 fotos propias       | H01, H02 | Tiene experiencia comparable           | Dirección + Marketing | Medio    | Muy alto |
+| Construir y publicar CASO-01 (Data Center)      | H01      | Tiene experiencia comparable           | Dirección + Ops       | Alto     | Muy alto |
+| Construir y publicar CASO-02 (Industrial)       | H02      | PICC entiende mi caso                  | Dirección + Ops       | Alto     | Muy alto |
+| Diseñar ruta diferenciada para H02              | H02      | PICC entiende mi caso / siguiente paso | Comercial + Producto  | Medio    | Alto     |
+| Obtener autorización formal de logotipo Panduit | H01      | Es técnicamente competente             | Dirección             | Bajo     | Alto     |

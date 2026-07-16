@@ -118,6 +118,23 @@ Razon:
 - El sistema ya tiene una lectura suficiente del mercado para pasar de arquitectura a comportamiento.
 Documentos impactados:
 - 00_IMPLEMENTATION_REPORT.md
+
+## D-0013 (2026-07-15)
+Decision:
+- Buyer Curiosity Engine V1 congelado; universo de 300 preguntas canonicales aprobado; transición a Knowledge Product Alpha Sprint.
+Razon:
+- Auditoría estructural, semántica, cobertura y epistemológica completa. Market Behavior Map integrado. Top 100 seleccionadas. 3 activos Alpha definidos con 5-7 semillas cada uno. Handoff lista para ejecución.
+Documentos impactados:
+- 06_CONOCIMIENTO/Buyer_Curiosity_Map.md (SSOT congelado)
+- 06_CONOCIMIENTO/BCE_V1_AUDIT_REPORT.md (nueva)
+- 06_CONOCIMIENTO/BCE_V1_TOP100.md (nueva)
+- 06_CONOCIMIENTO/Knowledge_Product_Alpha.md (nueva)
+- 00_IMPLEMENTATION_REPORT.md (handoff actualizado)
+- 99_META/SYSTEM_MAP.md (BCE marcado aprobado)
+Riesgos:
+- No reapertura del universo 300Q en este sprint; todas las adiciones futuras → Knowledge Product V2.
+Criterios de reversión:
+- Solo si defecto estructural crítico encontrado en auditoría post-congelación; de lo contrario, proceder a Alpha sprint.
 - 99_META/SYSTEM_MAP.md
 - 99_META/CHANGELOG.md
 Riesgos:

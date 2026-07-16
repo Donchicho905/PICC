@@ -30,6 +30,21 @@
 - Creado 02_VERDAD_COMERCIAL/000_PREGUNTAS_ABIERTAS.md para gobernar Fase 0.
 - Estandarizada trazabilidad de artefactos con metadatos estructurados.
 
+## 2026-07-15 - Buyer Curiosity Engine V1 (Sprint Cierre)
+
+### Ejecución y Resultados
+- Materializó universo de 300 preguntas canónicas en SSOT (06_CONOCIMIENTO/Buyer_Curiosity_Map.md).
+- Buyer Curiosity Model con 8 estados (C0-C7) definido.
+- Question Graph con 12 nodos y arcos explícitos documentado.
+- Auditoría estructural: 300/300 IDs únicos, 0 duplicados, 0 faltantes (✅ PASSED).
+- Auditoría semántica: 7 pares de similitud alta (Jaccard ≥ 0.75), 0 fusiones necesarias (✅ PASSED).
+- Cobertura: 6 buyer states × 5 ICPs = 30 células pobladas (✅ PASSED).
+- Top 100 seleccionadas: P0 (20) + P1 (30) + P2 (50) con scoring multifactorial.
+- 3 Knowledge Products Alpha definidos: RiskDiag, FinJustify, DecisionGov.
+- 5-7 semillas de P0 por activo seleccionadas para ejecución inmediata.
+
+---
+
 ## 2026-07-15 - Auditoria de madurez documental V2 (gobernabilidad)
 
 ### Escala V2

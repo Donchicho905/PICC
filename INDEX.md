@@ -66,6 +66,10 @@ Ver DOC-040 (99_META/ARTIFACT_REGISTRY.md).
 
 - DOC-047: Market Knowledge Map V1 (06_CONOCIMIENTO/Market_Knowledge_Map.md)
 - DOC-050: Market Behavior Map V1 (06_CONOCIMIENTO/Market_Behavior_Map.md)
+- DOC-048: Buyer Curiosity Engine V1 (06_CONOCIMIENTO/Buyer_Curiosity_Map.md)
+- DOC-048-AUDIT: BCE V1 Audit Report (06_CONOCIMIENTO/BCE_V1_AUDIT_REPORT.md)
+- DOC-048-TOP100: BCE V1 Top 100 Prioritized (06_CONOCIMIENTO/BCE_V1_TOP100.md)
+- DOC-048-ALPHA: Knowledge Product Alpha (06_CONOCIMIENTO/Knowledge_Product_Alpha.md)
 
 ## Artefactos nucleares
 

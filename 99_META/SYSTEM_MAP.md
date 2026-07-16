@@ -59,7 +59,7 @@ flowchart TD
       KPP[Knowledge Product Portfolio V1\naprobado]
       MKM[Market Knowledge Map V1\naprobado]
       MBM[Market Behavior Map V1\nactivo]
-      BCE[Buyer Curiosity Engine V1\n futuro]
+      BCE[Buyer Curiosity Engine V1\naprobado]
       QP[Question Portfolio\nfuturo]
       KP[Knowledge Products\nfuturo]
       GMVP[Growth MVP V1\naprobado]
@@ -73,7 +73,7 @@ flowchart TD
       classDef future fill:#dbeafe,stroke:#2563eb,color:#1e3a8a;
 
       class SHDLS,GS,BS,DIS,DE frozen;
-      class KPP,MKM,GMVP approved;
+      class KPP,MKM,GMVP,BCE approved;
       class MBM,PIPE active;
-      class BCE,QP,KP future;
+      class QP,KP future;
     ```

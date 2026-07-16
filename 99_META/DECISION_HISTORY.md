@@ -195,6 +195,21 @@ Riesgos:
 Criterio de reversión:
 - Solo si la regla impide capturar oportunidades claramente relevantes.
 
+## D-0018 (2026-07-15)
+Decision:
+- Market Behavior Map V1 queda aprobado y registrado como el modelo dinamico del mercado, con SSOT creado en `06_CONOCIMIENTO/Market_Behavior_Map.md`.
+Razon:
+- El programa activo ya no necesita mas abstraccion arquitectonica; requiere modelar movimiento, poder, confianza e informacion.
+Documentos impactados:
+- 06_CONOCIMIENTO/Market_Behavior_Map.md
+- 99_META/ARTIFACT_REGISTRY.md
+- 99_META/SYSTEM_MAP.md
+- 00_IMPLEMENTATION_REPORT.md
+Riesgos:
+- Confundir un modelo dinamico aprobado con una verdad final inmutable.
+Criterio de reversión:
+- Solo revertir si aparece evidencia objetiva de que el modelo no explica transiciones, bloqueos o reactivaciones del mercado.
+
 
 
 

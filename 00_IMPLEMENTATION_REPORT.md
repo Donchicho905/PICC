@@ -50,9 +50,9 @@ Comprender la dinámica real de nacimiento, evolución, bloqueo, muerte y reacti
 5. `99_META/ARTIFACT_REGISTRY.md`
 6. `00_MASTER_PLAN/MASTER_PLAN_PICC_NEXT_V3.md`
 7. `03_MODELO_COMERCIAL/Decision_Architecture.md`
-8. `04_TRUST/Trust_Architecture.md`
-9. `05_PRODUCTO/Capability_Model.md`
-10. `06_CONOCIMIENTO/Knowledge_Program.md`
+8. `06_CONOCIMIENTO/Market_Knowledge_Map.md`
+9. `06_CONOCIMIENTO/Market_Behavior_Map.md`
+10. `04_TRUST/Trust_Architecture.md`
 
 ## G. Qué no debe hacer
 
@@ -84,6 +84,13 @@ Ejecutar el sprint `Market Behavior Map V1`.
 - Hipótesis, vacíos de información y riesgos separados de hechos.
 - Integración explícita con Market Knowledge Map y Buyer Curiosity Engine.
 - Git comprometido, publicado y con handoff inequívoco.
+
+## K. Estado del sprint Market Behavior Map V1
+
+- SSOT creado en `06_CONOCIMIENTO/Market_Behavior_Map.md`.
+- Artefacto registrado en `99_META/ARTIFACT_REGISTRY.md`.
+- Referencia añadida en `INDEX.md`.
+- Siguiente sprint protegido: `Buyer Curiosity Engine V1`.
 
 
 ## Resumen ejecutivo

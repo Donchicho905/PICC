@@ -100,6 +100,13 @@
 - Se confirma que el siguiente sprint no produce activos, sino el modelo de comportamiento del mercado.
 - Se mantiene la disciplina de mínima expansión documental.
 
+## 2026-07-15 - Market Behavior Map V1 aprobado
+
+- Se crea el SSOT `06_CONOCIMIENTO/Market_Behavior_Map.md`.
+- Se registra el artefacto en `99_META/ARTIFACT_REGISTRY.md` y `INDEX.md`.
+- Se actualiza `00_IMPLEMENTATION_REPORT.md` con la entrada operacional del sprint.
+- Se fija el siguiente sprint protegido: `Buyer Curiosity Engine V1`.
+
 
 
 

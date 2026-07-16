@@ -52,5 +52,6 @@
 | DOC-045 | 🟢 Aprobado      | Meta-gobierno         | 99_META/SYSTEM_MAP.md                         |
 | DOC-046 | 🟢 Aprobado      | Indice                | INDEX.md                                      |
 | DOC-047 | 🟢 Aprobado      | Market Knowledge Map  | 06_CONOCIMIENTO/Market_Knowledge_Map.md       |
+| DOC-050 | 🟢 Aprobado      | Market Behavior Map   | 06_CONOCIMIENTO/Market_Behavior_Map.md        |
 | IMP-001 | 🟢 Aprobado      | Implementation Report | 00_IMPLEMENTATION_REPORT.md                   |
 | DOC-047 | 🔵 Congelado     | Plantilla             | TEMPLATE_DOCUMENTO.md                         |

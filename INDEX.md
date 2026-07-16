@@ -65,6 +65,7 @@ Ver DOC-040 (99_META/ARTIFACT_REGISTRY.md).
 ## Artefactos de conocimiento aprobados
 
 - DOC-047: Market Knowledge Map V1 (06_CONOCIMIENTO/Market_Knowledge_Map.md)
+- DOC-050: Market Behavior Map V1 (06_CONOCIMIENTO/Market_Behavior_Map.md)
 
 ## Artefactos nucleares
 

@@ -2,6 +2,154 @@
 
 ## Resumen ejecutivo
 
+Este documento registra el avance del programa PICC NEXT Growth System. Contiene el estado de Buyer System V1 (ya cerrado) y el estado de Growth MVP V1 (dise\u00f1o completo, listo para commits y paso a implementaci\u00f3n).
+
+---
+
+## Sprint 1 cerrado: Buyer System V1
+
+Commits publicados en `feature/picc-next-growth-system`:
+
+- b94fba8 \u2014 docs(buyer): define ICP hypotheses and prioritization
+- bcd9423 \u2014 docs(buyer): map buyer and decision journeys
+- 9793d52 \u2014 docs(growth): map decision surfaces and evidence gaps
+- 9bf5741 \u2014 docs(handoff): record Buyer System V1 status
+
+Documentos de Buyer System V1 completados:
+- 03_MODELO_COMERCIAL/ICPs.md
+- 03_MODELO_COMERCIAL/Modelo_Comercial.md
+- 03_MODELO_COMERCIAL/Customer_Journey.md
+- 03_MODELO_COMERCIAL/Decision_Architecture.md
+- 04_TRUST/Trust_Architecture.md
+- 05_PRODUCTO/Capability_Model.md
+
+---
+
+## Sprint 2 activo: Growth MVP V1
+
+### Objetivo
+
+Traducir Buyer System V1 en el plano funcional completo de la primera experiencia comercial ejecutable de PICC NEXT.
+
+### Estado al cierre de este sprint
+
+Dise\u00f1o Growth MVP V1 completado en contenido. Pendiente commit, push y validaci\u00f3n de repo.
+
+ICPs del MVP confirmados sin redefinici\u00f3n:
+- ICP-H01: Responsable de infraestructura cr\u00edtica o Data Center. [Evidencia parcial]
+- ICP-H02: Director de empresa industrial con necesidad de instalaciones cr\u00edticas. [Evidencia parcial]
+
+### Documentos producidos en Growth MVP V1
+
+| Documento                           | Estado            | Tipo de contenido                                                                                                                                                                           |
+| ----------------------------------- | ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 08_IMPLEMENTACION/MVP.md            | Listo para commit | Plano funcional completo: Home, rutas ICP, propuesta de valor, trust assets, sistema de casos, preevaluaci\u00f3n, formulario, flujo de lead, Content MVP, Decision Coverage, m\u00e9tricas |
+| 04_TRUST/Sistema_de_Evidencia.md    | Listo para commit | Reglas de evidencia E0-E5, proceso de construcci\u00f3n y validaci\u00f3n de assets, Claim Register operativo                                                                               |
+| 04_TRUST/Biblioteca_de_Evidencia.md | Listo para commit | Registro de trust assets con estado real, shortlist de casos priorizada, registro de permisos                                                                                               |
+| 05_PRODUCTO/Capability_Backlog.md   | Listo para commit | Backlog P0 (16 \u00edtems), P1 (11 \u00edtems), P2 (8 \u00edtems) con ID, owner, esfuerzo, criterio de aceptaci\u00f3n y release                                                            |
+| 05_PRODUCTO/Product_Roadmap.md      | Listo para commit | Releases MVP Alpha, Beta y V1.1+; criterios de avance; bloqueadores cr\u00edticos; gobierno                                                                                                 |
+| 00_IMPLEMENTATION_REPORT.md         | Este documento    | Handoff actualizado                                                                                                                                                                         |
+
+### Resultado sustantivo del sprint
+
+**Arquitectura funcional de Home (10 secciones)**: Hero, prueba de capacidad, rutas por ICP, diferenciador, casos, metodolog\u00eda, credenciales institucionales, conocimiento/herramienta, preevaluaci\u00f3n, CTA final. Cada secci\u00f3n tiene: objetivo, ICP, decisi\u00f3n, mensaje, evidencia requerida, CTA, m\u00e9trica, owner y datos faltantes.
+
+**Rutas ICP-H01 e ICP-H02**: dise\u00f1adas end-to-end con contexto, reto, resultado deseado, propuesta de valor, capacidades relevantes, evidencia m\u00ednima, casos recomendados, metodolog\u00eda visible, FAQ y CTA diferenciada. Cada ruta incluye criterio de calificaci\u00f3n para lead scoring.
+
+**Propuesta de valor**: general + H01 + H02. Cada propuesta con problema, resultado, mecanismo, evidencia, diferenciador, riesgos, objeciones, l\u00edmites y clasificaci\u00f3n de publicabilidad.
+
+**Trust assets**: 14 activos inventariados con estado real (E0-E2 en su mayor\u00eda), prioridad y brecha expl\u00edcita.
+
+**Sistema de casos**: formato est\u00e1ndar de 12 campos, reglas del sistema, shortlist de 6 candidatos. CASO-01 (Data Center) y CASO-02 (industrial) son bloqueadores del paso Alpha\u2192Beta.
+
+**Preevaluaci\u00f3n PICC**: nombre evaluado (recomendaci\u00f3n: "Diagn\u00f3stico de Proyecto" de cara al buyer), promesa, alcance, preguntas por bloque, scoring, asignaci\u00f3n, SLA, owner, m\u00e9tricas.
+
+**Formulario de captura**: 9 campos en paso 1 justificados campo por campo; captura progresiva; campos excluidos con raz\u00f3n expl\u00edcita.
+
+**Flujo interno del lead**: 9 pasos desde recepci\u00f3n hasta propuesta o descarte; responsable, sistema, entrada, salida, SLA, criterio, m\u00e9trica y excepci\u00f3n por paso; roles de ZEUS, DAVINCI, BrickEye, Comercial, T\u00e9cnico y Direcci\u00f3n definidos.
+
+**Content MVP**: 5 piezas (CNT-01 a CNT-05) priorizadas con ICP, pregunta, decisi\u00f3n, evidencia, formato, CTA, m\u00e9trica y mantenimiento.
+
+**Decision Coverage objetivo**: pre-MVP vs. post-MVP por surface; umbral m\u00ednimo para lanzar responsablemente.
+
+**Backlog P0/P1/P2**: 35 \u00edtems priorizados con todos los campos requeridos.
+
+**M\u00e9tricas**: 15 m\u00e9tricas con evento, fuente, owner, frecuencia, baseline, meta y limitaci\u00f3n.
+
+### Claims con riesgo identificado
+
+Ninguno de los siguientes debe publicarse como afirmaci\u00f3n fuerte sin completar la auditor\u00eda BKL-P0-01 a BKL-P0-03:
+- 25+ a\u00f1os de experiencia.
+- 100+ proyectos.
+- 50,000+ m\u00b2.
+- Certificaci\u00f3n ICREA CCRD (alcance exacto no documentado).
+- Relaci\u00f3n Panduit (tipo de relaci\u00f3n no verificado; logo no autorizado formalmente).
+
+### Bloqueadores cr\u00edticos para MVP Alpha
+
+1. Auditor\u00eda de claims institucionales.
+2. Fotos de proyectos con permiso.
+3. Proceso interno de respuesta formalizado.
+4. Formulario de preevaluaci\u00f3n funcional.
+5. Analytics GA4 habilitado.
+
+Para MVP Alpha\u2192Beta:
+- CASO-01 (Data Center) en E4 con permiso.
+- CASO-02 (industrial) en E4 con permiso.
+
+### Commits propuestos para este sprint
+
+1. docs(mvp): define Home and ICP decision routes
+   - 08_IMPLEMENTACION/MVP.md
+
+2. docs(trust): define MVP evidence and case system
+   - 04_TRUST/Sistema_de_Evidencia.md
+   - 04_TRUST/Biblioteca_de_Evidencia.md
+
+3. docs(roadmap): prioritize Growth MVP backlog
+   - 05_PRODUCTO/Capability_Backlog.md
+   - 05_PRODUCTO/Product_Roadmap.md
+
+4. docs(handoff): record Growth MVP design status
+   - 00_IMPLEMENTATION_REPORT.md
+
+---
+
+## Estado global del programa
+
+| Componente      | Estado               | Ubicaci\u00f3n                                  |
+| --------------- | -------------------- | ----------------------------------------------- |
+| SHDLS V1.0      | Congelado            | 00_MASTER_PLAN/MASTER_PLAN_PICC_NEXT_V3.md      |
+| Growth System   | Activo               | 00_MASTER_PLAN/MASTER_PLAN_PICC_NEXT_V3.md      |
+| Buyer System V1 | Cerrado en Git       | 03_MODELO_COMERCIAL/ + 04_TRUST/ + 05_PRODUCTO/ |
+| Growth MVP V1   | Dise\u00f1o completo | 08_IMPLEMENTACION/MVP.md + soportes             |
+| MVP Alpha       | No iniciado          | Bloqueado por BKL-P0-01 al BKL-P0-03            |
+
+## Reglas que no deben romperse
+
+- No reabrir SHDLS sin evidencia nueva.
+- No redefinir ICPs sin evidencia nueva.
+- No publicar claims E0-E1 como afirmaciones fuertes.
+- No mezclar commits PICC con cambios de DataManager ajenos.
+- No avanzar a MVP V2 o V3 sin haber evaluado resultados reales de Alpha y Beta.
+- No automatizar cotizaciones sin validaci\u00f3n humana.
+
+## Primer comando recomendado al retomar
+
+git status --short
+
+## Secuencia de lectura recomendada
+
+1. 00_IMPLEMENTATION_REPORT.md (este documento)
+2. 08_IMPLEMENTACION/MVP.md (plano completo del MVP)
+3. 05_PRODUCTO/Capability_Backlog.md (qu\u00e9 construir y en qu\u00e9 orden)
+4. 05_PRODUCTO/Product_Roadmap.md (c\u00f3mo secuenciar los releases)
+5. 04_TRUST/Biblioteca_de_Evidencia.md (qu\u00e9 evidencia conseguir primero)
+6. 04_TRUST/Sistema_de_Evidencia.md (c\u00f3mo gestionar la evidencia)
+
+
+## Resumen ejecutivo
+
 Este documento deja trazado el paso desde el cierre de la transicion a Growth System hacia el primer sprint operativo del programa: Buyer System V1.
 
 La arquitectura base permanece congelada. El trabajo de esta iteracion no reabre SHDLS ni el marco conceptual anterior; convierte esa base en artefactos comerciales utilizables para entender compradores, decisiones, evidencia requerida y capacidades faltantes.

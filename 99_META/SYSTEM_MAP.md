@@ -44,3 +44,36 @@ flowchart TD
     RL[RESEARCH LEDGER] -.soporta.-> RSO
     RS -.retroalimentacion.-> VC
 ```
+
+    ## Mapa de continuidad PICC NEXT
+
+    La flecha indica dependencia de lectura/gobernanza y continuidad del programa, no producción automática de un artefacto sobre otro.
+
+    ```mermaid
+    flowchart TD
+      SHDLS[SHDLS V1.0\ncongelado]
+      GS[Growth System V1\ncongelado]
+      BS[Buyer System V1\ncongelado]
+      DIS[Discovery Intelligence System V1\ncongelado]
+      DE[Demand Engine V1\ncongelado]
+      KPP[Knowledge Product Portfolio V1\naprobado]
+      MKM[Market Knowledge Map V1\naprobado]
+      MBM[Market Behavior Map V1\nactivo]
+      BCE[Buyer Curiosity Engine V1\n futuro]
+      QP[Question Portfolio\nfuturo]
+      KP[Knowledge Products\nfuturo]
+      GMVP[Growth MVP V1\naprobado]
+      PIPE[Pipeline / proyectos / aprendizaje\nactivo]
+
+      SHDLS --> GS --> BS --> DIS --> DE --> KPP --> MKM --> MBM --> BCE --> QP --> KP --> GMVP --> PIPE
+
+      classDef frozen fill:#e5e7eb,stroke:#6b7280,color:#111827;
+      classDef approved fill:#dcfce7,stroke:#16a34a,color:#14532d;
+      classDef active fill:#ffedd5,stroke:#f97316,color:#7c2d12;
+      classDef future fill:#dbeafe,stroke:#2563eb,color:#1e3a8a;
+
+      class SHDLS,GS,BS,DIS,DE frozen;
+      class KPP,MKM,GMVP approved;
+      class MBM,PIPE active;
+      class BCE,QP,KP future;
+    ```

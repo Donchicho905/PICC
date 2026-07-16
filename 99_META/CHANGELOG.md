@@ -86,6 +86,20 @@
 - El Research OS se ajusta para investigar hipotesis estrategicas y institucionalizar aprendizaje.
 - Se integran indicadores de acumulacion estrategica para futuras fases.
 
+## 2026-07-15 - Checkpoint Market Knowledge y handoff a Market Behavior
+
+- Se formaliza Market Knowledge Map V1 como artefacto conceptual aprobado.
+- Se registra Market Behavior Map V1 como programa activo siguiente.
+- Se fija 00_IMPLEMENTATION_REPORT.md como punto unico de entrada para la siguiente IA.
+- Se actualiza SYSTEM_MAP.md con el mapa de continuidad y estados congelado/aprobado/activo/futuro.
+- Se documentan decisiones de gobierno en DECISION_HISTORY.md para asegurar reversibilidad y trazabilidad.
+- Se alinea Knowledge Program con la transición desde conocimiento de mercado hacia comportamiento de mercado.
+
+## 2026-07-15 - Inicio de fase de mercado
+
+- Se confirma que el siguiente sprint no produce activos, sino el modelo de comportamiento del mercado.
+- Se mantiene la disciplina de mínima expansión documental.
+
 
 
 

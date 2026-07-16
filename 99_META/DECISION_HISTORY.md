@@ -252,6 +252,46 @@ Criterio de reversión / alternancia:
 Próximo paso autorizador:
 - ZEUS lee BOOT.md + DOC-054 (ZEUS_OLYMPUS_INTEGRATION_MEMO.md) y cierra Gates 0–1 en 2 semanas.
 
+## D-0020 (2026-07-16)
+Decision:
+- `DECISIÓN DIFERIDA` para integración PICC NEXT ↔ OLYMPUS tras cierre de Gate 0 y Gate 1.
+Razon:
+- Gate 0 aprobado.
+- Gate 1 aprobado en el alcance visible del workspace.
+- No existe validación de producto con compradores reales.
+- ZEUS ya posee equivalentes para research, ledgers, portafolio, memoria, observabilidad y handoff.
+- Los diferenciales de PICC todavía son conocimiento estructurado, diseños o hipótesis.
+- Integrar ahora generaría duplicidad y sobrearquitectura.
+Contingencia:
+- `INTEROPERABILIDAD CONTROLADA`.
+Trigger para reconsiderar:
+- Un Knowledge Product usado con comprador real.
+- Resultado medible.
+- Aprendizaje reutilizable.
+- No duplicación confirmada.
+- Binding reversible posible.
+Documentos creados:
+- 99_META/ZEUS_OLYMPUS_INTEGRATION_ASSESSMENT_V1.md (DOC-055).
+Documentos impactados:
+- 00_IMPLEMENTATION_REPORT.md
+- 99_META/ZEUS_OLYMPUS_INTEGRATION_MEMO.md
+- AI_EXECUTION_CONTRACT.md
+- 99_META/ARTIFACT_REGISTRY.md
+- 99_META/CHANGELOG.md
+- 99_META/SYSTEM_MAP.md
+Estado de Gate 2:
+- READY FOR ZEUS AUTHORIZATION (preparación documental únicamente).
+Prohibiciones vigentes hasta Gate 2+3:
+- No integrar PICC con ZEUS u OLYMPUS.
+- No crear APIs.
+- No mover componentes.
+- No fusionar bases, registries o ledgers.
+- No convertir DOS en doctrina.
+- No promover Advantage Operating System.
+- No adoptar Decision Confidence como North Star global.
+- No extraer BCE como servicio transversal.
+- No modificar DAVINCI o BrickEye por este dictamen.
+
 
 
 

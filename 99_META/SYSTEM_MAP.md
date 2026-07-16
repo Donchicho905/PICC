@@ -64,16 +64,22 @@ flowchart TD
       KP[Knowledge Products\nfuturo]
       GMVP[Growth MVP V1\naprobado]
       PIPE[Pipeline / proyectos / aprendizaje\nactivo]
+      ZM[ZEUS Integration Memo\naprobado]
+      ZA[ZEUS Assessment V1\naprobado]
+      G2[Gate 2 Prep: RiskDiag Pilot V1\nready for ZEUS authorization]
 
       SHDLS --> GS --> BS --> DIS --> DE --> KPP --> MKM --> MBM --> BCE --> QP --> KP --> GMVP --> PIPE
+      PIPE --> ZM --> ZA --> G2
 
       classDef frozen fill:#e5e7eb,stroke:#6b7280,color:#111827;
       classDef approved fill:#dcfce7,stroke:#16a34a,color:#14532d;
       classDef active fill:#ffedd5,stroke:#f97316,color:#7c2d12;
       classDef future fill:#dbeafe,stroke:#2563eb,color:#1e3a8a;
+      classDef ready fill:#fef3c7,stroke:#d97706,color:#78350f;
 
       class SHDLS,GS,BS,DIS,DE frozen;
-      class KPP,MKM,GMVP,BCE approved;
+      class KPP,MKM,GMVP,BCE,ZM,ZA approved;
       class MBM,PIPE active;
       class QP,KP future;
+      class G2 ready;
     ```

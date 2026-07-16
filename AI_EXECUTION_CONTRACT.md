@@ -51,7 +51,7 @@ La IA debe tratar como congelado lo siguiente:
 - Market Behavior Map V1
 - Buyer Curiosity Map V1
 - Knowledge Product Portfolio V1 conceptual
-- Decision System / Decision Operating System como marcos ya aceptados por el repositorio
+- Decision Operating System (DOS) como hipotesis estrategica prometedora, no doctrina transversal ni arquitectura validada de OLYMPUS
 
 La IA puede leerlos, usar sus salidas y construir sobre ellos. No puede redefinirlos por preferencia.
 

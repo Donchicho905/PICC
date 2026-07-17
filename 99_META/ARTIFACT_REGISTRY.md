@@ -64,3 +64,10 @@
 | DOC-053        | 🟢 Aprobado      | Executability Audit         | 08_IMPLEMENTACION/EXECUTABILITY_AUDIT.md          |
 | DOC-054        | 🟢 Aprobado      | ZEUS OLYMPUS Integration    | 99_META/ZEUS_OLYMPUS_INTEGRATION_MEMO.md          |
 | DOC-055        | 🟢 Aprobado      | ZEUS Integration Assessment | 99_META/ZEUS_OLYMPUS_INTEGRATION_ASSESSMENT_V1.md |
+| DOC-056        | 🟡 En desarrollo | Gate 2 — Pilot Protocol     | 10_GATE2_RISKDIAG_PILOT/01_Protocolo_Piloto.md    |
+| DOC-057        | 🟡 En desarrollo | Gate 2 — Question Bank      | 10_GATE2_RISKDIAG_PILOT/02_Banco_de_Preguntas.md  |
+| DOC-058        | 🟡 En desarrollo | Gate 2 — Classification Rules | 10_GATE2_RISKDIAG_PILOT/03_Reglas_de_Clasificacion.md |
+| DOC-059        | 🟡 En desarrollo | Gate 2 — Result Template    | 10_GATE2_RISKDIAG_PILOT/04_Plantilla_de_Resultado.md |
+| DOC-060        | 🟡 En desarrollo | Gate 2 — Measurement Sheet  | 10_GATE2_RISKDIAG_PILOT/05_Hoja_de_Medicion.md    |
+| DOC-061        | 🟡 En desarrollo | Gate 2 — Defect Log         | 10_GATE2_RISKDIAG_PILOT/06_Sheet_de_Defectos.md   |
+| DOC-062        | 🟡 En desarrollo | Gate 2 — Verdict Template   | 10_GATE2_RISKDIAG_PILOT/07_Plantilla_Veredicto_ZEUS.md |

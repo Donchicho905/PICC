@@ -132,12 +132,11 @@ Untracked classification:
 `RiskDiag Pilot V1 — Gate 2 Preparation`
 
 Current state:
-- **READY FOR ZEUS AUTHORIZATION**
+- **AUTHORIZED — IN PROGRESS**
 
-Not authorized in this iteration:
-- AUTHORIZED
-- ACTIVE
-- IN PROGRESS
+State history:
+- READY FOR ZEUS AUTHORIZATION (2026-07-16, per DOC-055 section 18)
+- AUTHORIZED — IN PROGRESS (2026-07-16, ZEUS authorized documentary preparation with the exact scope below; execution of the 3-5 real cases remains a separate future authorization)
 
 Gate 2 preparation package (documentation only):
 1. Objective: generate first real evidence of PICC NEXT value via RiskDiag in real cases.
@@ -147,6 +146,20 @@ Gate 2 preparation package (documentation only):
 5. Metrics: diagnosis time, completion, perceived clarity, perceived utility, gaps identified, priority change, rework reduction, share intent, advance intent, decision affected, downstream commercial signal, critical errors.
 6. Restrictions: no web build, no chatbot, no RAG, no autonomous agent, no final frontend, no integrations (OLYMPUS/ZEUS/DAVINCI/BrickEye).
 7. Expected deliverables: pilot protocol, 3-5 case template, measurement sheet, defect log, verdict template.
+
+### Bitácora — 2026-07-16: ZEUS autoriza Gate 2 (preparación documental)
+
+ZEUS, vía la sesión coordinadora, autorizó formalmente el sprint `RiskDiag Pilot V1 — Gate 2 Preparation` con el alcance documental exacto descrito arriba (7 puntos). Se generaron los 7 artefactos requeridos en `10_GATE2_RISKDIAG_PILOT/`:
+
+1. `10_GATE2_RISKDIAG_PILOT/01_Protocolo_Piloto.md` (DOC-056) — flujo paso a paso del piloto.
+2. `10_GATE2_RISKDIAG_PILOT/02_Banco_de_Preguntas.md` (DOC-057) — 24 preguntas en 7 bloques, vinculadas al universo de 14 decisiones de Decision_Architecture.md.
+3. `10_GATE2_RISKDIAG_PILOT/03_Reglas_de_Clasificacion.md` (DOC-058) — severidad, confianza (reutiliza E0-E5 de Trust_Architecture.md) y tipo de brecha.
+4. `10_GATE2_RISKDIAG_PILOT/04_Plantilla_de_Resultado.md` (DOC-059) — documento de entrega al cliente por caso.
+5. `10_GATE2_RISKDIAG_PILOT/05_Hoja_de_Medicion.md` (DOC-060) — las 12 métricas autorizadas, con definición operativa.
+6. `10_GATE2_RISKDIAG_PILOT/06_Sheet_de_Defectos.md` (DOC-061) — bitácora de fallas del proceso de diagnóstico.
+7. `10_GATE2_RISKDIAG_PILOT/07_Plantilla_Veredicto_ZEUS.md` (DOC-062) — regla GO/GO CONDICIONADO/PIVOT/NO GO al cierre de 3-5 casos.
+
+Esta autorización cubre **solo preparación documental**. La ejecución real de los 3-5 casos piloto con clientes reales requiere que un humano de PICC (Dirección o Comercial) la lleve a cabo manualmente; ningún agente de IA ejecuta el piloto. No se autorizó, ni se ejecutó, ninguna integración con OLYMPUS/ZEUS/DAVINCI/BrickEye, ni construcción de software, web, chatbot, RAG o agente autónomo — restricciones de DOC-055 sección 19 y AI_EXECUTION_CONTRACT.md se mantienen vigentes sin excepción.
 
 ---
 

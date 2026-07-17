@@ -292,7 +292,35 @@ Prohibiciones vigentes hasta Gate 2+3:
 - No extraer BCE como servicio transversal.
 - No modificar DAVINCI o BrickEye por este dictamen.
 
-
-
-
+## D-0021 (2026-07-16)
+Decision:
+- ZEUS autoriza formalmente el sprint `RiskDiag Pilot V1 — Gate 2 Preparation` con alcance documental estricto: protocolo del piloto, banco de preguntas, reglas de clasificación, plantilla de resultado, hoja de medición, sheet de defectos y plantilla de veredicto ZEUS.
+Razon:
+- El expediente de Gate 2 quedó en estado `READY FOR ZEUS AUTHORIZATION` en DOC-055 sección 18. Antes de correr casos reales con clientes, PICC necesita un método escrito, reproducible y auditable para que los 3-5 casos sean comparables entre sí y produzcan evidencia válida hacia Gate 3.
+Documentos creados:
+- 10_GATE2_RISKDIAG_PILOT/01_Protocolo_Piloto.md (DOC-056)
+- 10_GATE2_RISKDIAG_PILOT/02_Banco_de_Preguntas.md (DOC-057)
+- 10_GATE2_RISKDIAG_PILOT/03_Reglas_de_Clasificacion.md (DOC-058)
+- 10_GATE2_RISKDIAG_PILOT/04_Plantilla_de_Resultado.md (DOC-059)
+- 10_GATE2_RISKDIAG_PILOT/05_Hoja_de_Medicion.md (DOC-060)
+- 10_GATE2_RISKDIAG_PILOT/06_Sheet_de_Defectos.md (DOC-061)
+- 10_GATE2_RISKDIAG_PILOT/07_Plantilla_Veredicto_ZEUS.md (DOC-062)
+Documentos impactados:
+- 00_IMPLEMENTATION_REPORT.md (Active Program: READY FOR ZEUS AUTHORIZATION → AUTHORIZED — IN PROGRESS)
+- 99_META/ARTIFACT_REGISTRY.md (registrados DOC-056 a DOC-062)
+- 99_META/CHANGELOG.md (este registro)
+Autoridades:
+- ZEUS: autorizó el alcance documental (cumplido, este sprint)
+- PICC / Dirección + Comercial: ejecutarán manualmente los 3-5 casos reales (pendiente, fuera de este sprint)
+- ZEUS: emitirá o delegará el veredicto de cierre usando DOC-062 (pendiente)
+Riesgos si se ejecuta el piloto sin disciplina:
+- Casos no comparables entre sí por falta de método consistente.
+- Hallazgos E0-E1 presentados como certeza, dañando credibilidad frente al cliente.
+- Confundir el diagnóstico de riesgo del proyecto del cliente con claims públicos de PICC (mitigado explícitamente en DOC-058 y DOC-059).
+Riesgos si no se ejecuta el piloto:
+- Gate 2 y Gate 3 permanecen indefinidamente sin evidencia real; la Decisión Diferida (D-0020) nunca puede revisarse con base objetiva.
+Criterio de reversión / alternancia:
+- Este sprint no reabre la Decisión Diferida (D-0020) ni autoriza integración alguna. Solo la ejecución real de 3-5 casos con veredicto GO usando DOC-062, evaluada además contra los 5 criterios simultáneos de DOC-055 sección 17, puede justificar que ZEUS reconsidere la integración.
+Próximo paso autorizador:
+- Un humano de PICC (Dirección o Comercial) ejecuta el Protocolo (DOC-056) sobre 3-5 proyectos reales. Ningún agente de IA ejecuta el piloto ni genera datos de clientes.
 

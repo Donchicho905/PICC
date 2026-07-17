@@ -276,5 +276,40 @@ El método (Banco de Preguntas + Reglas de Clasificación) funcionó de forma co
 - Ejecución del piloto real (3-5 casos con clientes reales, en vivo): **sigue pendiente**, sin cambio de estado — requiere acción humana de Dirección/Comercial fuera de este repositorio.
 - Gate 3 (Evidence of measurable value): sigue bloqueado; este pre-piloto no aporta evidencia de valor comercial, solo evidencia de que el método no tiene defectos estructurales conocidos.
 
+## 2026-07-16 - Ronda 2 del pre-piloto retrospectivo RiskDiag V1 (MAYRAN, NISSAN-ANDRADE, corrección PALMAS→Oficinas)
+
+### Objetivo
+Extender el pre-piloto retrospectivo (D-0022) con dos proyectos de expediente rico señalados por Pablo (`MAYRAN-2026-001`, obra concluida con fotos de avance fechadas; `NISSAN-ANDRADE-2026-001`, propuesta técnica con catálogo fotográfico dron) y ampliar la cobertura de categorías a casa habitación, oficinas y data centers, verificando en cada caso si existe expediente suficiente antes de generar un caso — sin inventar datos donde no los hubiera.
+
+### Entregables
+
+**Nuevos documentos:**
+- `10_GATE2_RISKDIAG_PILOT/casos/caso_mayran_bodega.md`: caso reconstruido con el ciclo completo de un proyecto industrial concluido (`proyectos/MAYRAN-2026-001/`) — levantamiento, cotización, ejecución con incidente real (robo de material eléctrico cerca del AICM), cobranza y Acta de Entrega-Recepción firmada. Completitud de Banco más alta de los 7 casos totales (~75%).
+- `10_GATE2_RISKDIAG_PILOT/casos/caso_nissan_andrade.md`: caso reconstruido con la propuesta técnica preliminar de una nave industrial automotriz (`proyectos/NISSAN-ANDRADE-2026-001/`), en etapa previa a visita técnica interior — mismo cliente que Bodega Mayran (Grupo Andrade/Partarrio).
+- `10_GATE2_RISKDIAG_PILOT/casos/caso_oficinas_palmas936.md`: caso reconstruido con el expediente de `proyectos/PALMAS-2026-001/`, que el encargo original asumía como candidato de "casa habitación" pero que la lectura directa de la fuente confirma sin ambigüedad como un proyecto de **oficinas comerciales de lujo**. Este caso resuelve la categoría de oficinas, que no tenía expediente disponible más allá de párrafos de currículum comercial.
+- `10_GATE2_RISKDIAG_PILOT/08_Sintesis_Prepiloto_Retrospectivo.md` (DOC-063): agregada Sección 8 (Ronda 2) con tabla comparativa de calidad de datos de los 7 casos totales y documentación explícita de por qué casa habitación y data centers no generaron caso nuevo en esta ronda.
+
+**Documentos actualizados:**
+- `10_GATE2_RISKDIAG_PILOT/06_Sheet_de_Defectos.md` (DOC-061): agregados DEF-06 (discrepancia de -28% entre costo paramétrico interno y precio cotizado en Mayran, ya explicada y resuelta operativamente en la propia fuente), DEF-07 (segunda discrepancia de -20.8% entre dos cotizaciones de Mayran sin reconciliación documentada — Alta severidad, abierto), DEF-08 (corrección de encuadre de PALMAS de "casa habitación" a "oficinas", más discrepancia de área no reconciliada dentro del propio expediente — Alta severidad, abierto) y DEF-09 (gap de evidencia documentado para casa habitación y data centers, sin forzar un caso pobre).
+- `99_META/DECISION_HISTORY.md`: agregado D-0023.
+
+### Hallazgo principal
+Corrección de encuadre: `PALMAS-2026-001` no es un caso de casa habitación, es un proyecto de oficinas comerciales de lujo — confirmado por tres fuentes internas del propio expediente (`RESUMEN_PROYECTO.md`, `PROYECTO_INFO.json`, `CATALOGO_ESPACIOS.md`). Esto resuelve retroactivamente la categoría de oficinas y deja "casa habitación" como gap de evidencia genuino (el único candidato, `OREA-2026-001`, es un proyecto cancelado del que solo existe físicamente un índice ERP y una fotografía sin procesar en este repositorio). El caso Bodega Mayran, por ser una obra concluida y entregada con expediente financiero y de WhatsApp extenso, alcanzó la completitud de Banco más alta observada hasta ahora (~75%) y reveló un patrón nuevo relevante para PICC: dos discrepancias de precio internas distintas para el mismo proyecto (estimación paramétrica vs. precio cotizado, y dos cotizaciones formales con montos distintos), además de un incidente real de robo de material en obra y un patrón de cobranza pasiva con impacto de flujo de caja cuantificado ($50,342.86 de déficit documentado).
+
+### Qué NO se hizo (restricciones respetadas)
+- No se presenta esta ronda como cierre de Gate 2 ni como los 3-5 casos reales exigidos por DOC-062 — ningún dato de cliente real fue capturado en sesión en vivo.
+- No se inventó ningún dato, cifra o resultado no presente en las fuentes; donde faltó un dato real se marcó literalmente `[DATO NO DISPONIBLE EN FUENTE]`.
+- No se forzó un caso de casa habitación ni de data centers con evidencia insuficiente — se documentó el gap explícitamente (DEF-09) en vez de reusar los 3 casos pobres de Data Center ya hechos en Ronda 1 o inventar contenido para Orea.
+- No se modificaron DOC-056 a DOC-062 en su contenido normativo (solo se agregaron entradas nuevas a DOC-061 y una sección nueva a DOC-063, sin borrar contenido existente).
+- No se tocó ninguna arquitectura congelada ni se creó integración alguna con OLYMPUS/ZEUS/DAVINCI/BrickEye.
+- No se usó `git add -A` ni `git add .`; no se tocó `.tmp_bce_audit.ps1` ni `tools/`.
+- No se modificó ningún archivo fuera de `10_GATE2_RISKDIAG_PILOT/`, `99_META/CHANGELOG.md` y `99_META/DECISION_HISTORY.md`.
+
+### Estado de Gate 2 al cierre de esta iteración
+- Preparación documental: sigue **completa** (7/7 artefactos, sin cambios normativos).
+- Evidencia preparatoria del método: **ampliada** (7 casos retrospectivos totales + síntesis DOC-063 actualizada + 2 gaps de categoría documentados explícitamente).
+- Ejecución del piloto real (3-5 casos con clientes reales, en vivo): **sigue pendiente**, sin cambio de estado — requiere acción humana de Dirección/Comercial fuera de este repositorio.
+- Gate 3 (Evidence of measurable value): sigue bloqueado; esta ronda no aporta evidencia de valor comercial, solo evidencia adicional de que el método no tiene defectos estructurales conocidos, y de que la fuente documental (no el método) sigue siendo el factor limitante.
+
 
 

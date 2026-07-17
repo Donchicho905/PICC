@@ -87,3 +87,66 @@ Se priorizó incluir Chevrolet Pedregal pese a no estar en el currículum comerc
 | Centro de Datos Ixtapaluca | **Pobre** | Solo el texto del CV comercial (unas 20 líneas). Sin presupuesto, cronograma, incidentes o testimonio. Explícitamente reconocido como pobre en `caso_centro_datos_ixtapaluca.md`, Sección 2 |
 | Data Nation Querétaro | **Pobre** | Igual que el anterior; adicionalmente con una ambigüedad de alcance (proyecto ejecutivo vs. construcción) que el propio CV no aclara |
 | Satmex | **Pobre, con matiz** | Texto del CV más específico técnicamente que los otros dos (menciona Uptime Institute, N+1, biométrico), pero sigue sin presupuesto, cronograma ni resultado. Es el "menos pobre de los pobres", no un caso de datos suficientes |
+
+---
+
+## 8. Ronda 2 (2026-07-16) — MAYRAN, NISSAN-ANDRADE y corrección de encuadre PALMAS→Oficinas
+
+Pablo pidió relanzar el pre-piloto usando dos proyectos adicionales con expediente rico (`MAYRAN-2026-001` y `NISSAN-ANDRADE-2026-001`, ambos localizados en `C:\Development\DataManager\proyectos\`, no en el repositorio PICC), y ampliar la cobertura a las categorías **casa habitación, oficinas y data centers**. Esta ronda agrega 3 casos nuevos (`caso_mayran_bodega.md`, `caso_nissan_andrade.md`, `caso_oficinas_palmas936.md`) y documenta explícitamente dos categorías que **no alcanzaron el umbral de calidad** para generar un caso nuevo (casa habitación, data centers).
+
+### 8.1 Casos nuevos
+
+| Caso | Fuente principal | Tipo de proyecto | Completitud del Banco lograda |
+| --- | --- | --- | --- |
+| Bodega Mayran (`caso_mayran_bodega.md`) | Expediente operativo completo — proyecto.json, Acta de Entrega-Recepción, 3 reportes de avance, estado de cuenta con bitácora WhatsApp, análisis de discrepancia de precios interno | Industrial — rehabilitación post-incendio, **obra concluida y entregada** | ~75% (18/24) |
+| Nave Nissan Aeropuerto (`caso_nissan_andrade.md`) | Propuesta técnica preliminar + catálogo de fotos con análisis dron/sitio + índice de proyecto | Industrial/automotriz — remodelación de nave, **etapa preliminar, sin visita técnica interior** | ~58% (14/24) |
+| Oficinas Palmas 936 (`caso_oficinas_palmas936.md`) | Resumen de proyecto + catálogo de espacios + análisis de sobreprecios DEDALO | **Comercial — Oficinas** (reclasificado, ver 8.2) | ~42% (10/24) |
+
+### 8.2 Hallazgo de encuadre — PALMAS-2026-001 no es un caso de "casa habitación"
+
+El encargo original identificó `PALMAS-2026-001` (indexado también bajo el nombre de carpeta `Presupuesto_Casa_Las_Palmas`) como candidato para la categoría "casa habitación". La lectura directa de la fuente contradice esa clasificación de forma inequívoca: `RESUMEN_PROYECTO.md` titula el proyecto "Acondicionamiento Oficinas PALMAS 936" y `PROYECTO_INFO.json` declara `"tipo": "COMERCIAL - OFICINAS"`. El catálogo de espacios (`CATALOGO_ESPACIOS.md`) enumera exclusivamente programa de oficina (oficina de gerente, sala de juntas, recepción, área operativa con estaciones de trabajo, SITE) — cero espacios residenciales.
+
+Este hallazgo se trata como una corrección de dato, no como un error del encargo: el nombre coloquial "Casa Las Palmas" usado en el índice ERP (`Presupuesto_Casa_Las_Palmas/HISTORIAL.md`) es engañoso porque el proyecto real detrás de ese nombre es un fit-out comercial. Se recomienda a Dirección PICC renombrar esa carpeta índice para evitar que el mismo error de clasificación se repita en el futuro (ver Sheet de Defectos, DEF-08).
+
+**Consecuencia:** la categoría "oficinas", que el encargo original asumía sin expediente disponible (solo párrafos de currículum: Kuehne+Nagel WTC, Pabellón Bosques, Rubén Darío, Oficinas Lago Iseo, Oficinas Castellanos y Barragán, Riman Tlalnepantla, UCAD Lindavista — ninguno con carpeta de proyecto dedicada localizada en `proyectos/`), queda **resuelta** con `caso_oficinas_palmas936.md`. La categoría "casa habitación" queda **sin resolver** (ver 8.3).
+
+### 8.3 Categorías sin caso nuevo — gaps documentados explícitamente
+
+#### Casa habitación — NO se generó caso nuevo
+
+Se investigaron los tres candidatos señalados en el encargo:
+
+- `PALMAS-2026-001` / `Presupuesto_Casa_Las_Palmas`: reclasificado a Oficinas (ver 8.2), no es un caso residencial.
+- `Remodelacion_Casa_Familia_Orea` y `OREA-2026-001`: se verificó que son **el mismo proyecto** indexado bajo dos nombres de carpeta distintos (mismos archivos, mismas fechas, mismo monto financiero de $350,000 registrado como "Casa Orea - Remodelacion integral"). El proyecto está marcado **❌ CANCELADO** en su índice ERP ("PROYECTO CANCELADO - No go. Confirmado por Pablo 2026-06-10"). Al inspeccionar el contenido físico disponible en el repositorio (`OREA-2026-001/`), solo existen 1 fotografía (`IMG_9238.heic`, formato no procesado en este ejercicio) y el archivo índice `HISTORIAL.md` — los documentos de cotización de cocina, planos escaneados y levantamiento fotográfico que el índice lista **no están físicamente presentes en este repositorio** (probablemente residen en OneDrive, fuera del alcance de este ejercicio documental). No es posible responder con cita directa de fuente ninguna pregunta sustantiva del Banco más allá de la cronología y el monto cancelado.
+- No se localizó ningún otro candidato: una búsqueda de carpetas con patrón `casa|resid|depto|departamento` en `proyectos/` solo devolvió las dos carpetas de Orea ya evaluadas.
+
+**Conclusión:** casa habitación permanece sin expediente rico disponible en este repositorio a la fecha de esta reconstrucción. No se fuerza un caso con datos insuficientes — se documenta el gap (ver DEF-09).
+
+#### Data centers — NO se generó caso nuevo (no se repiten los 3 casos ya hechos en Ronda 1)
+
+Se investigaron los candidatos señalados en el encargo:
+
+- `ORION-CYMIT/RFQ_CONSOLIDADO_20260325.md`: es un proyecto de **sistemas de seguridad perimetral** (CCTV Avigilon, alarma Honeywell, iluminación solar, malla perimetral, planta de emergencia Tesla Powerwall, garitas) para **CIMMYT** (Centro Internacional de Mejoramiento de Maíz y Trigo, instituto de investigación agrícola), explícitamente marcado en la propia fuente como *"INDEPENDIENTE del proyecto Aeropuerto QarDeal"*. No es un Data Center.
+- Búsqueda de "HYPERION" (agente Director de Data Centers) en `output/`: todas las coincidencias son manifiestos de agentes y documentos de arquitectura del ecosistema ZEUS, ninguna es un expediente de proyecto real de cliente.
+- Búsqueda de "data center" / "centro de datos" en `proyectos/`: no arrojó ninguna carpeta de proyecto dedicada más allá de las menciones ya usadas en los 3 casos pobres de la Ronda 1 (`contenido_cv.txt`).
+
+**Conclusión:** no existe nuevo expediente de Data Center en este repositorio. Reconstruir un cuarto caso de Data Center con la misma fuente pobre (CV comercial) no aportaría información nueva — ya se documentó exhaustivamente en la Ronda 1 (DEF-04) que el techo de completitud con esa fuente es 12.5%-21%. Se documenta el gap sin duplicar trabajo ya hecho (ver DEF-09).
+
+### 8.4 Tabla comparativa de calidad de datos — todos los casos (Ronda 1 + Ronda 2)
+
+| Caso | Ronda | Categoría | Calidad de datos | % Banco respondible | Fuente principal | Hallazgo relevante |
+| --- | --- | --- | --- | --- | --- | --- |
+| Chevrolet Pedregal | 1 | Comercial/industrial | **Alta** | ~62.5% (15/24) | Memoria de cálculo + presupuesto + catálogo fotográfico | Filtración activa ya materializada en taller; discrepancia interna de cifras (DEF-03) |
+| Bodega Mayran | 2 | Industrial | **Muy alta** | ~75% (18/24) | Ciclo completo levantamiento→entrega+finanzas+WhatsApp | Robo de material en obra (AICM); dos discrepancias de precio distintas (DEF-06, DEF-07); cobranza pasiva documentada con impacto de flujo cuantificado |
+| Nave Nissan Aeropuerto | 2 | Industrial/automotriz | **Media-alta** | ~58% (14/24) | Propuesta técnica preliminar + catálogo fotográfico dron | Dispersión de 19x entre escenarios de presupuesto sin alcance definido; mismo cliente que Mayran con posible atención dividida |
+| Oficinas Palmas 936 | 2 | Comercial — Oficinas | **Media** | ~42% (10/24) | Catálogo técnico + análisis de sobreprecios | Fuerte en alcance/presupuesto/riesgo técnico, vacío en contexto comercial (sin cliente identificado); proyecto congelado sin fecha de reactivación; discrepancia de área no reconciliada (DEF-08) |
+| Centro de Datos Ixtapaluca | 1 | Data Center | **Pobre** | ~17% (4/24) | Solo CV comercial | Techo de utilidad del método con fuente de marketing |
+| Data Nation Querétaro | 1 | Data Center | **Pobre** | ~12.5% (3/24) | Solo CV comercial | Ambigüedad de alcance no aclarada por el CV |
+| Satmex | 1 | Data Center | **Pobre, con matiz** | ~21% (5/24) | Solo CV comercial | Técnicamente más específico, sigue sin presupuesto/cronograma |
+| *(Casa habitación)* | 2 | Casa habitación | **Sin caso** | No aplica | `OREA-2026-001` insuficiente (proyecto cancelado, solo índice + 1 foto no procesada) | Gap documentado, no forzado (ver 8.3) |
+| *(Oficinas — vía CV)* | — | Oficinas | **Sin caso vía CV** | No aplica | Resuelto por reclasificación de PALMAS (ver 8.2), no por el currículum comercial | — |
+
+### 8.5 Patrón transversal confirmado en Ronda 2
+
+La Ronda 1 concluyó que el método (Banco de Preguntas + Reglas de Clasificación) no mostró defectos de diseño, y que el factor limitante es la fuente de datos. La Ronda 2 **confirma y matiza** esa conclusión con un patrón nuevo: la completitud del Banco no depende solo de "cuánta documentación existe", sino de **qué tipo** de documentación existe. Oficinas Palmas 936 tiene abundante documentación técnica (catálogos, presupuestos, análisis de sobreprecios) pero completitud media (~42%) porque casi toda esa documentación responde a los Bloques B, C y D (alcance, presupuesto, riesgo técnico) y prácticamente nada a los Bloques A, F y G (contexto/urgencia, confianza institucional, siguiente paso) — bloques que solo un cliente real puede responder en sesión viva. Esto refuerza, con un mecanismo distinto al de la Ronda 1, la misma recomendación de Sección 5: ningún volumen de documentación técnica sustituye la sesión en vivo que exige DOC-062.
+

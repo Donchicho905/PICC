@@ -71,3 +71,4 @@
 | DOC-060        | 🟡 En desarrollo | Gate 2 — Measurement Sheet  | 10_GATE2_RISKDIAG_PILOT/05_Hoja_de_Medicion.md    |
 | DOC-061        | 🟡 En desarrollo | Gate 2 — Defect Log         | 10_GATE2_RISKDIAG_PILOT/06_Sheet_de_Defectos.md   |
 | DOC-062        | 🟡 En desarrollo | Gate 2 — Verdict Template   | 10_GATE2_RISKDIAG_PILOT/07_Plantilla_Veredicto_ZEUS.md |
+| DOC-063        | 🟡 En desarrollo | Gate 2 — Retrospective Pre-Pilot Synthesis | 10_GATE2_RISKDIAG_PILOT/08_Sintesis_Prepiloto_Retrospectivo.md |

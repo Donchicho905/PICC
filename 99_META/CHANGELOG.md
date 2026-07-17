@@ -242,5 +242,39 @@ Producir los 7 artefactos documentales que un humano de PICC necesita para ejecu
 - Ejecución del piloto (3-5 casos reales): **pendiente**, requiere acción humana de Dirección/Comercial fuera de este repositorio.
 - Gate 3 (Evidence of measurable value): sigue bloqueado hasta que exista un veredicto real usando DOC-062.
 
+## 2026-07-16 - Pre-piloto retrospectivo RiskDiag V1 (evidencia preparatoria, no cierre de Gate 2)
+
+### Objetivo
+Validar mecánicamente el Banco de Preguntas (DOC-057) y las Reglas de Clasificación (DOC-058) contra proyectos reales ya ejecutados de PICC, reconstruyendo retrospectivamente 4 casos sin sesión en vivo con cliente, antes de que un humano de PICC gaste tiempo de un cliente real en el piloto exigido por DOC-062.
+
+### Entregables
+
+**Nuevos documentos:**
+- `10_GATE2_RISKDIAG_PILOT/casos/caso_chevrolet_pedregal.md`: caso reconstruido con datos técnicos reales de `proyectos/CHEVROLET-2025-001/` (memoria de cálculo pluvial Rev 4.0, presupuesto por fases, catálogo de fotos de visita técnica). Proyecto no listado en el currículum comercial oficial, pero con la mayor densidad de evidencia real de riesgo disponible en el repositorio de PICC — desviación documentada explícitamente.
+- `10_GATE2_RISKDIAG_PILOT/casos/caso_centro_datos_ixtapaluca.md`: caso reconstruido exclusivamente con `contenido_cv.txt`.
+- `10_GATE2_RISKDIAG_PILOT/casos/caso_data_nation_queretaro.md`: caso reconstruido exclusivamente con `contenido_cv.txt`.
+- `10_GATE2_RISKDIAG_PILOT/casos/caso_satmex_centro_datos.md`: caso reconstruido exclusivamente con `contenido_cv.txt`.
+- DOC-063 — `10_GATE2_RISKDIAG_PILOT/08_Sintesis_Prepiloto_Retrospectivo.md`: síntesis de los 4 casos, qué se validó del método, qué falló, y recomendación explícita de que este ejercicio no sustituye el piloto en vivo de DOC-062.
+
+**Documentos actualizados:**
+- `99_META/ARTIFACT_REGISTRY.md`: registrado DOC-063.
+- `10_GATE2_RISKDIAG_PILOT/06_Sheet_de_Defectos.md`: agregados DEF-03 (discrepancia de cifras internas en el caso Chevrolet), DEF-04 (completitud del Banco cae a 12.5%-21% cuando la única fuente es el CV comercial, en los 3 casos de Data Center) y DEF-05 (Chevrolet Pedregal no está en el CV oficial; fuente real usada fuera de la ruta asumida por el encargo original).
+
+### Hallazgo principal
+El método (Banco de Preguntas + Reglas de Clasificación) funcionó de forma consistente en los 4 casos y no mostró defectos de diseño. El factor limitante fue la fuente de datos, no el método: con evidencia real rica (Chevrolet Pedregal) el método habría anticipado el riesgo de deterioro de techumbre que de hecho ya se había materializado (filtración visible en el taller); con evidencia limitada a un CV comercial (los otros 3 casos), la completitud cayó muy por debajo del umbral de aceptación de DOC-062 (≥70%), confirmando que ningún nivel de sofisticación del Banco de Preguntas sustituye una sesión real con quien vivió el proyecto.
+
+### Qué NO se hizo (restricciones respetadas)
+- No se presenta este pre-piloto como cierre de Gate 2 ni como los 3-5 casos reales exigidos por DOC-062 — ningún dato de cliente real fue capturado en sesión en vivo.
+- No se inventó ningún dato, cifra o resultado no presente en las fuentes; donde faltó un dato real se marcó literalmente `[DATO NO DISPONIBLE EN FUENTE]`.
+- No se modificaron DOC-056 a DOC-062 en su contenido normativo (solo se agregaron entradas nuevas a DOC-061, sin borrar las existentes).
+- No se tocó ninguna arquitectura congelada ni se creó integración alguna con OLYMPUS/ZEUS/DAVINCI/BrickEye.
+- No se modificó ningún archivo fuera de `10_GATE2_RISKDIAG_PILOT/`, `99_META/ARTIFACT_REGISTRY.md`, `99_META/CHANGELOG.md` y `99_META/DECISION_HISTORY.md`.
+
+### Estado de Gate 2 al cierre de esta iteración
+- Preparación documental: sigue **completa** (7/7 artefactos, sin cambios normativos).
+- Evidencia preparatoria del método: **generada** (4 casos retrospectivos + síntesis DOC-063).
+- Ejecución del piloto real (3-5 casos con clientes reales, en vivo): **sigue pendiente**, sin cambio de estado — requiere acción humana de Dirección/Comercial fuera de este repositorio.
+- Gate 3 (Evidence of measurable value): sigue bloqueado; este pre-piloto no aporta evidencia de valor comercial, solo evidencia de que el método no tiene defectos estructurales conocidos.
+
 
 

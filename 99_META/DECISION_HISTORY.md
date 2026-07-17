@@ -324,3 +324,30 @@ Criterio de reversión / alternancia:
 Próximo paso autorizador:
 - Un humano de PICC (Dirección o Comercial) ejecuta el Protocolo (DOC-056) sobre 3-5 proyectos reales. Ningún agente de IA ejecuta el piloto ni genera datos de clientes.
 
+## D-0022 (2026-07-16)
+Decision:
+- ZEUS autoriza y registra la ejecución de un `Pre-piloto Retrospectivo RiskDiag V1` con alcance documental estricto: reconstrucción de 4 casos usando proyectos reales ya documentados del repositorio operativo de PICC, sin sesión en vivo con ningún cliente, como evidencia preparatoria antes del piloto real exigido por D-0021 y DOC-062.
+Razon:
+- Antes de que Dirección/Comercial gaste tiempo de clientes reales ejecutando el Protocolo (DOC-056), es posible y de bajo costo probar mecánicamente si el Banco de Preguntas (DOC-057) y las Reglas de Clasificación (DOC-058) tienen defectos de diseño usando datos reales ya existentes de proyectos ejecutados o en curso de PICC.
+Documentos creados:
+- 10_GATE2_RISKDIAG_PILOT/casos/caso_chevrolet_pedregal.md
+- 10_GATE2_RISKDIAG_PILOT/casos/caso_centro_datos_ixtapaluca.md
+- 10_GATE2_RISKDIAG_PILOT/casos/caso_data_nation_queretaro.md
+- 10_GATE2_RISKDIAG_PILOT/casos/caso_satmex_centro_datos.md
+- 10_GATE2_RISKDIAG_PILOT/08_Sintesis_Prepiloto_Retrospectivo.md (DOC-063)
+Documentos impactados:
+- 10_GATE2_RISKDIAG_PILOT/06_Sheet_de_Defectos.md (DOC-061): agregados DEF-03, DEF-04, DEF-05, sin borrar entradas existentes.
+- 99_META/ARTIFACT_REGISTRY.md (registrado DOC-063).
+- 99_META/CHANGELOG.md (este registro).
+Autoridades:
+- ZEUS: ejecutó y autorizó el alcance documental de este pre-piloto (cumplido, este sprint).
+- PICC / Dirección + Comercial: siguen siendo los únicos autorizados a ejecutar el piloto real en vivo de D-0021 (pendiente, sin cambio de estado).
+Hallazgo principal:
+- El método no mostró defectos de diseño en los 4 casos. El factor limitante fue la fuente de datos: con evidencia real rica (Chevrolet Pedregal, proyecto no listado en el currículum comercial oficial pero con memoria de cálculo, presupuesto y catálogo fotográfico reales) el método habría anticipado el riesgo de deterioro de techumbre ya materializado (filtración visible en taller). Con evidencia limitada al currículum comercial (Centro de Datos Ixtapaluca, Data Nation Querétaro, Satmex) la completitud del Banco cayó a 12.5%-21%, muy por debajo del umbral de aceptación de DOC-062 (≥70%).
+Riesgos si se confunde este pre-piloto con el piloto real:
+- Ninguna de las 8 métricas de percepción/intención del cliente (DOC-060, métricas 3, 4, 6, 7, 8, 9, 11) pudo capturarse, porque no hubo cliente real respondiendo. Presentar este ejercicio como evidencia de cierre de Gate 2 violaría directamente los criterios de aceptación de DOC-062.
+Criterio de reversión / alternancia:
+- Este sprint no reabre la Decisión Diferida (D-0020) ni el estado "pendiente" del piloto real autorizado en D-0021. No autoriza, por sí mismo, ningún avance hacia Gate 3.
+Próximo paso autorizador:
+- Sin cambio respecto a D-0021: un humano de PICC (Dirección o Comercial) ejecuta el Protocolo (DOC-056) sobre 3-5 proyectos reales en sesión en vivo. Este pre-piloto reduce el riesgo de que el método falle durante esa sesión, no reemplaza la sesión.
+

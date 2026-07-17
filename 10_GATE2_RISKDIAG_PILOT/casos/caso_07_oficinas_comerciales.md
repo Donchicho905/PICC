@@ -1,34 +1,34 @@
-# Caso Piloto — Acondicionamiento de Oficinas Palmas 936
+# Caso Piloto — Caso-07
 
 **MODALIDAD: Pre-piloto retrospectivo, Ronda 2 (proyecto real en etapa de análisis, reconstruido desde el expediente operativo — NO es sesión en vivo con cliente).**
 
 ## Corrección de encuadre — léase antes que el resto del documento
 
-El encargo que originó esta reconstrucción identificó `PALMAS-2026-001` como candidato para la categoría **"casa habitación"**, agrupándolo junto con `Presupuesto_Casa_Las_Palmas` (el mismo proyecto, indexado con otro nombre de carpeta — ver más abajo) como posible expediente residencial. **Esto es incorrecto y se corrige aquí explícitamente, con evidencia directa de la fuente:**
+El encargo que originó esta reconstrucción identificó `CASO-07-PROY` como candidato para la categoría **"casa habitación"**, agrupándolo junto con `[CARPETA-INDICE-CASO-07]` (el mismo proyecto, indexado con otro nombre de carpeta — ver más abajo) como posible expediente residencial. **Esto es incorrecto y se corrige aquí explícitamente, con evidencia directa de la fuente:**
 
-- `RESUMEN_PROYECTO.md` (línea 1, título): *"RESUMEN PROYECTO PALMAS 936"*, con nombre de proyecto *"Acondicionamiento Oficinas PALMAS 936"* y tipo *"Remodelación - Oficinas Comerciales DE LUJO"*.
+- `RESUMEN_PROYECTO.md` (línea 1, título): *"RESUMEN PROYECTO CASO-07"*, con nombre de proyecto *"Caso-07 (Acondicionamiento Oficinas)"* y tipo *"Remodelación - Oficinas Comerciales DE LUJO"*.
 - `PROYECTO_INFO.json` (`proyecto.tipo`): *"COMERCIAL - OFICINAS"*.
 - El catálogo de espacios (`CATALOGO_ESPACIOS.md`) enumera exclusivamente programas de oficina: "Oficina de Gerente", "Sala de Trabajo A/Oficina 1", "Sala de Juntas", "Recepción", "Área Operativa" (con estaciones de trabajo), "SITE (Servidor)", "Impresión", "Archivo Móvil" — cero espacios de vivienda (sin recámaras, sin cocina residencial, sin sala de estar familiar).
 
-Este es un hallazgo relevante para la propia disciplina de captura de PICC/ZEUS: el proyecto fue etiquetado como candidato residencial en el encargo original probablemente por el nombre coloquial "Casa Las Palmas" usado en la carpeta índice `Presupuesto_Casa_Las_Palmas/HISTORIAL.md` (que apunta a los mismos archivos físicos que `PALMAS-2026-001/`, confirmado por fecha y tamaño de archivo idénticos en ambos índices) — pero el contenido real de esos archivos describe, sin ambigüedad, un fit-out de oficinas comerciales de lujo, no una casa. Se documenta esta discrepancia en la Sección 6 de `08_Sintesis_Prepiloto_Retrospectivo.md` y en el Sheet de Defectos (DOC-061).
+Este es un hallazgo relevante para la propia disciplina de captura de PICC/ZEUS: el proyecto fue etiquetado como candidato residencial en el encargo original probablemente por el nombre coloquial "[nombre coloquial de Caso-07]" usado en la carpeta índice `[CARPETA-INDICE-CASO-07]/HISTORIAL.md` (que apunta a los mismos archivos físicos que `CASO-07-PROY/`, confirmado por fecha y tamaño de archivo idénticos en ambos índices) — pero el contenido real de esos archivos describe, sin ambigüedad, un fit-out de oficinas comerciales de lujo, no una casa. Se documenta esta discrepancia en la Sección 6 de `08_Sintesis_Prepiloto_Retrospectivo.md` y en el Sheet de Defectos (DOC-061).
 
-**Consecuencia práctica:** este documento reclasifica el caso a la categoría **oficinas**, que el encargo original asumía sin expediente disponible más allá de párrafos de currículum (Kuehne+Nagel WTC, Pabellón Bosques, Rubén Darío, Oficinas Lago Iseo — ver Sección 6 de la síntesis). Esto **resuelve** la categoría de oficinas con un expediente real, y **deja abierta y sin resolver** la categoría de casa habitación (ver `08_Sintesis_Prepiloto_Retrospectivo.md`, Sección 8, para el detalle de por qué `OREA-2026-001` / `Remodelacion_Casa_Familia_Orea` no alcanza el umbral de calidad).
+**Consecuencia práctica:** este documento reclasifica el caso a la categoría **oficinas**, que el encargo original asumía sin expediente disponible más allá de párrafos de currículum ([clientes de oficinas del currículum PICC, sin expediente dedicado] — ver Sección 6 de la síntesis). Esto **resuelve** la categoría de oficinas con un expediente real, y **deja abierta y sin resolver** la categoría de casa habitación (ver `08_Sintesis_Prepiloto_Retrospectivo.md`, Sección 8, para el detalle de por qué `[PROY-CANDIDATO-CASA]` / `[CARPETA-CANDIDATO-CASA-HABITACION]` no alcanza el umbral de calidad).
 
 ## Fuentes de datos usadas (única fuente de verdad para este caso)
 
-- `C:\Development\DataManager\proyectos\PALMAS-2026-001\RESUMEN_PROYECTO.md`
-- `C:\Development\DataManager\proyectos\PALMAS-2026-001\PROYECTO_INFO.json`
-- `C:\Development\DataManager\proyectos\PALMAS-2026-001\CATALOGO_ESPACIOS.md`
-- `C:\Development\DataManager\proyectos\PALMAS-2026-001\ANALISIS_SOBREPRECIOS_R17.md`
-- Metadatos de `C:\Development\DataManager\proyectos\Presupuesto_Casa_Las_Palmas\HISTORIAL.md` (índice ERP, confirma que es el mismo proyecto, no uno adicional)
+- `C:\Development\DataManager\proyectos\CASO-07-PROY\RESUMEN_PROYECTO.md`
+- `C:\Development\DataManager\proyectos\CASO-07-PROY\PROYECTO_INFO.json`
+- `C:\Development\DataManager\proyectos\CASO-07-PROY\CATALOGO_ESPACIOS.md`
+- `C:\Development\DataManager\proyectos\CASO-07-PROY\ANALISIS_SOBREPRECIOS_R17.md`
+- Metadatos de `C:\Development\DataManager\proyectos\[CARPETA-INDICE-CASO-07]\HISTORIAL.md` (índice ERP, confirma que es el mismo proyecto, no uno adicional)
 
-No se leyeron en este ejercicio (fuera del alcance de fuentes de texto priorizadas, y de tamaño/formato que exceden lo razonable para esta reconstrucción): `PRESUPUESTO_NEODATA.md` (49.2 KB, presupuesto detallado completo), los 12 archivos `COTIZACION_VYD_PALMAS*.xlsx` (versiones v2 a v12, formato Excel), `CATALOGO_INSTALACIONES.md`, `CATALOGO_MUROS_ACABADOS.md`, `CATALOGO_MOBILIARIO.md`, `PROYECTO_PCI.md`, `PROYECTO_CABLEADO_ESTRUCTURADO.md`, ni los entregables PDF/dashboard en `entregables/`. Su existencia se registra como evidencia adicional disponible pero no consumida, no como afirmación de su contenido.
+No se leyeron en este ejercicio (fuera del alcance de fuentes de texto priorizadas, y de tamaño/formato que exceden lo razonable para esta reconstrucción): `PRESUPUESTO_NEODATA.md` (49.2 KB, presupuesto detallado completo), los 12 archivos `COTIZACION_VYD_CASO-07*.xlsx` (versiones v2 a v12, formato Excel), `CATALOGO_INSTALACIONES.md`, `CATALOGO_MUROS_ACABADOS.md`, `CATALOGO_MOBILIARIO.md`, `PROYECTO_PCI.md`, `PROYECTO_CABLEADO_ESTRUCTURADO.md`, ni los entregables PDF/dashboard en `entregables/`. Su existencia se registra como evidencia adicional disponible pero no consumida, no como afirmación de su contenido.
 
 ## 1. Encabezado del caso
 
 | Campo | Valor |
 | --- | --- |
-| Nombre del proyecto | Acondicionamiento Oficinas Palmas 936 (PALMAS-2026-001) |
+| Nombre del proyecto | Caso-07 (Acondicionamiento de oficinas comerciales) |
 | Fecha del "diagnóstico" reconstruido | Reconstrucción hecha 2026-07-16, sobre datos capturados 27-Ene-2026 (documento inicial) y 18-Mar-2026 (análisis de sobreprecios, DEDALO) |
 | Facilitador | No aplica — no hubo sesión en vivo |
 | ICP hipotético (referencia interna) | Ninguno de H01 (Data Center) o H02 (Industrial) aplica con precisión — es un fit-out comercial de oficinas de lujo. Se trata como ICP genérico "Todos" para efectos de aplicabilidad del Banco de Preguntas |
@@ -36,7 +36,7 @@ No se leyeron en este ejercicio (fuera del alcance de fuentes de texto priorizad
 
 ## 2. Resumen ejecutivo
 
-El proyecto es el acondicionamiento de ~145-200 m² (la propia fuente no reconcilia esta discrepancia — ver Sección 4) de oficinas comerciales de lujo en Palmas 936, CDMX, con especificación premium documentada (porcelanato rectificado, cristal templado, CCTV y control de acceso Hikvision, HVAC VRF). El expediente muestra un patrón distinto a los otros dos casos de esta ronda: **no hay evidencia de riesgo técnico de obra** (nunca se llegó a ejecutar), sino evidencia de **gobernanza de costos interna de PICC**: un análisis de sobreprecio generado por DEDALO (18-Mar-2026) identificó que la revisión de presupuesto R17 ($5,771,640) podía reducirse ~32% ($1,530,731 de ahorro potencial) mediante renegociación de proveedores, principalmente en mobiliario MillerKnoll (-59%, de $1,344,089 a $550,000). El propio análisis registra que el proyecto quedó **congelado por decisión del cliente/Pablo**: *"Estado: GUARDADO — Pablo dijo 'PALMAS LUEGO LA ANALIZAMOS'"*. Esto convierte al caso en un ejemplo útil y distinto: muestra cómo el Banco de Preguntas se comporta ante un proyecto que nunca llegó a la etapa de decisión de compra, con abundante evidencia técnica pero sin ninguna evidencia de intención o urgencia del comprador.
+El proyecto es el acondicionamiento de ~145-200 m² (la propia fuente no reconcilia esta discrepancia — ver Sección 4) de oficinas comerciales de lujo en Caso-07, CDMX, con especificación premium documentada (porcelanato rectificado, cristal templado, CCTV y control de acceso Hikvision, HVAC VRF). El expediente muestra un patrón distinto a los otros dos casos de esta ronda: **no hay evidencia de riesgo técnico de obra** (nunca se llegó a ejecutar), sino evidencia de **gobernanza de costos interna de PICC**: un análisis de sobreprecio generado por DEDALO (18-Mar-2026) identificó que la revisión de presupuesto R17 ($5,771,640) podía reducirse ~32% ($1,530,731 de ahorro potencial) mediante renegociación de proveedores, principalmente en mobiliario MillerKnoll (-59%, de $1,344,089 a $550,000). El propio análisis registra que el proyecto quedó **congelado por decisión del cliente/Pablo**: *"Estado: GUARDADO — Pablo dijo 'CASO-07 LUEGO LA ANALIZAMOS'"*. Esto convierte al caso en un ejemplo útil y distinto: muestra cómo el Banco de Preguntas se comporta ante un proyecto que nunca llegó a la etapa de decisión de compra, con abundante evidencia técnica pero sin ninguna evidencia de intención o urgencia del comprador.
 
 ## 3. Mapa de riesgos identificados
 
@@ -46,7 +46,7 @@ El proyecto es el acondicionamiento de ~145-200 m² (la propia fuente no reconci
 | Discrepancia de área total del proyecto: `RESUMEN_PROYECTO.md` declara "~200 m² (pendiente verificar)" mientras que `PROYECTO_INFO.json` declara "145 m²" y `CATALOGO_ESPACIOS.md` calcula 147.31 m² por suma de espacios — tres cifras distintas para la misma superficie | B (Alcance y definición técnica) | S2 — Riesgo medio (una base de área inconsistente afecta directamente la precisión del presupuesto derivado) | E2 — Evidencia parcial trazable (los tres documentos existen y son consultables, la inconsistencia es verificable por lectura directa) | 3 (Qué alcance necesito), 4 | No evaluable — el propio expediente no resuelve cuál cifra es la vigente |
 | Capacidad de carga de losa no verificada, condicionada a si el nivel es mezanine — marcado explícitamente "ALTA" prioridad de verificación en el propio resumen, especialmente relevante para el Archivo Móvil | D (Riesgo técnico y de ejecución) | S3 — Riesgo alto (si la losa no soporta la carga de archivo móvil, cambia el diseño estructural del entrepiso) | E1 — Señal aislada (mencionado como pendiente por el propio equipo de PICC, sin ninguna verificación estructural documentada) | 5 (Qué riesgos existen) | No evaluable |
 | Ausencia total de nombre de cliente, contacto o interlocutor en cualquiera de las fuentes consultadas | A (Contexto y urgencia) | S1 — Riesgo bajo para el proyecto técnico, pero crítico para la trazabilidad comercial | E0 — No evidencia (ningún documento de los consultados nombra al cliente) | 1 (Debo actuar ahora), 12 (Defender la contratación ante otros) | No evaluable |
-| Proyecto congelado sin fecha de reactivación ("GUARDADO — Pablo dijo 'PALMAS LUEGO LA ANALIZAMOS'") | A, G (Siguiente paso) | S2 — Riesgo medio (representa horas de ingeniería y análisis ya invertidas sin conversión a obra, un patrón de riesgo comercial más que técnico) | E3 — Evidencia operativa (la propia nota de estado en `ANALISIS_SOBREPRECIOS_R17.md` es una cita textual, no una inferencia) | 14 (Qué siguiente paso debo tomar) | Soportada (el estado "no evaluable qué sigue" está, en sí mismo, documentado con certeza) |
+| Proyecto congelado sin fecha de reactivación ("GUARDADO — Pablo dijo 'CASO-07 LUEGO LA ANALIZAMOS'") | A, G (Siguiente paso) | S2 — Riesgo medio (representa horas de ingeniería y análisis ya invertidas sin conversión a obra, un patrón de riesgo comercial más que técnico) | E3 — Evidencia operativa (la propia nota de estado en `ANALISIS_SOBREPRECIOS_R17.md` es una cita textual, no una inferencia) | 14 (Qué siguiente paso debo tomar) | Soportada (el estado "no evaluable qué sigue" está, en sí mismo, documentado con certeza) |
 
 ## 4. Brechas de información identificadas
 
@@ -56,7 +56,7 @@ El proyecto es el acondicionamiento de ~145-200 m² (la propia fuente no reconci
 | Verificación de capacidad de carga de losa (si es mezanine) | Ausencia de dato | Estudio estructural en sitio | PICC Ingeniería / estructurista |
 | Identidad del cliente y del interlocutor de decisión | Información no compartida / no definida en fuente | No se pudo inferir de ninguno de los documentos consultados en este ejercicio | Dirección PICC (fuera del alcance de este pre-piloto) |
 | Estado actual del proyecto (¿sigue "guardado" a la fecha de esta reconstrucción, 2026-07-16, cuatro meses después de la nota del 18-Mar?) | Ausencia de verificación | Consultar a Pablo directamente sobre el estado vigente | ZEUS / Dirección PICC |
-| Contenido de `PRESUPUESTO_NEODATA.md` y las 12 versiones de `COTIZACION_VYD_PALMAS*.xlsx` — no leídos en este ejercicio, podrían contener información adicional relevante para completar más preguntas del Banco | Ausencia de verificación (por alcance de este ejercicio, no por ausencia de la fuente) | Revisión dedicada de esos archivos en una iteración futura si el proyecto se reactiva | Quien retome el caso |
+| Contenido de `PRESUPUESTO_NEODATA.md` y las 12 versiones de `COTIZACION_VYD_CASO-07*.xlsx` — no leídos en este ejercicio, podrían contener información adicional relevante para completar más preguntas del Banco | Ausencia de verificación (por alcance de este ejercicio, no por ausencia de la fuente) | Revisión dedicada de esos archivos en una iteración futura si el proyecto se reactiva | Quien retome el caso |
 
 ## 5. Recomendaciones priorizadas
 

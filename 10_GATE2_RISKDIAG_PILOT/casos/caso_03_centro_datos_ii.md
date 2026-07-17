@@ -1,10 +1,10 @@
-# Caso Piloto — Data Nation, Centro de Datos Querétaro
+# Caso Piloto — Caso-03
 
 **MODALIDAD: Pre-piloto retrospectivo (proyecto ya ejecutado, reconstruido desde currículum PICC — NO es sesión en vivo con cliente).**
 
 ## Fuentes de datos usadas (única fuente de verdad para este caso)
 
-- `C:\Development\DataManager\proyectos\CV_PICC_GENERATOR\assets\data\contenido_cv.txt`, sección "DATA NATION - CENTRO DE DATOS QUERÉTARO", líneas 158-170.
+- `C:\Development\DataManager\proyectos\CV_PICC_GENERATOR\assets\data\contenido_cv.txt`, sección "CASO-03", líneas 158-170.
 
 No se encontró ningún documento adicional para este proyecto en el repositorio operativo de PICC más allá de la entrada del currículum.
 
@@ -12,7 +12,7 @@ No se encontró ningún documento adicional para este proyecto en el repositorio
 
 | Campo | Valor |
 | --- | --- |
-| Nombre del proyecto | Data Nation — Centro de Datos Querétaro |
+| Nombre del proyecto | Caso-03 |
 | Fecha del "diagnóstico" reconstruido | Reconstrucción hecha 2026-07-16, sobre proyecto ejecutado 2022-2023 |
 | Facilitador | No aplica — reconstrucción documental por agente IA bajo autorización ZEUS |
 | ICP hipotético (referencia interna) | ICP-H01 (Infraestructura crítica / Data Center) — el CV lo describe explícitamente como "Centro de Datos Tier II" |
@@ -20,14 +20,14 @@ No se encontró ningún documento adicional para este proyecto en el repositorio
 
 ## 2. Resumen ejecutivo
 
-El CV describe un proyecto ejecutivo (no de construcción física completa, según la fuente — el campo dice "Proyecto ejecutivo: PICC" sin mencionar "Construcción: PICC" como en otros casos del CV) de un Centro de Datos Tier II, con diseño arquitectónico, ingeniería eléctrica de media y baja tensión, sistemas CRAC y memorias de cálculo. Al igual que el caso Ixtapaluca, el nivel de detalle de riesgo, costo y resultado es prácticamente nulo. Un hallazgo relevante de este ejercicio: la ambigüedad sobre si PICC ejecutó la construcción o solo el proyecto ejecutivo es en sí misma información importante que el Banco de Preguntas (Bloque B, alcance) habría capturado en segundos con una pregunta directa al cliente.
+El CV describe un proyecto ejecutivo (no de construcción física completa, según la fuente — el campo dice "Proyecto ejecutivo: PICC" sin mencionar "Construcción: PICC" como en otros casos del CV) de un Centro de Datos Tier II, con diseño arquitectónico, ingeniería eléctrica de media y baja tensión, sistemas CRAC y memorias de cálculo. Al igual que el caso Caso-02, el nivel de detalle de riesgo, costo y resultado es prácticamente nulo. Un hallazgo relevante de este ejercicio: la ambigüedad sobre si PICC ejecutó la construcción o solo el proyecto ejecutivo es en sí misma información importante que el Banco de Preguntas (Bloque B, alcance) habría capturado en segundos con una pregunta directa al cliente.
 
 ## 3. Mapa de riesgos identificados
 
 | Riesgo | Bloque (DOC-057) | Severidad (DOC-058) | Confianza (DOC-058) | Decisión del comprador afectada (DOC-012) | Estado de la decisión |
 | --- | --- | --- | --- | --- | --- |
 | Ambigüedad sobre si el alcance de PICC incluyó construcción física o solo proyecto ejecutivo | B (alcance) | S1 — Riesgo bajo para el proyecto en sí, pero S2 para la claridad comercial del caso (afecta si PICC puede reclamarlo como "obra construida" en su portafolio) | E1 — Señal aislada (inferencia por ausencia de la palabra "Construcción" en el campo de responsables, comparado con el patrón de otros proyectos del mismo CV) | 3 (alcance), 7 (PICC entiende un proyecto como el mío) | No evaluable — requiere confirmación directa |
-| Sin información de si hubo certificación Tier II formal por un tercero (Uptime Institute u otro) | E (regulatorio), F (confianza institucional) | S2 — Riesgo medio, inferido: un Data Center "Tier II" sin certificación formal expone al cliente a que la clasificación no sea defendible ante terceros | E0 — No evidencia (el CV usa el término "Tier II" sin mencionar certificación de organismo alguno, a diferencia del caso Satmex que sí menciona "clasificación ICREA III (Uptime Institute)") | 5, 9 | No evaluable |
+| Sin información de si hubo certificación Tier II formal por un tercero (Uptime Institute u otro) | E (regulatorio), F (confianza institucional) | S2 — Riesgo medio, inferido: un Data Center "Tier II" sin certificación formal expone al cliente a que la clasificación no sea defendible ante terceros | E0 — No evidencia (el CV usa el término "Tier II" sin mencionar certificación de organismo alguno, a diferencia del caso Caso-04 que sí menciona "clasificación ICREA III (Uptime Institute)") | 5, 9 | No evaluable |
 | Sin ninguna cifra de presupuesto, plazo o incidente | D (riesgo técnico) | No evaluable | E0 | 4, 5 | No evaluable |
 
 ## 4. Brechas de información identificadas
@@ -40,13 +40,13 @@ El CV describe un proyecto ejecutivo (no de construcción física completa, seg�
 
 ## 5. Recomendaciones priorizadas
 
-1. Aclarar internamente y por escrito si "Data Nation" fue un proyecto de solo ingeniería/diseño o de construcción completa — esto afecta cómo se puede presentar el caso en futuras propuestas comerciales (evitar sobre-reclamar alcance, ver principio 3 de AI_EXECUTION_CONTRACT: "No inventar datos, claims o evidencia").
+1. Aclarar internamente y por escrito si "Caso-03" fue un proyecto de solo ingeniería/diseño o de construcción completa — esto afecta cómo se puede presentar el caso en futuras propuestas comerciales (evitar sobre-reclamar alcance, ver principio 3 de AI_EXECUTION_CONTRACT: "No inventar datos, claims o evidencia").
 2. Si el proyecto se usa como evidencia de capacidad Tier II, verificar si existe soporte de certificación; si no existe, ajustar el lenguaje comercial a "diseñado bajo criterios Tier II" en vez de "Centro de Datos Tier II" para no implicar una certificación que no está confirmada.
-3. Como en el caso Ixtapaluca, este proyecto es mejor candidato para un piloto en vivo real que para evidencia retrospectiva, dado lo limitado de la fuente.
+3. Como en el caso Caso-02, este proyecto es mejor candidato para un piloto en vivo real que para evidencia retrospectiva, dado lo limitado de la fuente.
 
 ## 6. Siguiente paso propuesto
 
-- Siguiente paso concreto: identificar al responsable de proyecto de Data Nation Querétaro y aplicar el Banco de Preguntas completo en sesión real.
+- Siguiente paso concreto: identificar al responsable de proyecto de Caso-03 y aplicar el Banco de Preguntas completo en sesión real.
 - Owner del siguiente paso: Dirección PICC.
 - Plazo sugerido: `[DATO NO DISPONIBLE EN FUENTE]`.
 

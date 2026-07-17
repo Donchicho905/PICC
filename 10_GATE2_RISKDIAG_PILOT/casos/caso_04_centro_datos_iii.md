@@ -1,10 +1,10 @@
-# Caso Piloto — Centro de Datos de Satélites Mexicanos (Satmex)
+# Caso Piloto — Caso-04
 
 **MODALIDAD: Pre-piloto retrospectivo (proyecto ya ejecutado, reconstruido desde currículum PICC — NO es sesión en vivo con cliente).**
 
 ## Fuentes de datos usadas (única fuente de verdad para este caso)
 
-- `C:\Development\DataManager\proyectos\CV_PICC_GENERATOR\assets\data\contenido_cv.txt`, sección "CENTRO DE DATOS DE SATÉLITES MEXICANOS", líneas 140-156.
+- `C:\Development\DataManager\proyectos\CV_PICC_GENERATOR\assets\data\contenido_cv.txt`, sección "CASO-04", líneas 140-156.
 
 No se encontró ningún documento adicional para este proyecto en el repositorio operativo de PICC más allá de la entrada del currículum.
 
@@ -12,7 +12,7 @@ No se encontró ningún documento adicional para este proyecto en el repositorio
 
 | Campo | Valor |
 | --- | --- |
-| Nombre del proyecto | Centro de Datos de Satélites Mexicanos (Satmex) |
+| Nombre del proyecto | Caso-04 |
 | Fecha del "diagnóstico" reconstruido | Reconstrucción hecha 2026-07-16, sobre proyecto ejecutado 2022-2023 |
 | Facilitador | No aplica — reconstrucción documental por agente IA bajo autorización ZEUS |
 | ICP hipotético (referencia interna) | ICP-H01 (Infraestructura crítica / Data Center) — es el caso del currículum con mayor especificidad técnica de clasificación formal (ICREA III, Uptime Institute) |
@@ -20,7 +20,7 @@ No se encontró ningún documento adicional para este proyecto en el repositorio
 
 ## 2. Resumen ejecutivo
 
-Este es el caso del currículum oficial con mayor densidad de especificación técnica: clasificación ICREA III explícitamente referenciada contra el estándar de Uptime Institute, redundancia N+1 en sistemas críticos, climatización de precisión con respaldo, detección/extinción de incendios, control de acceso biométrico y CCTV, piso falso técnico. Aun así, igual que los otros dos casos de Data Center del CV, no hay ninguna cifra de presupuesto, plazo, incidente o testimonio del cliente. La reconstrucción retrospectiva logra clasificar mejor el **alcance técnico** que los casos Ixtapaluca/Data Nation, pero sigue sin poder evaluar **riesgo real vivido**.
+Este es el caso del currículum oficial con mayor densidad de especificación técnica: clasificación ICREA III explícitamente referenciada contra el estándar de Uptime Institute, redundancia N+1 en sistemas críticos, climatización de precisión con respaldo, detección/extinción de incendios, control de acceso biométrico y CCTV, piso falso técnico. Aun así, igual que los otros dos casos de Data Center del CV, no hay ninguna cifra de presupuesto, plazo, incidente o testimonio del cliente. La reconstrucción retrospectiva logra clasificar mejor el **alcance técnico** que los casos Caso-02/Caso-03, pero sigue sin poder evaluar **riesgo real vivido**.
 
 ## 3. Mapa de riesgos identificados
 
@@ -29,7 +29,7 @@ Este es el caso del currículum oficial con mayor densidad de especificación t�
 | Sin evidencia de si la clasificación ICREA III fue certificada por auditor externo o es una declaración de PICC sobre el diseño entregado | E (regulatorio), F (confianza institucional) | S2 — Riesgo medio, inferido: una clasificación ICREA no certificada por tercero es menos defendible ante stakeholders del cliente | E1 — Señal aislada (el CV menciona la clasificación junto a "Uptime Institute" entre paréntesis, sin aclarar si Uptime certificó el proyecto o si PICC solo diseñó "bajo" ese estándar) | 5, 9, 10 | Parcialmente soportada |
 | Redundancia N+1 declarada "en todos los sistemas críticos" sin especificar cuáles sistemas se consideraron críticos | B (alcance) | S1 — Riesgo bajo (ambigüedad de alcance, no necesariamente un defecto técnico) | E0 — No evidencia (frase genérica del CV, sin lista de sistemas) | 3 | No evaluable |
 | Sin ninguna cifra de presupuesto, plazo o incidente durante la ejecución | D, C | No evaluable | E0 | 4, 5 | No evaluable |
-| Cliente (Satélites Mexicanos / Satmex) es una entidad de alto perfil técnico — no hay registro de si el proyecto generó una relación continua o fue un caso único | F (confianza institucional) | S1 — Riesgo bajo | E0 | 6, 12 (defender contratación ante otros) | No evaluable |
+| Cliente (Caso-04) es una entidad de alto perfil técnico — no hay registro de si el proyecto generó una relación continua o fue un caso único | F (confianza institucional) | S1 — Riesgo bajo | E0 | 6, 12 (defender contratación ante otros) | No evaluable |
 
 ## 4. Brechas de información identificadas
 
@@ -38,13 +38,13 @@ Este es el caso del currículum oficial con mayor densidad de especificación t�
 | Soporte documental de la certificación ICREA III (si existe un certificado formal vs. diseño "bajo" el estándar) | Ausencia de verificación | Solicitar el documento de certificación al archivo de PICC o al cliente | Dirección PICC |
 | Lista de sistemas cubiertos por la redundancia N+1 | Ausencia de definición | Documentar el alcance técnico exacto entregado | PICC Ingeniería |
 | Presupuesto, plazo, resultado, satisfacción del cliente | Ausencia de dato | No existe en ninguna fuente autorizada para este ejercicio | Dirección PICC / archivo comercial |
-| Estado de la relación comercial actual con Satmex (¿sigue siendo cliente?) | Información no compartida | Consultar con Comercial | Comercial PICC |
+| Estado de la relación comercial actual con Caso-04 (¿sigue siendo cliente?) | Información no compartida | Consultar con Comercial | Comercial PICC |
 
 ## 5. Recomendaciones priorizadas
 
 1. Este es el caso del CV con mayor potencial como Knowledge Product o caso de referencia técnica (mayor especificidad de estándares), pero antes de usarlo como claim público verificar si "ICREA III (Uptime Institute)" es una certificación real u obtenida, para no violar la regla de evidencia de AI_EXECUTION_CONTRACT (§6.3: "si una cifra no está verificada, no se presenta como hecho").
 2. Documentar la lista exacta de sistemas con redundancia N+1 para poder defender el claim ante un comprador técnico exigente (perfil ICP-H01).
-3. Confirmar si existe relación comercial vigente con Satmex — si la hay, es un candidato natural para el piloto en vivo real (no retrospectivo) de RiskDiag, dado que ya hay una relación de confianza establecida.
+3. Confirmar si existe relación comercial vigente con Caso-04 — si la hay, es un candidato natural para el piloto en vivo real (no retrospectivo) de RiskDiag, dado que ya hay una relación de confianza establecida.
 
 ## 6. Siguiente paso propuesto
 

@@ -1,10 +1,10 @@
-# Caso Piloto — Centro de Datos Ixtapaluca (CDC)
+# Caso Piloto — Caso-02
 
 **MODALIDAD: Pre-piloto retrospectivo (proyecto ya ejecutado, reconstruido desde currículum PICC — NO es sesión en vivo con cliente).**
 
 ## Fuentes de datos usadas (única fuente de verdad para este caso)
 
-- `C:\Development\DataManager\proyectos\CV_PICC_GENERATOR\assets\data\contenido_cv.txt`, sección "CENTRO DE DATOS IXTAPALUCA (CDC)", líneas 80-100.
+- `C:\Development\DataManager\proyectos\CV_PICC_GENERATOR\assets\data\contenido_cv.txt`, sección "CASO-02", líneas 80-100.
 
 No se encontró ningún documento adicional (memoria de cálculo, presupuesto, fotos, reportes) para este proyecto en el repositorio operativo de PICC más allá de la entrada del currículum. Este caso se reconstruye **exclusivamente** con lo que dice el CV — es, deliberadamente, el ejercicio de "qué tan lejos se puede llegar con la fuente mínima disponible".
 
@@ -12,7 +12,7 @@ No se encontró ningún documento adicional (memoria de cálculo, presupuesto, f
 
 | Campo | Valor |
 | --- | --- |
-| Nombre del proyecto | Centro de Datos Ixtapaluca (CDC) |
+| Nombre del proyecto | Caso-02 |
 | Fecha del "diagnóstico" reconstruido | Reconstrucción hecha 2026-07-16, sobre proyecto ejecutado 2024-2025 |
 | Facilitador | No aplica — no hubo sesión en vivo. Reconstrucción documental por agente IA bajo autorización ZEUS |
 | ICP hipotético (referencia interna) | ICP-H01 (Infraestructura crítica / Data Center) — clasificación explícita según naturaleza del proyecto (Centro de Datos, ICREA, UPS), consistente con la ficha de ICP-H01 en `03_MODELO_COMERCIAL/ICPs.md` |
@@ -48,7 +48,7 @@ El CV describe un proyecto ejecutivo y de construcción completo de un Centro de
 
 ## 6. Siguiente paso propuesto
 
-- Siguiente paso concreto: identificar internamente quién fue el responsable de proyecto de CDC Ixtapaluca y solicitarle, en una sesión real (no retrospectiva), las respuestas al Banco de Preguntas completo.
+- Siguiente paso concreto: identificar internamente quién fue el responsable de proyecto de Caso-02 y solicitarle, en una sesión real (no retrospectiva), las respuestas al Banco de Preguntas completo.
 - Owner del siguiente paso: Dirección PICC.
 - Plazo sugerido: `[DATO NO DISPONIBLE EN FUENTE]`.
 
@@ -71,7 +71,7 @@ El CV describe un proyecto ejecutivo y de construcción completo de un Centro de
 | # | Métrica | Valor en este caso | Nota de aplicabilidad |
 | --- | --- | --- | --- |
 | 1 | Tiempo de diagnóstico | NO APLICA — modalidad retrospectiva | — |
-| 2 | Completitud | 4 de 24 preguntas del Banco pudieron responderse con algún nivel de evidencia (aprox. 17%) — el resto no tiene ningún dato en la fuente disponible | Este número por sí mismo es el hallazgo más importante de este caso: con solo un CV comercial, la completitud del método cae drásticamente frente a Chevrolet Pedregal |
+| 2 | Completitud | 4 de 24 preguntas del Banco pudieron responderse con algún nivel de evidencia (aprox. 17%) — el resto no tiene ningún dato en la fuente disponible | Este número por sí mismo es el hallazgo más importante de este caso: con solo un CV comercial, la completitud del método cae drásticamente frente a Caso-01 |
 | 3 | Claridad percibida | NO APLICA | — |
 | 4 | Utilidad percibida | NO APLICA | — |
 | 5 | Gaps identificados | 5 (ver sección 4) | Conteo directo |

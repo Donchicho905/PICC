@@ -1,4 +1,4 @@
-# Caso Piloto — Chevrolet Pedregal (Sistema Pluvial y Techumbre)
+# Caso Piloto — Caso-01 (Sistema Pluvial y Techumbre)
 
 **MODALIDAD: Pre-piloto retrospectivo (proyecto ya ejecutado, reconstruido desde currículum PICC — NO es sesión en vivo con cliente).**
 
@@ -6,16 +6,16 @@ Aclaración adicional de modalidad para este caso específico: al momento de est
 
 ## Fuentes de datos usadas (única fuente de verdad para este caso)
 
-- `C:\Development\DataManager\proyectos\CHEVROLET-2025-001\proyecto.json`
-- `C:\Development\DataManager\proyectos\CHEVROLET-2025-001\CALCULO_PLUVIAL_CHEVROLET.md`
-- `C:\Development\DataManager\proyectos\CHEVROLET-2025-001\PRESUPUESTO_CHEVROLET_PLUVIAL.md`
-- `C:\Development\DataManager\proyectos\CHEVROLET-2025-001\08_FOTOS\visita2_20260302\CATALOGO_FOTOS_VISITA2.md` (descripciones textuales de 26 de 58 fotos revisadas; nunca se interpretó contenido visual no descrito en el texto del catálogo)
+- `C:\Development\DataManager\proyectos\CASO-01-PROY\proyecto.json`
+- `C:\Development\DataManager\proyectos\CASO-01-PROY\CALCULO_PLUVIAL_CASO-01.md`
+- `C:\Development\DataManager\proyectos\CASO-01-PROY\PRESUPUESTO_CASO-01_PLUVIAL.md`
+- `C:\Development\DataManager\proyectos\CASO-01-PROY\08_FOTOS\visita2_20260302\CATALOGO_FOTOS_VISITA2.md` (descripciones textuales de 26 de 58 fotos revisadas; nunca se interpretó contenido visual no descrito en el texto del catálogo)
 - `C:\Development\DataManager\proyectos\CV_PICC_GENERATOR\memoria_calculo_pluvial.txt`
 - `C:\Development\DataManager\proyectos\CV_PICC_GENERATOR\analisis_llenado_cisternas.txt`
 
-**Nota de trazabilidad importante:** este proyecto **no aparece listado en** `contenido_cv.txt` (el currículum comercial oficial de 24 proyectos de PICC). Es un proyecto real y operativo documentado en el repositorio interno de PICC (`DataManager/proyectos/CHEVROLET-2025-001/`), con datos técnicos verificables de mayor granularidad que cualquier proyecto del CV oficial. Se incluye en este pre-piloto porque el propio encargo de esta tarea lo identificó explícitamente como candidato fuerte por su evidencia real de deterioro de techumbre. Se documenta la discrepancia de fuente en vez de ocultarla (regla AI_EXECUTION_CONTRACT §15.9, "no ocultar incertidumbre").
+**Nota de trazabilidad importante:** este proyecto **no aparece listado en** `contenido_cv.txt` (el currículum comercial oficial de 24 proyectos de PICC). Es un proyecto real y operativo documentado en el repositorio interno de PICC (`DataManager/proyectos/CASO-01-PROY/`), con datos técnicos verificables de mayor granularidad que cualquier proyecto del CV oficial. Se incluye en este pre-piloto porque el propio encargo de esta tarea lo identificó explícitamente como candidato fuerte por su evidencia real de deterioro de techumbre. Se documenta la discrepancia de fuente en vez de ocultarla (regla AI_EXECUTION_CONTRACT §15.9, "no ocultar incertidumbre").
 
-**Nota adicional de trazabilidad:** `proyecto.json` registra `"elaborado_por": "BANDEJAS FODDER, SA DE CV"` para el reporte original de levantamiento (`Reporte_Levantamiento_Chevrolet_Pedregal.pdf`, no leído en este ejercicio — no se tuvo acceso a su contenido), mientras que `CALCULO_PLUVIAL_CHEVROLET.md` indica `"Elaboro: PICC Ingenieria / DEDALO-ZEUS"`. No se resuelve aquí si el levantamiento inicial lo hizo FODDER (jardín/paisajismo, otra empresa de Pablo) y el cálculo de ingeniería lo hizo PICC, o si hay una imprecisión en los metadatos. Se marca como **[DATO NO DISPONIBLE EN FUENTE]** cuál empresa facturaría el proyecto final.
+**Nota adicional de trazabilidad:** `proyecto.json` registra `"elaborado_por": "BANDEJAS FODDER, SA DE CV"` para el reporte original de levantamiento (`Reporte_Levantamiento_Caso-01.pdf`, no leído en este ejercicio — no se tuvo acceso a su contenido), mientras que `CALCULO_PLUVIAL_CASO-01.md` indica `"Elaboro: PICC Ingenieria / DEDALO-ZEUS"`. No se resuelve aquí si el levantamiento inicial lo hizo FODDER (jardín/paisajismo, otra empresa de Pablo) y el cálculo de ingeniería lo hizo PICC, o si hay una imprecisión en los metadatos. Se marca como **[DATO NO DISPONIBLE EN FUENTE]** cuál empresa facturaría el proyecto final.
 
 ---
 
@@ -23,7 +23,7 @@ Aclaración adicional de modalidad para este caso específico: al momento de est
 
 | Campo | Valor |
 | --- | --- |
-| Nombre del proyecto | Chevrolet Pedregal — Rehabilitación Sistema Pluvial y Techumbre (CHEVROLET-2025-001) |
+| Nombre del proyecto | Caso-01 — Rehabilitación Sistema Pluvial y Techumbre |
 | Fecha del "diagnóstico" reconstruido | Reconstrucción hecha 2026-07-16, sobre datos de campo capturados 2025-12-09 (inicio) y 2026-03-02 (visita técnica 2, última actualización de cálculo Rev 4.0) |
 | Facilitador | No aplica — no hubo sesión en vivo. Reconstrucción documental por agente IA bajo autorización ZEUS, no por Dirección/Comercial de PICC |
 | ICP hipotético (referencia interna) | ICP-H02 (Industrial e instalaciones críticas) — hipótesis del reconstructor; el proyecto es una agencia automotriz con taller mecánico, área de lavado y techumbre industrial. No hay clasificación ICP formal registrada en las fuentes originales del proyecto, por lo tanto esta asignación es una inferencia, no un dato capturado en sesión |
@@ -44,15 +44,15 @@ El proyecto presenta un sistema pluvial con déficit de capacidad documentado en
 | Estructura metálica oxidada en zona de cubierta nueva | D | S2 — Riesgo medio (encarece o retrasa si no se trata antes de instalar lámina nueva) | E3 — Evidencia operativa (fotografiada) | 5 | Soportada |
 | Bajada pluvial exterior sin conexión al drenaje municipal (descarga al aire a 1.5 m del piso) | D, E (regulatorio) | S2 — Riesgo medio (no cumplimiento normativo probable, no crítico de forma inmediata) | E3 — Evidencia operativa (fotografiada) | 5, 5 (regulatorio) | Parcialmente soportada — no se verificó normativa municipal aplicable exacta, `[DATO NO DISPONIBLE EN FUENTE]` |
 | Presencia de lámina de asbesto en alcance de largo plazo (retiro certificado requerido) | E (regulatorio) | S3 — Riesgo alto (manejo de residuo peligroso, costo y cumplimiento regulatorio; `$50,604.75` en manifiesto y disposición según presupuesto) | E3 — Evidencia operativa (cuantificado en presupuesto, con partida `[OK]` para el manifiesto) | 5 | Soportada |
-| 64.7% de las partidas del presupuesto son estimadas `[EST]`, no verificadas en sitio | C (presupuesto) | S2 — Riesgo medio (el presupuesto final puede variar significativamente respecto al estimado) | E3 — Evidencia operativa (cifra explícita en `PRESUPUESTO_CHEVROLET_PLUVIAL.md`: "Porcentaje estimado: 64.7%") | 4 (presupuesto) | No evaluable — el propio documento reconoce que la mayoría de partidas no están verificadas |
-| Discrepancia entre `proyecto.json` (déficit 86.4%, 13 bajadas) y `PRESUPUESTO_CHEVROLET_PLUVIAL.md` (déficit 75%, 11 bajadas) | Brecha de método interno de PICC, no del proyecto del cliente | S1 — Riesgo bajo para el cliente, pero relevante para la fiabilidad del propio proceso de PICC | E1 — Señal aislada (detectada por el reconstructor, no verificada con el equipo que generó los documentos) | No aplica — esto no es un hallazgo del proyecto del cliente, se registra también como defecto en DOC-061 | No evaluable |
+| 64.7% de las partidas del presupuesto son estimadas `[EST]`, no verificadas en sitio | C (presupuesto) | S2 — Riesgo medio (el presupuesto final puede variar significativamente respecto al estimado) | E3 — Evidencia operativa (cifra explícita en `PRESUPUESTO_CASO-01_PLUVIAL.md`: "Porcentaje estimado: 64.7%") | 4 (presupuesto) | No evaluable — el propio documento reconoce que la mayoría de partidas no están verificadas |
+| Discrepancia entre `proyecto.json` (déficit 86.4%, 13 bajadas) y `PRESUPUESTO_CASO-01_PLUVIAL.md` (déficit 75%, 11 bajadas) | Brecha de método interno de PICC, no del proyecto del cliente | S1 — Riesgo bajo para el cliente, pero relevante para la fiabilidad del propio proceso de PICC | E1 — Señal aislada (detectada por el reconstructor, no verificada con el equipo que generó los documentos) | No aplica — esto no es un hallazgo del proyecto del cliente, se registra también como defecto en DOC-061 | No evaluable |
 
 ## 4. Brechas de información identificadas
 
 | Brecha | Tipo (DOC-058) | Qué se necesita para cerrarla | Quién la puede cerrar |
 | --- | --- | --- | --- |
-| Área tributaria y gasto requerido tienen cifras distintas entre `proyecto.json` (Rev 4.0: área 767.10 m², gasto 57.40 L/s) y `memoria_calculo_pluvial.txt` (Zona 4: área 767.1 m², gasto 4.89 L/s) y `PRESUPUESTO_CHEVROLET_PLUVIAL.md` (gasto requerido 4.89 L/s, capacidad actual 1.20 L/s, déficit 75%) | Ausencia de verificación | Reconciliar cuál revisión de cálculo (Rev 2.0 a Rev 4.0 según `CALCULO_PLUVIAL_CHEVROLET.md`) es la vigente y cuál documento debe actualizarse para quedar consistente | PICC Ingeniería (autor de la memoria de cálculo) |
-| Contenido del reporte original de levantamiento (`Reporte_Levantamiento_Chevrolet_Pedregal.pdf`) | Ausencia de verificación | No se leyó el PDF en este ejercicio (fuera del alcance de fuentes de texto autorizadas para este pre-piloto) | PICC / quien tenga el archivo original |
+| Área tributaria y gasto requerido tienen cifras distintas entre `proyecto.json` (Rev 4.0: área 767.10 m², gasto 57.40 L/s) y `memoria_calculo_pluvial.txt` (Zona 4: área 767.1 m², gasto 4.89 L/s) y `PRESUPUESTO_CASO-01_PLUVIAL.md` (gasto requerido 4.89 L/s, capacidad actual 1.20 L/s, déficit 75%) | Ausencia de verificación | Reconciliar cuál revisión de cálculo (Rev 2.0 a Rev 4.0 según `CALCULO_PLUVIAL_CASO-01.md`) es la vigente y cuál documento debe actualizarse para quedar consistente | PICC Ingeniería (autor de la memoria de cálculo) |
+| Contenido del reporte original de levantamiento (`Reporte_Levantamiento_Caso-01.pdf`) | Ausencia de verificación | No se leyó el PDF en este ejercicio (fuera del alcance de fuentes de texto autorizadas para este pre-piloto) | PICC / quien tenga el archivo original |
 | Empresa responsable final de facturación/ejecución (FODDER vs. PICC) | Información no compartida / no definida en fuente | Confirmar internamente con Dirección quién factura el proyecto | Dirección PICC |
 | Normativa municipal exacta aplicable a la descarga pluvial no conectada a drenaje | Ausencia de dato | Consulta con SACMEX o normativa local de Tlalpan | PICC / asesor regulatorio |
 | 32 de 58 fotos de la visita 2 no fueron revisadas ni descritas en el catálogo | Ausencia de verificación | Revisar el resto de las fotos si se requiere evidencia adicional | Facilitador que revise el catálogo completo |

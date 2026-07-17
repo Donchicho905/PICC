@@ -13,7 +13,7 @@
   - DOC-060 (10_GATE2_RISKDIAG_PILOT/05_Hoja_de_Medicion.md)
   - DOC-061 (10_GATE2_RISKDIAG_PILOT/06_Sheet_de_Defectos.md), entradas DEF-03 a DEF-05
   - `C:\Development\DataManager\proyectos\CV_PICC_GENERATOR\assets\data\contenido_cv.txt`
-  - `C:\Development\DataManager\proyectos\CHEVROLET-2025-001\` (proyecto.json, CALCULO_PLUVIAL_CHEVROLET.md, PRESUPUESTO_CHEVROLET_PLUVIAL.md, catálogo de fotos)
+  - `C:\Development\DataManager\proyectos\CASO-01-PROY\` (proyecto.json, CALCULO_PLUVIAL_CASO-01.md, PRESUPUESTO_CASO-01_PLUVIAL.md, catálogo de fotos)
   - `C:\Development\DataManager\proyectos\CV_PICC_GENERATOR\memoria_calculo_pluvial.txt`, `analisis_llenado_cisternas.txt`
 - Salidas:
   - 4 archivos de caso reconstruidos en `10_GATE2_RISKDIAG_PILOT/casos/`
@@ -22,7 +22,7 @@
 - Dependencias:
   - Ninguna hacia adelante — este documento no es insumo obligatorio de DOC-062 (ver Sección 5)
 - Documentos consumidos:
-  - Los 4 archivos de `10_GATE2_RISKDIAG_PILOT/casos/` (caso_chevrolet_pedregal.md, caso_centro_datos_ixtapaluca.md, caso_data_nation_queretaro.md, caso_satmex_centro_datos.md)
+  - Los 4 archivos de `10_GATE2_RISKDIAG_PILOT/casos/` (caso_01_techumbre_comercial.md, caso_02_centro_datos_i.md, caso_03_centro_datos_ii.md, caso_04_centro_datos_iii.md)
 - Documentos generados:
   - Ninguno adicional
 - Responsable: ZEUS (bajo autorización del sprint), ejecución agente IA
@@ -44,24 +44,24 @@ Este documento sintetiza un ejercicio **documental y retrospectivo**: reconstrui
 
 | Caso | Fuente principal | Tipo de proyecto | ICP hipotético | Completitud del Banco lograda |
 | --- | --- | --- | --- | --- |
-| Chevrolet Pedregal (`caso_chevrolet_pedregal.md`) | Documentación operativa real del proyecto (`proyectos/CHEVROLET-2025-001/`) — **no está en el CV oficial** | Comercial/industrial — rehabilitación pluvial y techumbre | ICP-H02 (hipótesis) | ~62.5% (15/24 preguntas) |
-| Centro de Datos Ixtapaluca (`caso_centro_datos_ixtapaluca.md`) | Currículum oficial (`contenido_cv.txt`) únicamente | Data Center | ICP-H01 | ~17% (4/24 preguntas) |
-| Data Nation Querétaro (`caso_data_nation_queretaro.md`) | Currículum oficial (`contenido_cv.txt`) únicamente | Data Center Tier II | ICP-H01 | ~12.5% (3/24 preguntas) |
-| Satmex — Centro de Datos de Satélites Mexicanos (`caso_satmex_centro_datos.md`) | Currículum oficial (`contenido_cv.txt`) únicamente | Data Center ICREA III | ICP-H01 | ~21% (5/24 preguntas) |
+| Caso-01 (`caso_01_techumbre_comercial.md`) | Documentación operativa real del proyecto (`proyectos/CASO-01-PROY/`) — **no está en el CV oficial** | Comercial/industrial — rehabilitación pluvial y techumbre | ICP-H02 (hipótesis) | ~62.5% (15/24 preguntas) |
+| Caso-02 (`caso_02_centro_datos_i.md`) | Currículum oficial (`contenido_cv.txt`) únicamente | Data Center | ICP-H01 | ~17% (4/24 preguntas) |
+| Caso-03 (`caso_03_centro_datos_ii.md`) | Currículum oficial (`contenido_cv.txt`) únicamente | Data Center Tier II | ICP-H01 | ~12.5% (3/24 preguntas) |
+| Caso-04 — Caso-04 (`caso_04_centro_datos_iii.md`) | Currículum oficial (`contenido_cv.txt`) únicamente | Data Center ICREA III | ICP-H01 | ~21% (5/24 preguntas) |
 
 ## 3. Qué se validó del método
 
 1. **El Banco de Preguntas (DOC-057) es aplicable sin modificación a proyectos de naturaleza muy distinta** (rehabilitación pluvial industrial vs. Data Centers de alta especificación técnica). No fue necesario inventar preguntas nuevas ni forzar preguntas fuera de contexto — se usó el mecanismo ya previsto de "omitir y documentar" para las preguntas ICP-específicas que no aplicaban.
-2. **Las Reglas de Clasificación (DOC-058) permitieron clasificar de forma consistente incluso con evidencia muy dispar entre casos.** El caso Chevrolet, con evidencia E3 abundante, y los tres casos de Data Center, con evidencia mayormente E0-E1, se clasificaron con la misma escala sin necesidad de ajustarla.
+2. **Las Reglas de Clasificación (DOC-058) permitieron clasificar de forma consistente incluso con evidencia muy dispar entre casos.** El caso Caso-01, con evidencia E3 abundante, y los tres casos de Data Center, con evidencia mayormente E0-E1, se clasificaron con la misma escala sin necesidad de ajustarla.
 3. **La regla de "ningún hallazgo E0-E1 se presenta como certeza" (DOC-058, Sección 5) se pudo aplicar de forma disciplinada.** En los 3 casos de Data Center, la mayoría de los hallazgos quedaron redactados explícitamente como inferencias del reconstructor, no como hechos — el método obliga a esa honestidad incluso cuando la fuente es pobre.
 4. **El vínculo hallazgo → decisión del comprador (universo de 14 decisiones, DOC-012) funcionó en todos los casos** sin necesidad de agregar una decisión nueva al universo base.
-5. **El caso Chevrolet Pedregal confirma la hipótesis de partida del sprint:** con evidencia real suficiente (memoria de cálculo, catálogo fotográfico con descripciones, presupuesto), el método sí habría anticipado explícitamente el riesgo de deterioro/filtración de techumbre antes de que se agravara — la filtración interior ya visible en el taller mecánico se habría capturado en Bloque D (riesgo técnico) con severidad S4, exactamente el tipo de hallazgo que el diseño del método pretende priorizar (DOC-058, Sección 7, regla de priorización 1: "Severidad S3-S4 con cualquier nivel de confianza").
+5. **El caso Caso-01 confirma la hipótesis de partida del sprint:** con evidencia real suficiente (memoria de cálculo, catálogo fotográfico con descripciones, presupuesto), el método sí habría anticipado explícitamente el riesgo de deterioro/filtración de techumbre antes de que se agravara — la filtración interior ya visible en el taller mecánico se habría capturado en Bloque D (riesgo técnico) con severidad S4, exactamente el tipo de hallazgo que el diseño del método pretende priorizar (DOC-058, Sección 7, regla de priorización 1: "Severidad S3-S4 con cualquier nivel de confianza").
 
 ## 4. Qué falló o generó dudas (ver también DOC-061, DEF-03 a DEF-05)
 
 1. **Completitud del Banco cae drásticamente (12.5%-21%) cuando la única fuente es el currículum comercial oficial**, muy por debajo del umbral de aceptación de 70% que exige DOC-062 para el criterio "Disciplina de evidencia". Esto no es un defecto del Banco de Preguntas ni de las Reglas de Clasificación — es una limitación estructural de la modalidad retrospectiva cuando se usa una fuente que no fue diseñada para capturar riesgo (ver DEF-04).
-2. **Se encontró una discrepancia de cifras dentro de la propia documentación interna de PICC** en el caso Chevrolet (déficit de capacidad pluvial reportado como 75% en un documento y 86.4% en otro; 11 vs. 13 bajadas existentes). Esto no es un defecto del método RiskDiag, pero es un hallazgo relevante para la disciplina de evidencia interna de PICC en general (ver DEF-03).
-3. **El proyecto con mayor riqueza de evidencia (Chevrolet Pedregal) no forma parte del currículum comercial oficial** (`contenido_cv.txt`), lo que generó una desviación respecto a la instrucción original del sprint de usar "proyectos del currículum PICC". Se documenta esta desviación explícitamente en vez de forzar el uso exclusivo de proyectos con poca evidencia solo por estar en el CV (ver DEF-05 y razonamiento en Sección 6).
+2. **Se encontró una discrepancia de cifras dentro de la propia documentación interna de PICC** en el caso Caso-01 (déficit de capacidad pluvial reportado como 75% en un documento y 86.4% en otro; 11 vs. 13 bajadas existentes). Esto no es un defecto del método RiskDiag, pero es un hallazgo relevante para la disciplina de evidencia interna de PICC en general (ver DEF-03).
+3. **El proyecto con mayor riqueza de evidencia (Caso-01) no forma parte del currículum comercial oficial** (`contenido_cv.txt`), lo que generó una desviación respecto a la instrucción original del sprint de usar "proyectos del currículum PICC". Se documenta esta desviación explícitamente en vez de forzar el uso exclusivo de proyectos con poca evidencia solo por estar en el CV (ver DEF-05 y razonamiento en Sección 6).
 4. **Ninguna de las 8 métricas de percepción/intención de DOC-060 pudo capturarse** (claridad, utilidad, cambio de prioridad declarado, reducción de retrabajo declarada, intención de compartir, intención de avanzar, señal comercial downstream) — son estructuralmente imposibles de obtener sin un cliente real respondiendo en una sesión. Esto confirma que DOC-060 está correctamente diseñado para sesión en vivo, no para modalidad retrospectiva.
 5. **El estado de las decisiones del universo base (DOC-012) quedó mayormente "No evaluable" en los 3 casos de Data Center**, no porque la decisión no importe, sino porque la fuente no contiene la información necesaria para evaluarla siquiera. Esto es consistente con el diseño de DOC-058 (Sección 6, regla de "No evaluable"), pero deja en evidencia que un CV de 24 proyectos, por sí solo, no es una base suficiente para un ejercicio de validación completo del método.
 
@@ -77,38 +77,38 @@ Este documento sintetiza un ejercicio **documental y retrospectivo**: reconstrui
 
 ## 6. Nota sobre la elección de casos
 
-Se priorizó incluir Chevrolet Pedregal pese a no estar en el currículum comercial oficial porque es, con amplio margen, el proyecto con mayor densidad de evidencia real de riesgo técnico disponible en el repositorio de PICC — y porque el objetivo explícito de este sprint fue "ver si el método hubiera anticipado riesgos que de hecho ocurrieron". Los otros tres proyectos (Ixtapaluca, Data Nation, Satmex) sí provienen exclusivamente del currículum oficial y muestran, de forma honesta, el techo de utilidad del método cuando la única fuente disponible es un documento de marketing. Ambos resultados —uno rico, tres pobres— son útiles: el primero confirma que el método captura bien el riesgo cuando hay evidencia; los otros tres confirman que el método no puede compensar la ausencia de evidencia, y que ningún nivel de sofisticación en el Banco de Preguntas sustituye una sesión real con quien vivió el proyecto.
+Se priorizó incluir Caso-01 pese a no estar en el currículum comercial oficial porque es, con amplio margen, el proyecto con mayor densidad de evidencia real de riesgo técnico disponible en el repositorio de PICC — y porque el objetivo explícito de este sprint fue "ver si el método hubiera anticipado riesgos que de hecho ocurrieron". Los otros tres proyectos (Caso-02, Caso-03, Caso-04) sí provienen exclusivamente del currículum oficial y muestran, de forma honesta, el techo de utilidad del método cuando la única fuente disponible es un documento de marketing. Ambos resultados —uno rico, tres pobres— son útiles: el primero confirma que el método captura bien el riesgo cuando hay evidencia; los otros tres confirman que el método no puede compensar la ausencia de evidencia, y que ningún nivel de sofisticación en el Banco de Preguntas sustituye una sesión real con quien vivió el proyecto.
 
 ## 7. Evaluación honesta de calidad de datos por caso
 
 | Caso | Calidad de datos disponible | Justificación |
 | --- | --- | --- |
-| Chevrolet Pedregal | **Alta** | Memoria de cálculo con 4 revisiones, presupuesto desglosado por fase, catálogo fotográfico con 26 descripciones textuales de hallazgos reales, datos técnicos estructurados en `proyecto.json`. Es el único caso con evidencia de nivel E3 (evidencia operativa) en múltiples hallazgos |
-| Centro de Datos Ixtapaluca | **Pobre** | Solo el texto del CV comercial (unas 20 líneas). Sin presupuesto, cronograma, incidentes o testimonio. Explícitamente reconocido como pobre en `caso_centro_datos_ixtapaluca.md`, Sección 2 |
-| Data Nation Querétaro | **Pobre** | Igual que el anterior; adicionalmente con una ambigüedad de alcance (proyecto ejecutivo vs. construcción) que el propio CV no aclara |
-| Satmex | **Pobre, con matiz** | Texto del CV más específico técnicamente que los otros dos (menciona Uptime Institute, N+1, biométrico), pero sigue sin presupuesto, cronograma ni resultado. Es el "menos pobre de los pobres", no un caso de datos suficientes |
+| Caso-01 | **Alta** | Memoria de cálculo con 4 revisiones, presupuesto desglosado por fase, catálogo fotográfico con 26 descripciones textuales de hallazgos reales, datos técnicos estructurados en `proyecto.json`. Es el único caso con evidencia de nivel E3 (evidencia operativa) en múltiples hallazgos |
+| Caso-02 | **Pobre** | Solo el texto del CV comercial (unas 20 líneas). Sin presupuesto, cronograma, incidentes o testimonio. Explícitamente reconocido como pobre en `caso_02_centro_datos_i.md`, Sección 2 |
+| Caso-03 | **Pobre** | Igual que el anterior; adicionalmente con una ambigüedad de alcance (proyecto ejecutivo vs. construcción) que el propio CV no aclara |
+| Caso-04 | **Pobre, con matiz** | Texto del CV más específico técnicamente que los otros dos (menciona Uptime Institute, N+1, biométrico), pero sigue sin presupuesto, cronograma ni resultado. Es el "menos pobre de los pobres", no un caso de datos suficientes |
 
 ---
 
-## 8. Ronda 2 (2026-07-16) — MAYRAN, NISSAN-ANDRADE y corrección de encuadre PALMAS→Oficinas
+## 8. Ronda 2 (2026-07-16) — Caso-05, Caso-06 y corrección de encuadre CASO-07→Oficinas
 
-Pablo pidió relanzar el pre-piloto usando dos proyectos adicionales con expediente rico (`MAYRAN-2026-001` y `NISSAN-ANDRADE-2026-001`, ambos localizados en `C:\Development\DataManager\proyectos\`, no en el repositorio PICC), y ampliar la cobertura a las categorías **casa habitación, oficinas y data centers**. Esta ronda agrega 3 casos nuevos (`caso_mayran_bodega.md`, `caso_nissan_andrade.md`, `caso_oficinas_palmas936.md`) y documenta explícitamente dos categorías que **no alcanzaron el umbral de calidad** para generar un caso nuevo (casa habitación, data centers).
+Pablo pidió relanzar el pre-piloto usando dos proyectos adicionales con expediente rico (`CASO-05-PROY` y `CASO-06-PROY`, ambos localizados en `C:\Development\DataManager\proyectos\`, no en el repositorio PICC), y ampliar la cobertura a las categorías **casa habitación, oficinas y data centers**. Esta ronda agrega 3 casos nuevos (`caso_05_bodega_industrial.md`, `caso_06_nave_automotriz.md`, `caso_07_oficinas_comerciales.md`) y documenta explícitamente dos categorías que **no alcanzaron el umbral de calidad** para generar un caso nuevo (casa habitación, data centers).
 
 ### 8.1 Casos nuevos
 
 | Caso | Fuente principal | Tipo de proyecto | Completitud del Banco lograda |
 | --- | --- | --- | --- |
-| Bodega Mayran (`caso_mayran_bodega.md`) | Expediente operativo completo — proyecto.json, Acta de Entrega-Recepción, 3 reportes de avance, estado de cuenta con bitácora WhatsApp, análisis de discrepancia de precios interno | Industrial — rehabilitación post-incendio, **obra concluida y entregada** | ~75% (18/24) |
-| Nave Nissan Aeropuerto (`caso_nissan_andrade.md`) | Propuesta técnica preliminar + catálogo de fotos con análisis dron/sitio + índice de proyecto | Industrial/automotriz — remodelación de nave, **etapa preliminar, sin visita técnica interior** | ~58% (14/24) |
-| Oficinas Palmas 936 (`caso_oficinas_palmas936.md`) | Resumen de proyecto + catálogo de espacios + análisis de sobreprecios DEDALO | **Comercial — Oficinas** (reclasificado, ver 8.2) | ~42% (10/24) |
+| Caso-05 (`caso_05_bodega_industrial.md`) | Expediente operativo completo — proyecto.json, Acta de Entrega-Recepción, 3 reportes de avance, estado de cuenta con bitácora WhatsApp, análisis de discrepancia de precios interno | Industrial — rehabilitación post-incendio, **obra concluida y entregada** | ~75% (18/24) |
+| Caso-06 (`caso_06_nave_automotriz.md`) | Propuesta técnica preliminar + catálogo de fotos con análisis dron/sitio + índice de proyecto | Industrial/automotriz — remodelación de nave, **etapa preliminar, sin visita técnica interior** | ~58% (14/24) |
+| Oficinas Caso-07 (`caso_07_oficinas_comerciales.md`) | Resumen de proyecto + catálogo de espacios + análisis de sobreprecios DEDALO | **Comercial — Oficinas** (reclasificado, ver 8.2) | ~42% (10/24) |
 
-### 8.2 Hallazgo de encuadre — PALMAS-2026-001 no es un caso de "casa habitación"
+### 8.2 Hallazgo de encuadre — CASO-07-PROY no es un caso de "casa habitación"
 
-El encargo original identificó `PALMAS-2026-001` (indexado también bajo el nombre de carpeta `Presupuesto_Casa_Las_Palmas`) como candidato para la categoría "casa habitación". La lectura directa de la fuente contradice esa clasificación de forma inequívoca: `RESUMEN_PROYECTO.md` titula el proyecto "Acondicionamiento Oficinas PALMAS 936" y `PROYECTO_INFO.json` declara `"tipo": "COMERCIAL - OFICINAS"`. El catálogo de espacios (`CATALOGO_ESPACIOS.md`) enumera exclusivamente programa de oficina (oficina de gerente, sala de juntas, recepción, área operativa con estaciones de trabajo, SITE) — cero espacios residenciales.
+El encargo original identificó `CASO-07-PROY` (indexado también bajo el nombre de carpeta `[CARPETA-INDICE-CASO-07]`) como candidato para la categoría "casa habitación". La lectura directa de la fuente contradice esa clasificación de forma inequívoca: `RESUMEN_PROYECTO.md` titula el proyecto "Caso-07 (Acondicionamiento Oficinas)" y `PROYECTO_INFO.json` declara `"tipo": "COMERCIAL - OFICINAS"`. El catálogo de espacios (`CATALOGO_ESPACIOS.md`) enumera exclusivamente programa de oficina (oficina de gerente, sala de juntas, recepción, área operativa con estaciones de trabajo, SITE) — cero espacios residenciales.
 
-Este hallazgo se trata como una corrección de dato, no como un error del encargo: el nombre coloquial "Casa Las Palmas" usado en el índice ERP (`Presupuesto_Casa_Las_Palmas/HISTORIAL.md`) es engañoso porque el proyecto real detrás de ese nombre es un fit-out comercial. Se recomienda a Dirección PICC renombrar esa carpeta índice para evitar que el mismo error de clasificación se repita en el futuro (ver Sheet de Defectos, DEF-08).
+Este hallazgo se trata como una corrección de dato, no como un error del encargo: el nombre coloquial "[nombre coloquial de Caso-07]" usado en el índice ERP (`[CARPETA-INDICE-CASO-07]/HISTORIAL.md`) es engañoso porque el proyecto real detrás de ese nombre es un fit-out comercial. Se recomienda a Dirección PICC renombrar esa carpeta índice para evitar que el mismo error de clasificación se repita en el futuro (ver Sheet de Defectos, DEF-08).
 
-**Consecuencia:** la categoría "oficinas", que el encargo original asumía sin expediente disponible (solo párrafos de currículum: Kuehne+Nagel WTC, Pabellón Bosques, Rubén Darío, Oficinas Lago Iseo, Oficinas Castellanos y Barragán, Riman Tlalnepantla, UCAD Lindavista — ninguno con carpeta de proyecto dedicada localizada en `proyectos/`), queda **resuelta** con `caso_oficinas_palmas936.md`. La categoría "casa habitación" queda **sin resolver** (ver 8.3).
+**Consecuencia:** la categoría "oficinas", que el encargo original asumía sin expediente disponible (solo párrafos de currículum: [clientes de oficinas del currículum PICC, sin expediente dedicado] — ninguno con carpeta de proyecto dedicada localizada en `proyectos/`), queda **resuelta** con `caso_07_oficinas_comerciales.md`. La categoría "casa habitación" queda **sin resolver** (ver 8.3).
 
 ### 8.3 Categorías sin caso nuevo — gaps documentados explícitamente
 
@@ -116,9 +116,9 @@ Este hallazgo se trata como una corrección de dato, no como un error del encarg
 
 Se investigaron los tres candidatos señalados en el encargo:
 
-- `PALMAS-2026-001` / `Presupuesto_Casa_Las_Palmas`: reclasificado a Oficinas (ver 8.2), no es un caso residencial.
-- `Remodelacion_Casa_Familia_Orea` y `OREA-2026-001`: se verificó que son **el mismo proyecto** indexado bajo dos nombres de carpeta distintos (mismos archivos, mismas fechas, mismo monto financiero de $350,000 registrado como "Casa Orea - Remodelacion integral"). El proyecto está marcado **❌ CANCELADO** en su índice ERP ("PROYECTO CANCELADO - No go. Confirmado por Pablo 2026-06-10"). Al inspeccionar el contenido físico disponible en el repositorio (`OREA-2026-001/`), solo existen 1 fotografía (`IMG_9238.heic`, formato no procesado en este ejercicio) y el archivo índice `HISTORIAL.md` — los documentos de cotización de cocina, planos escaneados y levantamiento fotográfico que el índice lista **no están físicamente presentes en este repositorio** (probablemente residen en OneDrive, fuera del alcance de este ejercicio documental). No es posible responder con cita directa de fuente ninguna pregunta sustantiva del Banco más allá de la cronología y el monto cancelado.
-- No se localizó ningún otro candidato: una búsqueda de carpetas con patrón `casa|resid|depto|departamento` en `proyectos/` solo devolvió las dos carpetas de Orea ya evaluadas.
+- `CASO-07-PROY` / `[CARPETA-INDICE-CASO-07]`: reclasificado a Oficinas (ver 8.2), no es un caso residencial.
+- `[CARPETA-CANDIDATO-CASA-HABITACION]` y `[PROY-CANDIDATO-CASA]`: se verificó que son **el mismo proyecto** indexado bajo dos nombres de carpeta distintos (mismos archivos, mismas fechas, mismo monto financiero de $350,000 registrado como "[FAMILIA-CANDIDATA-CASA] - Remodelacion integral"). El proyecto está marcado **❌ CANCELADO** en su índice ERP ("PROYECTO CANCELADO - No go. Confirmado por Pablo 2026-06-10"). Al inspeccionar el contenido físico disponible en el repositorio (`[PROY-CANDIDATO-CASA]/`), solo existen 1 fotografía (`IMG_9238.heic`, formato no procesado en este ejercicio) y el archivo índice `HISTORIAL.md` — los documentos de cotización de cocina, planos escaneados y levantamiento fotográfico que el índice lista **no están físicamente presentes en este repositorio** (probablemente residen en OneDrive, fuera del alcance de este ejercicio documental). No es posible responder con cita directa de fuente ninguna pregunta sustantiva del Banco más allá de la cronología y el monto cancelado.
+- No se localizó ningún otro candidato: una búsqueda de carpetas con patrón `casa|resid|depto|departamento` en `proyectos/` solo devolvió las dos carpetas de [FAMILIA-CANDIDATA-CASA] ya evaluadas.
 
 **Conclusión:** casa habitación permanece sin expediente rico disponible en este repositorio a la fecha de esta reconstrucción. No se fuerza un caso con datos insuficientes — se documenta el gap (ver DEF-09).
 
@@ -126,7 +126,7 @@ Se investigaron los tres candidatos señalados en el encargo:
 
 Se investigaron los candidatos señalados en el encargo:
 
-- `ORION-CYMIT/RFQ_CONSOLIDADO_20260325.md`: es un proyecto de **sistemas de seguridad perimetral** (CCTV Avigilon, alarma Honeywell, iluminación solar, malla perimetral, planta de emergencia Tesla Powerwall, garitas) para **CIMMYT** (Centro Internacional de Mejoramiento de Maíz y Trigo, instituto de investigación agrícola), explícitamente marcado en la propia fuente como *"INDEPENDIENTE del proyecto Aeropuerto QarDeal"*. No es un Data Center.
+- `[PROY-CANDIDATO-DESCARTADO]/RFQ_CONSOLIDADO_20260325.md`: es un proyecto de **sistemas de seguridad perimetral** (CCTV Avigilon, alarma Honeywell, iluminación solar, malla perimetral, planta de emergencia Tesla Powerwall, garitas) para **[CLIENTE-INSTITUCIONAL-DESCARTADO]** (Centro Internacional de Mejoramiento de Maíz y Trigo, instituto de investigación agrícola), explícitamente marcado en la propia fuente como *"INDEPENDIENTE del proyecto Aeropuerto [CLIENTE-A-MARCA]"*. No es un Data Center.
 - Búsqueda de "HYPERION" (agente Director de Data Centers) en `output/`: todas las coincidencias son manifiestos de agentes y documentos de arquitectura del ecosistema ZEUS, ninguna es un expediente de proyecto real de cliente.
 - Búsqueda de "data center" / "centro de datos" en `proyectos/`: no arrojó ninguna carpeta de proyecto dedicada más allá de las menciones ya usadas en los 3 casos pobres de la Ronda 1 (`contenido_cv.txt`).
 
@@ -136,17 +136,17 @@ Se investigaron los candidatos señalados en el encargo:
 
 | Caso | Ronda | Categoría | Calidad de datos | % Banco respondible | Fuente principal | Hallazgo relevante |
 | --- | --- | --- | --- | --- | --- | --- |
-| Chevrolet Pedregal | 1 | Comercial/industrial | **Alta** | ~62.5% (15/24) | Memoria de cálculo + presupuesto + catálogo fotográfico | Filtración activa ya materializada en taller; discrepancia interna de cifras (DEF-03) |
-| Bodega Mayran | 2 | Industrial | **Muy alta** | ~75% (18/24) | Ciclo completo levantamiento→entrega+finanzas+WhatsApp | Robo de material en obra (AICM); dos discrepancias de precio distintas (DEF-06, DEF-07); cobranza pasiva documentada con impacto de flujo cuantificado |
-| Nave Nissan Aeropuerto | 2 | Industrial/automotriz | **Media-alta** | ~58% (14/24) | Propuesta técnica preliminar + catálogo fotográfico dron | Dispersión de 19x entre escenarios de presupuesto sin alcance definido; mismo cliente que Mayran con posible atención dividida |
-| Oficinas Palmas 936 | 2 | Comercial — Oficinas | **Media** | ~42% (10/24) | Catálogo técnico + análisis de sobreprecios | Fuerte en alcance/presupuesto/riesgo técnico, vacío en contexto comercial (sin cliente identificado); proyecto congelado sin fecha de reactivación; discrepancia de área no reconciliada (DEF-08) |
-| Centro de Datos Ixtapaluca | 1 | Data Center | **Pobre** | ~17% (4/24) | Solo CV comercial | Techo de utilidad del método con fuente de marketing |
-| Data Nation Querétaro | 1 | Data Center | **Pobre** | ~12.5% (3/24) | Solo CV comercial | Ambigüedad de alcance no aclarada por el CV |
-| Satmex | 1 | Data Center | **Pobre, con matiz** | ~21% (5/24) | Solo CV comercial | Técnicamente más específico, sigue sin presupuesto/cronograma |
-| *(Casa habitación)* | 2 | Casa habitación | **Sin caso** | No aplica | `OREA-2026-001` insuficiente (proyecto cancelado, solo índice + 1 foto no procesada) | Gap documentado, no forzado (ver 8.3) |
-| *(Oficinas — vía CV)* | — | Oficinas | **Sin caso vía CV** | No aplica | Resuelto por reclasificación de PALMAS (ver 8.2), no por el currículum comercial | — |
+| Caso-01 | 1 | Comercial/industrial | **Alta** | ~62.5% (15/24) | Memoria de cálculo + presupuesto + catálogo fotográfico | Filtración activa ya materializada en taller; discrepancia interna de cifras (DEF-03) |
+| Caso-05 | 2 | Industrial | **Muy alta** | ~75% (18/24) | Ciclo completo levantamiento→entrega+finanzas+WhatsApp | Robo de material en obra (AICM); dos discrepancias de precio distintas (DEF-06, DEF-07); cobranza pasiva documentada con impacto de flujo cuantificado |
+| Caso-06 | 2 | Industrial/automotriz | **Media-alta** | ~58% (14/24) | Propuesta técnica preliminar + catálogo fotográfico dron | Dispersión de 19x entre escenarios de presupuesto sin alcance definido; mismo cliente que Caso-05 con posible atención dividida |
+| Oficinas Caso-07 | 2 | Comercial — Oficinas | **Media** | ~42% (10/24) | Catálogo técnico + análisis de sobreprecios | Fuerte en alcance/presupuesto/riesgo técnico, vacío en contexto comercial (sin cliente identificado); proyecto congelado sin fecha de reactivación; discrepancia de área no reconciliada (DEF-08) |
+| Caso-02 | 1 | Data Center | **Pobre** | ~17% (4/24) | Solo CV comercial | Techo de utilidad del método con fuente de marketing |
+| Caso-03 | 1 | Data Center | **Pobre** | ~12.5% (3/24) | Solo CV comercial | Ambigüedad de alcance no aclarada por el CV |
+| Caso-04 | 1 | Data Center | **Pobre, con matiz** | ~21% (5/24) | Solo CV comercial | Técnicamente más específico, sigue sin presupuesto/cronograma |
+| *(Casa habitación)* | 2 | Casa habitación | **Sin caso** | No aplica | `[PROY-CANDIDATO-CASA]` insuficiente (proyecto cancelado, solo índice + 1 foto no procesada) | Gap documentado, no forzado (ver 8.3) |
+| *(Oficinas — vía CV)* | — | Oficinas | **Sin caso vía CV** | No aplica | Resuelto por reclasificación de CASO-07 (ver 8.2), no por el currículum comercial | — |
 
 ### 8.5 Patrón transversal confirmado en Ronda 2
 
-La Ronda 1 concluyó que el método (Banco de Preguntas + Reglas de Clasificación) no mostró defectos de diseño, y que el factor limitante es la fuente de datos. La Ronda 2 **confirma y matiza** esa conclusión con un patrón nuevo: la completitud del Banco no depende solo de "cuánta documentación existe", sino de **qué tipo** de documentación existe. Oficinas Palmas 936 tiene abundante documentación técnica (catálogos, presupuestos, análisis de sobreprecios) pero completitud media (~42%) porque casi toda esa documentación responde a los Bloques B, C y D (alcance, presupuesto, riesgo técnico) y prácticamente nada a los Bloques A, F y G (contexto/urgencia, confianza institucional, siguiente paso) — bloques que solo un cliente real puede responder en sesión viva. Esto refuerza, con un mecanismo distinto al de la Ronda 1, la misma recomendación de Sección 5: ningún volumen de documentación técnica sustituye la sesión en vivo que exige DOC-062.
+La Ronda 1 concluyó que el método (Banco de Preguntas + Reglas de Clasificación) no mostró defectos de diseño, y que el factor limitante es la fuente de datos. La Ronda 2 **confirma y matiza** esa conclusión con un patrón nuevo: la completitud del Banco no depende solo de "cuánta documentación existe", sino de **qué tipo** de documentación existe. Oficinas Caso-07 tiene abundante documentación técnica (catálogos, presupuestos, análisis de sobreprecios) pero completitud media (~42%) porque casi toda esa documentación responde a los Bloques B, C y D (alcance, presupuesto, riesgo técnico) y prácticamente nada a los Bloques A, F y G (contexto/urgencia, confianza institucional, siguiente paso) — bloques que solo un cliente real puede responder en sesión viva. Esto refuerza, con un mecanismo distinto al de la Ronda 1, la misma recomendación de Sección 5: ningún volumen de documentación técnica sustituye la sesión en vivo que exige DOC-062.
 

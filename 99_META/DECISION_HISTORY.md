@@ -330,10 +330,10 @@ Decision:
 Razon:
 - Antes de que Dirección/Comercial gaste tiempo de clientes reales ejecutando el Protocolo (DOC-056), es posible y de bajo costo probar mecánicamente si el Banco de Preguntas (DOC-057) y las Reglas de Clasificación (DOC-058) tienen defectos de diseño usando datos reales ya existentes de proyectos ejecutados o en curso de PICC.
 Documentos creados:
-- 10_GATE2_RISKDIAG_PILOT/casos/caso_chevrolet_pedregal.md
-- 10_GATE2_RISKDIAG_PILOT/casos/caso_centro_datos_ixtapaluca.md
-- 10_GATE2_RISKDIAG_PILOT/casos/caso_data_nation_queretaro.md
-- 10_GATE2_RISKDIAG_PILOT/casos/caso_satmex_centro_datos.md
+- 10_GATE2_RISKDIAG_PILOT/casos/caso_01_techumbre_comercial.md
+- 10_GATE2_RISKDIAG_PILOT/casos/caso_02_centro_datos_i.md
+- 10_GATE2_RISKDIAG_PILOT/casos/caso_03_centro_datos_ii.md
+- 10_GATE2_RISKDIAG_PILOT/casos/caso_04_centro_datos_iii.md
 - 10_GATE2_RISKDIAG_PILOT/08_Sintesis_Prepiloto_Retrospectivo.md (DOC-063)
 Documentos impactados:
 - 10_GATE2_RISKDIAG_PILOT/06_Sheet_de_Defectos.md (DOC-061): agregados DEF-03, DEF-04, DEF-05, sin borrar entradas existentes.
@@ -343,7 +343,7 @@ Autoridades:
 - ZEUS: ejecutó y autorizó el alcance documental de este pre-piloto (cumplido, este sprint).
 - PICC / Dirección + Comercial: siguen siendo los únicos autorizados a ejecutar el piloto real en vivo de D-0021 (pendiente, sin cambio de estado).
 Hallazgo principal:
-- El método no mostró defectos de diseño en los 4 casos. El factor limitante fue la fuente de datos: con evidencia real rica (Chevrolet Pedregal, proyecto no listado en el currículum comercial oficial pero con memoria de cálculo, presupuesto y catálogo fotográfico reales) el método habría anticipado el riesgo de deterioro de techumbre ya materializado (filtración visible en taller). Con evidencia limitada al currículum comercial (Centro de Datos Ixtapaluca, Data Nation Querétaro, Satmex) la completitud del Banco cayó a 12.5%-21%, muy por debajo del umbral de aceptación de DOC-062 (≥70%).
+- El método no mostró defectos de diseño en los 4 casos. El factor limitante fue la fuente de datos: con evidencia real rica (Caso-01, proyecto no listado en el currículum comercial oficial pero con memoria de cálculo, presupuesto y catálogo fotográfico reales) el método habría anticipado el riesgo de deterioro de techumbre ya materializado (filtración visible en taller). Con evidencia limitada al currículum comercial (Caso-02, Caso-03, Caso-04) la completitud del Banco cayó a 12.5%-21%, muy por debajo del umbral de aceptación de DOC-062 (≥70%).
 Riesgos si se confunde este pre-piloto con el piloto real:
 - Ninguna de las 8 métricas de percepción/intención del cliente (DOC-060, métricas 3, 4, 6, 7, 8, 9, 11) pudo capturarse, porque no hubo cliente real respondiendo. Presentar este ejercicio como evidencia de cierre de Gate 2 violaría directamente los criterios de aceptación de DOC-062.
 Criterio de reversión / alternancia:
@@ -353,13 +353,13 @@ Próximo paso autorizador:
 
 ## D-0023 (2026-07-16)
 Decision:
-- ZEUS ejecuta y registra una `Ronda 2` del Pre-piloto Retrospectivo RiskDiag V1 (extensión de D-0022), agregando 3 casos reconstruidos con proyectos reales adicionales de PICC (`MAYRAN-2026-001`, `NISSAN-ANDRADE-2026-001`, `PALMAS-2026-001`) y documentando explícitamente dos categorías (casa habitación, data centers) que no alcanzaron el umbral de calidad para generar un caso nuevo.
+- ZEUS ejecuta y registra una `Ronda 2` del Pre-piloto Retrospectivo RiskDiag V1 (extensión de D-0022), agregando 3 casos reconstruidos con proyectos reales adicionales de PICC (`CASO-05-PROY`, `CASO-06-PROY`, `CASO-07-PROY`) y documentando explícitamente dos categorías (casa habitación, data centers) que no alcanzaron el umbral de calidad para generar un caso nuevo.
 Razon:
 - Pablo pidió relanzar el pre-piloto con dos proyectos de expediente rico ya localizados (bodega con fotos de avance fechadas, nave industrial con catálogo fotográfico dron) y ampliar la cobertura de categorías del ejercicio a casa habitación, oficinas y data centers, buscando en las carpetas de clientes reales sin inventar datos donde no los hubiera.
 Documentos creados:
-- 10_GATE2_RISKDIAG_PILOT/casos/caso_mayran_bodega.md
-- 10_GATE2_RISKDIAG_PILOT/casos/caso_nissan_andrade.md
-- 10_GATE2_RISKDIAG_PILOT/casos/caso_oficinas_palmas936.md
+- 10_GATE2_RISKDIAG_PILOT/casos/caso_05_bodega_industrial.md
+- 10_GATE2_RISKDIAG_PILOT/casos/caso_06_nave_automotriz.md
+- 10_GATE2_RISKDIAG_PILOT/casos/caso_07_oficinas_comerciales.md
 Documentos impactados:
 - 10_GATE2_RISKDIAG_PILOT/08_Sintesis_Prepiloto_Retrospectivo.md (DOC-063): agregada Sección 8 (Ronda 2) con tabla comparativa de calidad de datos de los 7 casos totales (Rondas 1+2) y documentación explícita de los gaps de casa habitación y data centers.
 - 10_GATE2_RISKDIAG_PILOT/06_Sheet_de_Defectos.md (DOC-061): agregados DEF-06, DEF-07, DEF-08, DEF-09, sin borrar entradas existentes.
@@ -368,11 +368,11 @@ Autoridades:
 - ZEUS: ejecutó y autorizó el alcance documental de esta ronda (cumplido, este sprint).
 - PICC / Dirección + Comercial: siguen siendo los únicos autorizados a ejecutar el piloto real en vivo de D-0021 (pendiente, sin cambio de estado).
 Hallazgo principal:
-- Corrección de encuadre: `PALMAS-2026-001` (identificado en el encargo como candidato de "casa habitación") es en realidad un proyecto de acondicionamiento de oficinas comerciales de lujo ("Acondicionamiento Oficinas PALMAS 936", `PROYECTO_INFO.json` tipo "COMERCIAL - OFICINAS"), confirmado por lectura directa de tres fuentes de la carpeta del proyecto. Esto resuelve retroactivamente la categoría "oficinas" (que no tenía expediente disponible más allá de párrafos de currículum) y deja "casa habitación" sin caso nuevo, porque el único candidato real (`OREA-2026-001` / `Remodelacion_Casa_Familia_Orea`, mismo proyecto cancelado indexado dos veces) solo tiene físicamente en el repositorio un índice ERP y una fotografía sin procesar. El caso Bodega Mayran (obra concluida y entregada) alcanzó la completitud de Banco más alta de los 7 casos totales (~75%), y reveló dos discrepancias de precio internas no reconciliadas entre documentos de PICC para el mismo proyecto (DEF-06, DEF-07), además de un incidente real de robo de material en obra cerca del AICM.
+- Corrección de encuadre: `CASO-07-PROY` (identificado en el encargo como candidato de "casa habitación") es en realidad un proyecto de acondicionamiento de oficinas comerciales de lujo ("Caso-07 (Acondicionamiento Oficinas)", `PROYECTO_INFO.json` tipo "COMERCIAL - OFICINAS"), confirmado por lectura directa de tres fuentes de la carpeta del proyecto. Esto resuelve retroactivamente la categoría "oficinas" (que no tenía expediente disponible más allá de párrafos de currículum) y deja "casa habitación" sin caso nuevo, porque el único candidato real (`[PROY-CANDIDATO-CASA]` / `[CARPETA-CANDIDATO-CASA-HABITACION]`, mismo proyecto cancelado indexado dos veces) solo tiene físicamente en el repositorio un índice ERP y una fotografía sin procesar. El caso Caso-05 (obra concluida y entregada) alcanzó la completitud de Banco más alta de los 7 casos totales (~75%), y reveló dos discrepancias de precio internas no reconciliadas entre documentos de PICC para el mismo proyecto (DEF-06, DEF-07), además de un incidente real de robo de material en obra cerca del AICM.
 Riesgos si se confunde esta ronda con el piloto real:
 - Igual que en D-0022: ninguna de las 8 métricas de percepción/intención del cliente pudo capturarse porque no hubo cliente real respondiendo. Este ejercicio no cuenta como evidencia de cierre de Gate 2.
 Criterio de reversión / alternancia:
 - Este sprint no reabre la Decisión Diferida (D-0020) ni el estado "pendiente" del piloto real autorizado en D-0021. No autoriza, por sí mismo, ningún avance hacia Gate 3.
 Próximo paso autorizador:
-- Sin cambio respecto a D-0021 y D-0022: un humano de PICC (Dirección o Comercial) ejecuta el Protocolo (DOC-056) sobre 3-5 proyectos reales en sesión en vivo. Adicionalmente, se recomienda a Dirección PICC (fuera del alcance de este pre-piloto): (1) reconciliar la discrepancia de precio DEF-07 en Bodega Mayran, (2) renombrar la carpeta índice ERP `Presupuesto_Casa_Las_Palmas` para reflejar que es un proyecto de oficinas, no de casa habitación.
+- Sin cambio respecto a D-0021 y D-0022: un humano de PICC (Dirección o Comercial) ejecuta el Protocolo (DOC-056) sobre 3-5 proyectos reales en sesión en vivo. Adicionalmente, se recomienda a Dirección PICC (fuera del alcance de este pre-piloto): (1) reconciliar la discrepancia de precio DEF-07 en Caso-05, (2) renombrar la carpeta índice ERP `[CARPETA-INDICE-CASO-07]` para reflejar que es un proyecto de oficinas, no de casa habitación.
 

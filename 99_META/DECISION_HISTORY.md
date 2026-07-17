@@ -376,3 +376,27 @@ Criterio de reversión / alternancia:
 Próximo paso autorizador:
 - Sin cambio respecto a D-0021 y D-0022: un humano de PICC (Dirección o Comercial) ejecuta el Protocolo (DOC-056) sobre 3-5 proyectos reales en sesión en vivo. Adicionalmente, se recomienda a Dirección PICC (fuera del alcance de este pre-piloto): (1) reconciliar la discrepancia de precio DEF-07 en Caso-05, (2) renombrar la carpeta índice ERP `[CARPETA-INDICE-CASO-07]` para reflejar que es un proyecto de oficinas, no de casa habitación.
 
+## D-0024 (2026-07-16)
+Decision:
+- ZEUS ejecuta y registra una `Ronda 3` del Pre-piloto Retrospectivo RiskDiag V1 (extensión de D-0022/D-0023), agregando 2 casos reconstruidos directamente desde un reporte de consulta al sistema DAVINCI (`CASO-08-PROY`, `CASO-09-PROY` en la nomenclatura interna de este ejercicio) y resolviendo una pregunta de identidad de cliente entre ambos y el cliente ya codificado `[CLIENTE-A]` en Rondas 1-2.
+Razon:
+- DEDALO entregó a ZEUS un reporte de evidencia (`ZEUS-GATE2-EVIDENCIA-0001`, 16-Jul-2026) con dos expedientes DAVINCI ricos de proyectos activos. Pablo pidió usar esa evidencia para ampliar el pre-piloto, resolver si uno de los dos proyectos es o no el mismo cliente ya presente en Caso-05/Caso-06, y documentar sin inventar ningún dato no presente en el reporte fuente.
+Documentos creados:
+- 10_GATE2_RISKDIAG_PILOT/casos/caso_08_nave_automotriz_ii.md
+- 10_GATE2_RISKDIAG_PILOT/casos/caso_09_nave_automotriz_iii.md
+Documentos impactados:
+- 10_GATE2_RISKDIAG_PILOT/08_Sintesis_Prepiloto_Retrospectivo.md (DOC-063): agregada Sección 9 (Ronda 3) con la decisión de identidad de cliente, hallazgo de concentración de cliente, y tabla comparativa de los 9 casos totales del pre-piloto.
+- 10_GATE2_RISKDIAG_PILOT/06_Sheet_de_Defectos.md (DOC-061): agregados DEF-10, DEF-11, sin borrar entradas existentes.
+- 99_META/CHANGELOG.md (este registro).
+Autoridades:
+- ZEUS: ejecutó y autorizó el alcance documental de esta ronda (cumplido, este sprint), incluida la decisión de identidad de cliente (confirmada para Caso-09, no confirmada para Caso-08).
+- PICC / Dirección + Comercial: siguen siendo los únicos autorizados a ejecutar el piloto real en vivo de D-0021 (pendiente, sin cambio de estado).
+Hallazgo principal:
+- Caso-09 se confirmó como el mismo cliente `[CLIENTE-A]` de Caso-05/Caso-06 (confianza ALTA: coincidencia de ubicación, marca comercial y grupo comercial). Caso-08 se codificó como entidad relacionada distinta y nueva (`[CLIENTE-B]`) porque su cliente registrado tiene razón social propia y `[CLIENTE-A]` aparece en ese expediente solo como arrendatario del inmueble, sin RFC disponible para confirmar si son o no la misma persona moral — duda documentada explícitamente, no resuelta por inferencia débil. Con este cierre, `[CLIENTE-A]` acumula tres casos en el pre-piloto (Caso-05, Caso-06, Caso-09), más un cuarto caso de entidad relacionada (Caso-08) — hallazgo de concentración de cliente documentado en DOC-063 Sección 9.3. Ambos casos nuevos revelaron además discrepancias de monto contractual dentro de la propia documentación interna de PICC (DEF-10: escalada de alcance de +5.6% entre dos revisiones de presupuesto el mismo día; DEF-11: discrepancia entre un registro retroactivo en sistema y el contrato confirmado directamente por Pablo), el mismo patrón de disciplina documental ya visto en Caso-05 (DEF-07).
+Riesgos si se confunde esta ronda con el piloto real:
+- Igual que en D-0022/D-0023: ninguna de las 8 métricas de percepción/intención del cliente pudo capturarse porque no hubo cliente real respondiendo. Este ejercicio no cuenta como evidencia de cierre de Gate 2.
+Criterio de reversión / alternancia:
+- Este sprint no reabre la Decisión Diferida (D-0020) ni el estado "pendiente" del piloto real autorizado en D-0021. No autoriza, por sí mismo, ningún avance hacia Gate 3.
+Próximo paso autorizador:
+- Sin cambio respecto a D-0021/D-0022/D-0023: un humano de PICC (Dirección o Comercial) ejecuta el Protocolo (DOC-056) sobre 3-5 proyectos reales en sesión en vivo. Adicionalmente, se recomienda a Dirección PICC (fuera del alcance de este pre-piloto): (1) reconciliar la discrepancia de monto de DEF-10 (Caso-08) y DEF-11 (Caso-09) antes de facturar sobre esos folios, (2) obtener el RFC del cliente registrado de Caso-08 para cerrar con evidencia la pregunta de identidad con `[CLIENTE-A]`, (3) evaluar formalmente la exposición de concentración de cliente dado que `[CLIENTE-A]` y su entidad relacionada suman 4 de los 9 casos del pre-piloto.
+

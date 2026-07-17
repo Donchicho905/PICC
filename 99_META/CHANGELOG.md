@@ -311,5 +311,40 @@ Corrección de encuadre: `CASO-07-PROY` no es un caso de casa habitación, es un
 - Ejecución del piloto real (3-5 casos con clientes reales, en vivo): **sigue pendiente**, sin cambio de estado — requiere acción humana de Dirección/Comercial fuera de este repositorio.
 - Gate 3 (Evidence of measurable value): sigue bloqueado; esta ronda no aporta evidencia de valor comercial, solo evidencia adicional de que el método no tiene defectos estructurales conocidos, y de que la fuente documental (no el método) sigue siendo el factor limitante.
 
+## 2026-07-16 - Ronda 3 del pre-piloto retrospectivo RiskDiag V1 (Caso-08, Caso-09, evidencia de sistema DAVINCI)
+
+### Objetivo
+Extender el pre-piloto retrospectivo (D-0022, D-0023) con dos proyectos activos adicionales reconstruidos directamente desde un reporte de consulta al sistema DAVINCI (folios, expediente, hitos de cobro), resolver una pregunta de identidad de cliente entre ambos proyectos y el cliente ya codificado como `[CLIENTE-A]` en Rondas 1-2, y documentar dos hallazgos de disciplina de evidencia interna (discrepancias de monto contractual) sin inventar datos donde no los hubiera.
+
+### Entregables
+
+**Nuevos documentos:**
+- `10_GATE2_RISKDIAG_PILOT/casos/caso_08_nave_automotriz_ii.md`: caso reconstruido desde un reporte de consulta al sistema DAVINCI de un proyecto industrial activo (nave para guardado de vehículos + oficinas), con presupuesto en dos revisiones sucesivas el mismo día por escalada de alcance en uno de los dos predios. Cliente registrado con razón social distinta a la de `[CLIENTE-A]`; se documenta como entidad relacionada pero no confirmada, código nuevo `[CLIENTE-B]`.
+- `10_GATE2_RISKDIAG_PILOT/casos/caso_09_nave_automotriz_iii.md`: caso reconstruido desde el mismo reporte de consulta, de un proyecto de remodelación de local existente a concesionario/showroom automotriz, presupuesto APROBADO con registro retroactivo en sistema. Confirmado con confianza ALTA como el mismo cliente de Caso-05/Caso-06 (`[CLIENTE-A]`).
+- `10_GATE2_RISKDIAG_PILOT/08_Sintesis_Prepiloto_Retrospectivo.md` (DOC-063): agregada Sección 9 (Ronda 3) con la decisión de identidad de cliente, el hallazgo de concentración de cliente (`[CLIENTE-A]` acumula 3 casos), y tabla comparativa actualizada con los 9 casos totales del pre-piloto.
+
+**Documentos actualizados:**
+- `10_GATE2_RISKDIAG_PILOT/06_Sheet_de_Defectos.md` (DOC-061): agregados DEF-10 (escalada de alcance entre dos revisiones de presupuesto de Caso-08, +5.6% el mismo día por condiciones de sitio no verificadas en uno de dos predios) y DEF-11 (discrepancia de monto contractual en Caso-09 entre el registro retroactivo en sistema y el contrato confirmado directamente por Pablo).
+- `99_META/DECISION_HISTORY.md`: agregado D-0024.
+
+### Hallazgo principal
+Decisión de identidad de cliente con dos resultados distintos sobre la misma pregunta: Caso-09 se confirmó como el mismo cliente de Caso-05/Caso-06 (`[CLIENTE-A]`, confianza ALTA, tres coincidencias documentadas), mientras que Caso-08 se trató como una entidad relacionada pero **no confirmada** (`[CLIENTE-B]`, código nuevo), porque el cliente registrado en el sistema para ese proyecto tiene razón social distinta y `[CLIENTE-A]` aparece ahí solo como arrendatario del inmueble, sin RFC disponible para cruzar ambas entidades. Esto deja a `[CLIENTE-A]` con tres casos en el pre-piloto (concentración de cliente, ver DOC-063 Sección 9.3), más un cuarto caso de entidad relacionada del mismo grupo comercial. Además, ambos casos nuevos revelaron discrepancias de monto contractual dentro de la propia documentación interna de PICC (DEF-10, DEF-11), siguiendo el mismo patrón ya visto en Caso-05 (DEF-07): el método RiskDiag capturó correctamente ambas discrepancias marcando la decisión de presupuesto como "no evaluable" — el defecto es de disciplina documental de PICC, no del método.
+
+### Qué NO se hizo (restricciones respetadas)
+- No se presenta esta ronda como cierre de Gate 2 ni como los 3-5 casos reales exigidos por DOC-062 — ningún dato de cliente real fue capturado en sesión en vivo.
+- No se inventó ningún dato, cifra o resultado no presente en las fuentes; donde faltó un dato real se marcó literalmente `[DATO NO DISPONIBLE EN FUENTE]`.
+- No se sobre-optimizó ninguna clasificación ya marcada "Parcial" o "No" por el reporte fuente — se respetó esa clasificación sin inferencia adicional no citada.
+- No se resolvió la duda de identidad de Caso-08 por inferencia débil — se documentó explícitamente como no confirmada, pendiente de verificación de RFC.
+- No se modificaron DOC-056 a DOC-062 en su contenido normativo (solo se agregaron entradas nuevas a DOC-061 y una sección nueva a DOC-063, sin borrar contenido existente).
+- No se tocó ninguna arquitectura congelada ni se creó integración alguna con OLYMPUS/ZEUS/DAVINCI/BrickEye.
+- No se usó `git add -A` ni `git add .`; no se tocó `.tmp_bce_audit.ps1` ni `tools/`.
+- No se modificó ningún archivo fuera de `10_GATE2_RISKDIAG_PILOT/`, `99_META/CHANGELOG.md` y `99_META/DECISION_HISTORY.md`.
+
+### Estado de Gate 2 al cierre de esta iteración
+- Preparación documental: sigue **completa** (7/7 artefactos, sin cambios normativos).
+- Evidencia preparatoria del método: **ampliada** (9 casos retrospectivos totales + síntesis DOC-063 actualizada + hallazgo de concentración de cliente documentado explícitamente).
+- Ejecución del piloto real (3-5 casos con clientes reales, en vivo): **sigue pendiente**, sin cambio de estado — requiere acción humana de Dirección/Comercial fuera de este repositorio.
+- Gate 3 (Evidence of measurable value): sigue bloqueado; esta ronda no aporta evidencia de valor comercial, solo evidencia adicional de que el método no tiene defectos estructurales conocidos, y de que la fuente documental (no el método) sigue siendo el factor limitante.
+
 
 

@@ -150,3 +150,54 @@ Se investigaron los candidatos señalados en el encargo:
 
 La Ronda 1 concluyó que el método (Banco de Preguntas + Reglas de Clasificación) no mostró defectos de diseño, y que el factor limitante es la fuente de datos. La Ronda 2 **confirma y matiza** esa conclusión con un patrón nuevo: la completitud del Banco no depende solo de "cuánta documentación existe", sino de **qué tipo** de documentación existe. Oficinas Caso-07 tiene abundante documentación técnica (catálogos, presupuestos, análisis de sobreprecios) pero completitud media (~42%) porque casi toda esa documentación responde a los Bloques B, C y D (alcance, presupuesto, riesgo técnico) y prácticamente nada a los Bloques A, F y G (contexto/urgencia, confianza institucional, siguiente paso) — bloques que solo un cliente real puede responder en sesión viva. Esto refuerza, con un mecanismo distinto al de la Ronda 1, la misma recomendación de Sección 5: ningún volumen de documentación técnica sustituye la sesión en vivo que exige DOC-062.
 
+## 9. Ronda 3 (2026-07-16) — Caso-08 y Caso-09, evidencia de sistema DAVINCI y concentración de cliente
+
+Pablo autorizó a ZEUS incorporar dos proyectos activos adicionales, reconstruidos por primera vez directamente desde el sistema DAVINCI (folios de `davinci.cotizaciones`, expediente de `davinci.expediente_items`, hitos de `davinci.hitos_cobro`) en vez de carpetas de proyecto sueltas, vía un reporte de consulta preparado por DEDALO. Esta ronda agrega 2 casos nuevos (`caso_08_nave_automotriz_ii.md`, `caso_09_nave_automotriz_iii.md`) y resuelve explícitamente una pregunta de identidad de cliente entre ambos proyectos y los de la Ronda 2.
+
+### 9.1 Casos nuevos
+
+| Caso | Fuente principal | Tipo de proyecto | Completitud del Banco lograda (cálculo propio de este ejercicio, 24 preguntas de referencia) |
+| --- | --- | --- | --- |
+| Caso-08 (`caso_08_nave_automotriz_ii.md`) | Reporte de consulta a sistema DAVINCI (folios, expediente, notas) | Industrial — nave para guardado de vehículos + oficinas, presupuesto en dos revisiones, la segunda sin aprobar | ~63% (15/24) |
+| Caso-09 (`caso_09_nave_automotriz_iii.md`) | Reporte de consulta a sistema DAVINCI (folios, expediente, notas) | Industrial/comercial — remodelación de local existente a concesionario/showroom, presupuesto APROBADO con registro retroactivo | ~58% (14/24) |
+
+### 9.2 Decisión de identidad de cliente — un caso confirma, un caso queda abierto
+
+Esta ronda resolvió una pregunta de identidad de cliente entre los dos proyectos nuevos y el cliente ya codificado como `[CLIENTE-A]` en Caso-05 y Caso-06:
+
+- **Caso-09 = mismo cliente que `[CLIENTE-A]`, confianza ALTA.** La decisión se apoyó en tres coincidencias documentadas en la fuente y en la clave de anonimización interna (no reproducidas en el repositorio PICC por regla de anonimización): coincidencia de ubicación (domicilio fiscal registrado de `[CLIENTE-A]`), coincidencia de marca comercial del proyecto, y coincidencia del mismo grupo comercial ya identificado en Caso-05/Caso-06. Se usó el código `[CLIENTE-A]` sin generar un código nuevo.
+- **Caso-08 = entidad relacionada pero NO confirmada como la misma, confianza insuficiente para unificar.** El cliente registrado en el sistema DAVINCI para este proyecto tiene una razón social **distinta** a la de `[CLIENTE-A]`, con `[CLIENTE-A]` apareciendo en el expediente únicamente como **arrendatario** del inmueble (rol de inquilino, no de cliente contratante). Sin RFC de la razón social registrada como cliente de Caso-08 disponible para cruzar contra el RFC de `[CLIENTE-A]`, no hay evidencia suficiente para tratar ambas entidades como la misma persona moral, aunque ambas pertenecen al mismo grupo comercial. Se asignó un código nuevo, `[CLIENTE-B]`, verificando primero en la clave de anonimización que ninguna letra distinta de A estuviera ya reservada (solo `[CLIENTE-A]` existía antes de esta ronda). El caso documenta explícitamente esta duda como no resuelta, sin forzarla por inferencia débil.
+
+### 9.3 Hallazgo de concentración de cliente
+
+Con el cierre de esta ronda, `[CLIENTE-A]` tiene ahora **tres casos** en el pre-piloto (Caso-05, Caso-06, Caso-09) — el cliente con mayor presencia individual en todo el ejercicio (7 casos totales con expediente en Rondas 2 y 3, más los 4 casos pobres de Ronda 1) — más **un caso adicional de entidad relacionada pero no confirmada** del mismo grupo comercial (Caso-08, `[CLIENTE-B]`). Esto no es un hallazgo sobre el método RiskDiag en sí, sino una observación operativa relevante para Dirección PICC: casi la mitad de los casos con expediente rico de este pre-piloto (3 de 6, excluyendo los 4 casos pobres de currículum de Ronda 1) provienen del mismo grupo comercial, lo cual es consistente con la recomendación ya hecha en Caso-06 (Sección 5, punto 4) de dar seguimiento proactivo a la carga de trabajo compartida entre proyectos de un mismo cliente, y con la recomendación nueva de Caso-09 (Sección 5, punto 5) de evaluar formalmente la exposición de concentración de cliente antes de aceptar proyectos adicionales del mismo grupo.
+
+### 9.4 Hallazgos de disciplina de evidencia — dos discrepancias de monto contractual
+
+Esta ronda, igual que la Ronda 2 con Caso-05, encontró discrepancias de cifra dentro de la propia documentación interna de PICC, no en el proyecto del cliente:
+
+1. **Caso-08:** escalada de alcance a mitad de cotización — dos revisiones del mismo folio el mismo día (09-Jul-2026), con incremento de +5.6% por condiciones de sitio no verificadas en uno de los dos predios, más un ajuste de partida posterior (16-Jul-2026) sin reconciliar contra el monto total (ver DEF-10).
+2. **Caso-09:** discrepancia entre el monto registrado en sistema como APROBADO ($577,325 s/IVA) y el monto que la fuente cita textualmente como el contrato real confirmado directamente por Pablo ($602,105 s/IVA antes de un ajuste posterior) — con el agravante de que el registro en sistema fue retroactivo respecto a la aprobación real del cliente (ver DEF-11).
+
+Ambos hallazgos siguen el mismo patrón ya visto en Caso-05 (DEF-07): el método RiskDiag no falla al capturarlos — al contrario, el Bloque C (presupuesto) y las Reglas de Clasificación (marcar la decisión de presupuesto como "no evaluable" cuando hay dos cifras sin reconciliar) funcionaron exactamente como fueron diseñados. El defecto es de disciplina documental interna de PICC, no del método.
+
+### 9.5 Tabla comparativa de calidad de datos — todos los casos (Rondas 1+2+3)
+
+| Caso | Ronda | Categoría | Calidad de datos | % Banco respondible | Fuente principal | Hallazgo relevante |
+| --- | --- | --- | --- | --- | --- | --- |
+| Caso-01 | 1 | Comercial/industrial | **Alta** | ~62.5% (15/24) | Memoria de cálculo + presupuesto + catálogo fotográfico | Filtración activa ya materializada en taller; discrepancia interna de cifras (DEF-03) |
+| Caso-05 | 2 | Industrial | **Muy alta** | ~75% (18/24) | Ciclo completo levantamiento→entrega+finanzas+WhatsApp | Robo de material en obra; dos discrepancias de precio distintas (DEF-06, DEF-07); cobranza pasiva documentada con impacto de flujo cuantificado |
+| Caso-06 | 2 | Industrial/automotriz | **Media-alta** | ~58% (14/24) | Propuesta técnica preliminar + catálogo fotográfico dron | Dispersión de 19x entre escenarios de presupuesto sin alcance definido; mismo cliente que Caso-05 con posible atención dividida |
+| Oficinas Caso-07 | 2 | Comercial — Oficinas | **Media** | ~42% (10/24) | Catálogo técnico + análisis de sobreprecios | Fuerte en alcance/presupuesto/riesgo técnico, vacío en contexto comercial; discrepancia de área no reconciliada (DEF-08) |
+| Caso-08 | 3 | Industrial (entidad relacionada, `[CLIENTE-B]`) | **Media-alta** | ~63% (15/24) | Reporte de consulta a sistema DAVINCI (folios, expediente) | Escalada de alcance entre dos revisiones de presupuesto el mismo día; identidad de cliente relacionada pero no confirmada (DEF-10) |
+| Caso-09 | 3 | Industrial/comercial (`[CLIENTE-A]`) | **Media-alta** | ~58% (14/24) | Reporte de consulta a sistema DAVINCI (folios, expediente) | Discrepancia de monto contractual entre registro retroactivo y contrato confirmado directamente por Pablo (DEF-11); tercer caso del mismo cliente en el pre-piloto |
+| Caso-02 | 1 | Data Center | **Pobre** | ~17% (4/24) | Solo CV comercial | Techo de utilidad del método con fuente de marketing |
+| Caso-03 | 1 | Data Center | **Pobre** | ~12.5% (3/24) | Solo CV comercial | Ambigüedad de alcance no aclarada por el CV |
+| Caso-04 | 1 | Data Center | **Pobre, con matiz** | ~21% (5/24) | Solo CV comercial | Técnicamente más específico, sigue sin presupuesto/cronograma |
+| *(Casa habitación)* | 2 | Casa habitación | **Sin caso** | No aplica | Proyecto candidato cancelado, solo índice + 1 foto no procesada | Gap documentado, no forzado (ver 8.3) |
+| *(Oficinas — vía CV)* | — | Oficinas | **Sin caso vía CV** | No aplica | Resuelto por reclasificación de CASO-07 (ver 8.2) | — |
+
+### 9.6 Patrón transversal confirmado en Ronda 3
+
+Los reportes de sistema DAVINCI (Caso-08, Caso-09) confirman un patrón distinto al de las carpetas de proyecto sueltas de Rondas 1 y 2: la completitud del Banco (~58-63%) es consistentemente media-alta cuando la fuente es un sistema transaccional estructurado (folios, hitos, expediente clasificado por tipo), porque ese tipo de fuente responde bien a los Bloques B y C (alcance, presupuesto) casi por diseño del propio sistema, pero sigue sin poder responder los Bloques A, F y G (contexto/urgencia, confianza institucional, siguiente paso) — el mismo techo estructural ya confirmado en la Ronda 2 con Oficinas Caso-07. Esto refuerza, con una tercera fuente de datos distinta (CV comercial en Ronda 1, expedientes documentales en Ronda 2, sistema DAVINCI en Ronda 3), la misma conclusión de Sección 5: ningún tipo de fuente documental, por estructurada que sea, sustituye la sesión en vivo que exige DOC-062.
+
